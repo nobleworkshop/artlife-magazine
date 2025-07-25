@@ -1,0 +1,22 @@
+.component {
+
+}
+
+.component__title {
+	font-size: 18px;
+	font-weight: 800;
+	margin-bottom: 10px;
+}
+
+.component__preview {
+	background-color: #e7e7e7;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.component__code {
+	background-color: #e7e7e7;
+	padding: 10px;
+	font-size: 14px;
+	font-family: monospace;
+}

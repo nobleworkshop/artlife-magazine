@@ -10,7 +10,7 @@
 import Logo from "../components/Logo/Logo";
 import styles from "./uikit.module.css";
 
-const UiKitButton = () => {
+const UiKitLogo = () => {
     return (
         <div className={styles.component}>
             <h3 className={styles.component__title}>Badge</h3>
@@ -36,4 +36,4 @@ const UiKitButton = () => {
     );
 };
 
-export default UiKitButton;
+export default UiKitLogo;

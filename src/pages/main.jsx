@@ -1,3 +1,5 @@
+import NavLink from "../components/NavLink/NavLink"
+
 const Main = () => {
 	return (
 		<>

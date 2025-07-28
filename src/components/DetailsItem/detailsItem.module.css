@@ -1,0 +1,21 @@
+.details-item__title {
+	font-family: General Sans;
+	font-weight: 600;
+	font-style: Semibold;
+	font-size: 14px;
+	line-height: 160%;
+
+}
+
+.details-item__volume{
+	font-family: General Sans;
+	font-size: 14px;
+	line-height: 160%;
+}
+
+.details-item__content{
+	display: flex;
+	gap: 8px;
+
+
+}

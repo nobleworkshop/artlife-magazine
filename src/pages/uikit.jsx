@@ -1,5 +1,6 @@
 import UiKitButton from "./../uikit-components/uikit-Button";
 import UiKitBadge from "./../uikit-components/uikit-Badge";
+import UiKitDetailsItem from "./../uikit-components/uikit-DetailsItem";
 
 const UiKit = () => {
 	return (
@@ -10,6 +11,7 @@ const UiKit = () => {
 				<h2>Components</h2>
 				<UiKitButton />
 				<UiKitBadge />
+				<UiKitDetailsItem />
 			</div>
 		</div>
 	);

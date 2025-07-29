@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Social = ({ link, alt, target }) => {
     return (
         <Link to={link} target={target} >
-            <img src="../../../img/inst.svg" alt={alt} />
+            <img src="../.." alt={alt} />
         </Link>
     );
 };

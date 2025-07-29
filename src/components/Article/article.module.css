@@ -1,0 +1,51 @@
+body {
+    font-family: var(--font-family);
+}
+
+.article {
+    width: 1055px;
+    height: 240px;
+    display: flex;
+    gap: 48px;
+}
+
+.img {
+    width: 240px;
+    height: 240px;
+    flex-shrink: 0;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.textBlock {
+    flex: 1 0 auto;
+}
+
+.text {
+    margin: 12px 0;
+}
+
+.footer {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+}
+
+.info {
+    display: flex;
+    gap: 24px;
+}
+
+.info__item {
+    margin-right: 8px;
+}

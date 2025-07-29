@@ -1,5 +1,10 @@
 import UiKitButton from "./../uikit-components/uikit-Button";
 import UiKitBadge from "./../uikit-components/uikit-Badge";
+import UiKitInstagram from "../uikit-components/uikit-Instagram";
+import UiKitRss from "../uikit-components/uikit-Rss";
+import UiKitTwitter from "../uikit-components/uikit-Twitter";
+import UiKitYouTube from "../uikit-components/uikit-YouTube";
+import UiKitSocials from "../uikit-components/uikit-Socials";
 
 const UiKit = () => {
 	return (
@@ -10,6 +15,11 @@ const UiKit = () => {
 				<h2>Components</h2>
 				<UiKitButton />
 				<UiKitBadge />
+				<UiKitInstagram />
+				<UiKitRss />
+				<UiKitTwitter />
+				<UiKitYouTube />
+				<UiKitSocials />
 			</div>
 		</div>
 	);

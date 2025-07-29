@@ -7,9 +7,9 @@ const UiKitButton = () => {
 			<h3 className={styles.component__title}>Details Item</h3>
 
 			<div className={styles.component__preview}>
-				<DetailsItem title="Text" volume="Jacob Gronberg" />
-				<DetailsItem title="Date" volume="2022-03-16" />
-				<DetailsItem title="Duration" volume="1" />
+				<DetailsItem title="Text" value="Jacob Gronberg" />
+				<DetailsItem title="Date" value="2022-03-16" />
+				<DetailsItem title="Duration" value="1" />
 			</div>
 
 			<div className={styles.component__code}>
@@ -18,11 +18,11 @@ const UiKitButton = () => {
 						{`import DetailsItem from "../components/DetailsItem/DetailsItem";`}
 						<br />
 						<br />
-						{`<DetailsItem title="Text" volume="name"/>`}
+						{`<DetailsItem title="Text" value="Jacob Gronberg"/>`}
 						<br />
-						{`<DetailsItem title="Date" volume="date"/>`}
+						{`<DetailsItem title="Date" value="2022-03-16"/>`}
 						<br />
-						{`<DetailsItem title="Duration" volume="duration"/>`}
+						{`<DetailsItem title="Duration" value="1"/>`}
 
 					</code>
 				</pre>

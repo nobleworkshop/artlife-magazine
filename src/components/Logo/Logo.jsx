@@ -1,9 +1,9 @@
 /**
  * @Component Logo
  * @import import Logo from "../components/Logo/Logo"
- * @useLink <Logo alter="Название сайта" link="/" />
- * @useUnLink <Logo alter="Badge" />
- * @param alter = "наименование свойства alt"
+ * @useLink <Logo alt="Название сайта" link="/" />
+ * @useUnLink <Logo alt="Badge" />
+ * @param alt = "наименование свойства alt"
  * @param link = передается если логотип используется как ссылка
  */
 
@@ -12,14 +12,14 @@
 import Img from "../../img/logo.svg";
 import { Link } from "react-router-dom";
 
-const Logo = ({ alter, link }) => {
+const Logo = ({ alt, link }) => {
     return (
         <>
             {link && (
-                <Link to={link}><img src={Img} alt={alter} /></Link>
+                <Link to={link}><img src={Img} alt={alt} /></Link>
             )}
             {!link && (
-                <img src={Img} alt={alter} />
+                <img src={Img} alt={alt} />
             )}
         </>
     )

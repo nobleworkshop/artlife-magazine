@@ -17,9 +17,9 @@ const Article = ({ img, title, text, info_text, info_date, info_read }) => {
                 </div>
                 <div className={styles.footer}>
                     <div className={styles.info}>
-                        <div><span className={styles.info__item}><b>Text</b></span>{info_text}</div>
-                        <div><span className={styles.info__item}><b>Date</b></span>{info_date}</div>
-                        <div><span className={styles.info__item}><b>Read</b></span>{info_read}</div>
+                        <div><span className={styles.info__item}>Text</span>{info_text}</div>
+                        <div><span className={styles.info__item}>Date</span>{info_date}</div>
+                        <div><span className={styles.info__item}>Read</span>{info_read}</div>
                     </div>
 
                     <div>

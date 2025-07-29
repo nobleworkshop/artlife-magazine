@@ -43,9 +43,11 @@ body {
 
 .info {
     display: flex;
+    align-items: center;
     gap: 24px;
 }
 
 .info__item {
     margin-right: 8px;
+    font-weight: 600;
 }

@@ -1,4 +1,13 @@
-.link {
+a.NavLink__active {
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    font-size: 20px;
+    line-height: 100%;
+    color: var(--font-text-default);
+    text-transform: capitalize;
+}
+
+a.NavLink__pending {
     font-family: var(--font-family);
     font-weight: var(--font-weight);
     font-size: 20px;

@@ -10,13 +10,13 @@ import { NavLink } from "react-router-dom";
 import styles from "./Link.module.css";
 
 
-const Link = ({ title, to }) => {
+const Link = ({ title, link }) => {
     return (
+        // Using render props
         <NavLink
-            to={to}
-            className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "active" : ""
-            }>
+            to={link}
+            className={({ isActive }) =>
+                isActive ? styles.NavLink__active : styles.NavLink__pending}>
             {title}
         </NavLink>
     )

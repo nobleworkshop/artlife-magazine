@@ -1,4 +1,4 @@
-import NavLink from "../components/Link/Link";
+import Link from "../components/Link/Link";
 import styles from "./uikit.module.css";
 
 const UiKitLink = () => {
@@ -7,16 +7,16 @@ const UiKitLink = () => {
             <h3 className={styles.component__title}>Link</h3>
 
             <div className={styles.component__preview}>
-                <NavLink title="magazine" router="/magazine" />
+                <Link to="/magazine" title="magazine" />
             </div>
 
             <div className={styles.component__code}>
                 <pre>
                     <code>
-                        {`import NavLink from "../components/Link/Link";`}
+                        {`import Link from "../components/Link/Link";`}
                         <br />
                         <br />
-                        {`<NavLink title="magazine" router="/magazine" />`}
+                        {`<Link link="/magazine" title="magazine" />`}
                     </code>
                 </pre>
             </div>

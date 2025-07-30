@@ -1,3 +1,4 @@
+import Socials from "../components/Socials/Socials";
 const Main = () => {
 	return (
 		<>

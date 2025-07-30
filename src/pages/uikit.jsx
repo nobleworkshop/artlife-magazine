@@ -1,5 +1,6 @@
 import UiKitButton from "./../uikit-components/uikit-Button";
 import UiKitBadge from "./../uikit-components/uikit-Badge";
+import UiKitDetailsItem from "./../uikit-components/uikit-DetailsItem";
 import UiKitNavLink from "../uikit-components/uikit-NavLink";
 import UiKitLogo from "../uikit-components/uikit-Logo";
 import UiKitInstagram from "../uikit-components/uikit-Instagram";
@@ -16,6 +17,7 @@ const UiKit = () => {
 				<h2>Components</h2>
 				<UiKitButton />
 				<UiKitBadge />
+				<UiKitDetailsItem />
 				<UiKitNavLink />
 				<UiKitLogo />
 				<UiKitInstagram />

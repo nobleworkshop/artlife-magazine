@@ -8,6 +8,7 @@ import UiKitRss from "../uikit-components/uikit-Rss";
 import UiKitTwitter from "../uikit-components/uikit-Twitter";
 import UiKitYouTube from "../uikit-components/uikit-YouTube";
 import UiKitSocials from "../uikit-components/uikit-Socials";
+import UiKitLeadArticle from "../uikit-components/uikit-LeadArticle";
 
 const UiKit = () => {
 	return (
@@ -25,6 +26,7 @@ const UiKit = () => {
 				<UiKitTwitter />
 				<UiKitYouTube />
 				<UiKitSocials />
+				<UiKitLeadArticle />
 			</div>
 		</div>
 	);

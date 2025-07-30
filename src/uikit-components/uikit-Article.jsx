@@ -13,9 +13,11 @@ const UiKitArticle = () => {
                     img={image}
                     title="Hope dies last"
                     text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam."
-                    info_text="Jakob Gronberg"
-                    info_date="16. March 2022"
-                    info_read="1 Min" />
+                    autor="Jakob Gronberg"
+                    date="16. March 2022"
+                    timeToRead="1 Min"
+                    badgeName="ART"
+                    badgeLink="/art" />
 
             </div>
 

@@ -1,5 +1,5 @@
 import Link from "../components/Link/Link";
-
+import Socials from "../components/Socials/Socials";
 
 const Main = () => {
 	return (

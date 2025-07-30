@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import rss from "../../../img/Social/rss.svg";
+import rss from "../../../img/social/rss.svg";
 import styles from "./social.module.css";
 
 const Rss = ({ link, alt, target }) => {

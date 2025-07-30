@@ -3,8 +3,6 @@ import YouTube from "../../components/Socials/Social/YouTube";
 import Instagram from "../../components/Socials/Social/Instagram";
 import Twitter from "../../components/Socials/Social/Twitter";
 
-
-
 const Socials = () => {
     return (
         <>

@@ -10,6 +10,7 @@ import UiKitTwitter from "../uikit-components/uikit-Twitter";
 import UiKitYouTube from "../uikit-components/uikit-YouTube";
 import UiKitSocials from "../uikit-components/uikit-Socials";
 import UiKitHeader from "../uikit-components/uikit-Header";
+import UiKitLinkTo from "../uikit-components/uikit-LinkTo";
 
 const UiKit = () => {
 	return (
@@ -29,6 +30,7 @@ const UiKit = () => {
 				<UiKitYouTube />
 				<UiKitSocials />
 				<UiKitHeader />
+				<UiKitLinkTo />
 			</div>
 		</div>
 	);

@@ -1,9 +1,6 @@
 import UiKitButton from "./../uikit-components/uikit-Button";
 import UiKitBadge from "./../uikit-components/uikit-Badge";
-<<<<<<< HEAD
-=======
 import UiKitArticle from "./../uikit-components/uikit-Article";
->>>>>>> article
 import UiKitDetailsItem from "./../uikit-components/uikit-DetailsItem";
 import UiKitNavLink from "../uikit-components/uikit-NavLink";
 import UiKitLogo from "../uikit-components/uikit-Logo";
@@ -12,10 +9,8 @@ import UiKitRss from "../uikit-components/uikit-Rss";
 import UiKitTwitter from "../uikit-components/uikit-Twitter";
 import UiKitYouTube from "../uikit-components/uikit-YouTube";
 import UiKitSocials from "../uikit-components/uikit-Socials";
-<<<<<<< HEAD
-=======
 import UiKitHeader from "../uikit-components/uikit-Header";
->>>>>>> article
+import UiKitLinkTo from "../uikit-components/uikit-LinkTo";
 
 const UiKit = () => {
 	return (
@@ -25,10 +20,7 @@ const UiKit = () => {
 				<h2>Components</h2>
 				<UiKitButton />
 				<UiKitBadge />
-<<<<<<< HEAD
-=======
 				<UiKitArticle />
->>>>>>> article
 				<UiKitDetailsItem />
 				<UiKitNavLink />
 				<UiKitLogo />
@@ -37,13 +29,11 @@ const UiKit = () => {
 				<UiKitTwitter />
 				<UiKitYouTube />
 				<UiKitSocials />
-<<<<<<< HEAD
-=======
 				<UiKitHeader />
->>>>>>> article
+				<UiKitLinkTo />
 			</div>
 		</div>
 	);
-}
+};
 
 export default UiKit;

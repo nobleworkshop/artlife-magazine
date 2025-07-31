@@ -1,6 +1,7 @@
 .header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 16px;
 }
 
 .logo {
@@ -27,4 +28,10 @@
     display: flex;
     gap: 12px;
 
+}
+
+.line{
+    width: 100%;
+    border-bottom: 1px solid #000;
+    margin-bottom: 48px;
 }

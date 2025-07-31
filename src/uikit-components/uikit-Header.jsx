@@ -14,12 +14,10 @@ const UikitHeader = () => {
             <div className={styles.component__code}>
                 <pre>
                     <code>
-                        {`import Badge from "../components/Badge/Badge";`}
+                        {`import Header from "../components/Header/Header";`}
                         <br />
                         <br />
-                        {`<Badge title="Badge" />`}
-                        <br />
-                        {`<Badge title="Badge" link="/" />`}
+                        {`<Header />`}
                     </code>
                 </pre>
             </div>

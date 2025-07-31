@@ -11,6 +11,7 @@ import UiKitYouTube from "../uikit-components/uikit-YouTube";
 import UiKitSocials from "../uikit-components/uikit-Socials";
 import UiKitHeader from "../uikit-components/uikit-Header";
 import UiKitLinkTo from "../uikit-components/uikit-LinkTo";
+import UiKitRunningLine from "../uikit-components/uikit-RunningLine";
 
 const UiKit = () => {
 	return (
@@ -31,6 +32,7 @@ const UiKit = () => {
 				<UiKitSocials />
 				<UiKitHeader />
 				<UiKitLinkTo />
+				<UiKitRunningLine />
 			</div>
 		</div>
 	);

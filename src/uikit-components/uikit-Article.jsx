@@ -30,9 +30,9 @@ const UiKitArticle = () => {
                         {`<Article    img={img}
             title="Hope dies last"
             text="Lorem ipsum ..."
-            info_text="Jakob Gronberg"
-            info_date="16. March 2022"
-            info_read="1 Min" />`}
+            autor="Jakob Gronberg"
+            date="16. March 2022"
+            timeToRead="1 Min" />`}
                     </code>
                 </pre>
             </div>

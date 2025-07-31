@@ -15,16 +15,19 @@ const UiKitButton = () => {
 				/>
 			</div>
 
-			{/* <div className={styles.component__code}>
-				<pre>
-					<code>
-						{`import LeadArticle from "../components/ LeadArticle/LeadsArticle";`}
-						<br />
-						<br />
-						{`<Button title="Sign up" onclick={() => {console.log('Click!');}} />`}
-					</code>
-				</pre>
-			</div> */}
+			{
+				<div className={styles.component__code}>
+					<pre>
+						<code>
+							{`import LeadArticle from "../components/ LeadArticle/LeadsArticle";`}
+							<br />
+							<br />
+							{`<LeadArticle title="Don’t close your eyes" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreet dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut.Porttitor leo a diam."
+							img={<img src={img} alt="Lead Article img" />`}
+						</code>
+					</pre>
+				</div>
+			}
 		</div>
 	);
 };

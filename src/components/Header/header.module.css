@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.links * {
+    margin-right: 24px;
+}
+
+.socials {
+    display: flex;
+    gap: 12px;
+
+}

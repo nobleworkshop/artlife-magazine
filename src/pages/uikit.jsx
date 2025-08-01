@@ -15,6 +15,7 @@ import UiKitLinkTo from "../uikit-components/uikit-LinkTo";
 import UiKitRunningLine from "../uikit-components/uikit-RunningLine";
 import UiKitNewsletter from "../uikit-components/uikit-Newsletter";
 import UiKitPrintmagazine from "../uikit-components/uikit-Printmagazine";
+import UiKitAuthorCard from "../uikit-components/uikit-AuthorCard";
 
 const UiKit = () => {
 	return (
@@ -39,6 +40,7 @@ const UiKit = () => {
 				<UiKitRunningLine />
 				<UiKitNewsletter />
 				<UiKitPrintmagazine />
+				<UiKitAuthorCard />
 			</div>
 		</div>
 	);

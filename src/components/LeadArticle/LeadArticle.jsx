@@ -6,9 +6,9 @@ const LeadArticle = ({ title, img, text, author, date, timeToRead, badge, badgeL
 	return (
 		<article className={styles["lead-article"]}>
 			<div className={styles["lead-article-content"]}>
-				<div className={styles["lead-article-content__title"]}>
+				<h2 className={styles["lead-article-content__title"]}>
 					{title}
-				</div>
+				</h2>
 				<div className={styles["lead-article-content__wrapper"]}>
 					<div className={styles["lead-article-content__text"]}>
 						{text}

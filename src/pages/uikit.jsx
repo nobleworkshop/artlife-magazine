@@ -13,6 +13,8 @@ import UiKitHeader from "../uikit-components/uikit-Header";
 import UiKitLinkTo from "../uikit-components/uikit-LinkTo";
 import UiKitNewsletter from "../uikit-components/uikit-Newsletter";
 import UiKitPrintmagazine from "../uikit-components/uikit-Printmagazine";
+import UiKitMostPopular from "../uikit-components/uikit-MostPopular";
+import UiKitMostPopularWrapper from "../uikit-components/uikit-MostPopularWrapper";
 
 const UiKit = () => {
 	return (
@@ -35,6 +37,8 @@ const UiKit = () => {
 				<UiKitLinkTo />
 				<UiKitNewsletter />
 				<UiKitPrintmagazine />
+				<UiKitMostPopular />
+				<UiKitMostPopularWrapper />
 			</div>
 		</div>
 	);

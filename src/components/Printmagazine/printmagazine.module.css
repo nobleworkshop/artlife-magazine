@@ -1,0 +1,23 @@
+.title{
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.date{
+    font-weight: 600;
+    font-size: 48px;
+    margin-bottom: 32px;
+}
+
+.image{
+    margin-bottom: 16px;
+}
+
+.btn{
+
+}
+
+.btn *{
+    height: auto;
+}

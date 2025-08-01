@@ -6,7 +6,7 @@ const UiKitMostPopular = () => {
         <div className={styles.component}>
             <h3 className={styles.component__title}>MostPopular</h3>
 
-            <div className={styles.component__preview}>
+            <div className={styles.component__preview + " " + styles['component__preview--column']}>
                 <MostPopular
                     num="01"
                     title="Street art festival"

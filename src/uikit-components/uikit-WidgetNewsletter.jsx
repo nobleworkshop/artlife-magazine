@@ -1,4 +1,4 @@
-import Newsletter from "../components/Newsletter/Newsletter";
+import WidgetNewsletter from "../components/WidgetNewsletter/WidgetNewsletter";
 import styles from "./uikit.module.css";
 
 const UiKitNewsletter = () => {
@@ -7,7 +7,7 @@ const UiKitNewsletter = () => {
             <h3 className={styles.component__title}>Newsletter</h3>
 
             <div className={styles.component__preview}>
-                <Newsletter />
+                <WidgetNewsletter />
             </div>
 
             <div className={styles.component__code}>

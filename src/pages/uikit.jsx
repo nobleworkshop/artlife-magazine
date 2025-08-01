@@ -12,7 +12,10 @@ import UiKitInput from "../uikit-components/uikit-Input";
 import UiKitRunningLine from "../uikit-components/uikit-RunningLine";
 import UiKitNewsletter from "../uikit-components/uikit-Newsletter";
 import UiKitPrintmagazine from "../uikit-components/uikit-Printmagazine";
+import UiKitMostPopular from "../uikit-components/uikit-MostPopular";
+import UiKitMostPopularWrapper from "../uikit-components/uikit-MostPopularWrapper";
 import UiKitAuthorCard from "../uikit-components/uikit-AuthorCard";
+
 
 const UiKit = () => {
 	return (
@@ -51,7 +54,11 @@ const UiKit = () => {
 
 				<UiKitNewsletter />
 				<UiKitPrintmagazine />
+
+				<UiKitMostPopular />
+				<UiKitMostPopularWrapper />
 				<UiKitAuthorCard />
+
 			</div>
 		</div>
 	);

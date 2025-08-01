@@ -1,0 +1,26 @@
+
+
+.num, .title{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.title{
+    margin-bottom: 16px;
+}
+
+.block{
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 66px 1fr;
+    padding: 24px 0;
+}
+
+.block:not(:last-child){
+    border-bottom: 1px solid #000000 ;
+}
+
+.text span{
+    font-weight: 600;
+    margin-right: 8px;
+}

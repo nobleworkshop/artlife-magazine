@@ -9,7 +9,8 @@ const UikitHeader = () => {
             <h3 className={styles.component__title}>Header</h3>
 
             <div className={styles.component__preview}>
-                <Header titleImg={img} />
+                <Header  title={img}/>
+         
             </div>
 
             <div className={styles.component__code}>
@@ -18,7 +19,10 @@ const UikitHeader = () => {
                         {`import Header from "../components/Header/Header";`}
                         <br />
                         <br />
-                        {`<Header titleImg={img} />`}
+                        {`<Header  />`}
+                        <br />
+                        <br />
+                        {`<Header title={img} />`}
                     </code>
                 </pre>
             </div>

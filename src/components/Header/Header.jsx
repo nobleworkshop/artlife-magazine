@@ -5,24 +5,29 @@ import Socials from "../Socials/Socials";
 import img from "../../img/line.png"
 
 
-const Header = ({ titleImg }) => {
+const Header = ({ title }) => {
     return (
-        <>
+        <header>
             <div className={styles.header}>
-                <div className="logo"> <Logo alt="логотип сайта" /></div>
+                <div className={styles.logo}> <Logo alt="логотип сайта" /></div>
                 <div className={styles.nav}>
                     <Link link="/magazine" title="Magazine" />
                     <Link link="/authors" title="Authors" />
                     <Link link="/podcast" title="Podcast" />
-                    <img src={img} alt="line" />
+                    <img className={styles.icon} src={img} alt="line" />
                     <div className={styles.socials}> <Socials /></div>
                 </div>
             </div>
 
             <div className={styles.line}></div>
 
-            <div className="title"> <img src={titleImg} alt="image" /></div>
-        </>
+            {title && (
+                <div className="title"> <img src={title} alt="image" /></div>
+            )}
+            {!title && (
+                <div className="title"></div>
+            )}
+        </header>
     )
 }
 

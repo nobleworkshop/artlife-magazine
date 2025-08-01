@@ -1,11 +1,11 @@
 import styles from './input.module.css';
 
-const Input = ({ placeholder }) => {
+const Input = ({ placeholder, type = "text" }) => {
 	return (
 		<input
-			type="email"
+			type={type}
 			placeholder={placeholder}
-			className={styles["email-input"]}
+			className={styles["input"]}
 		/>
 	);
 };

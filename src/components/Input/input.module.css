@@ -1,5 +1,5 @@
-.email-input {
-	max-width: 309px;
+.input {
+	width: 100%;
 	padding: 11px 15px;
 	font-family: var(--font-family);
 	font-size: 16px;
@@ -8,7 +8,7 @@
 	outline: none;
 }
 
-.email-input::placeholder {
+.input::placeholder {
 	color: rgba(0, 0, 0, 0.6);
 	font-family: var(--font-family);
 	font-weight: 400;

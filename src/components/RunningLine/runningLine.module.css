@@ -6,15 +6,79 @@
     gap: 24px;
 }
 
-.ticker {
+.title {
     font-weight: 600;
     font-size: 22px;
     color: var(--text-inverse);
     white-space: nowrap;
 }
 
-.line {
+.ticker__item {
     color: var(--text-inverse);
     font-size: 20px;
     white-space: nowrap;
+}
+
+.block {
+    height: 90px;
+    width: 300px;
+    margin: 0 auto;
+    background: #343436;
+}
+
+@keyframes ticker {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.ticker {
+    background: var(--black);
+    color: var(--text-inverse);
+    overflow: hidden;
+}
+
+.ticker__in {
+    display: flex;
+    width: fit-content;
+    animation: ticker 10s linear infinite;
+    gap: 24px;
+    -webkit-transform-style: preserve-3d;
+    /* Фикс возможного глюка с морганием в Сафари */
+}
+
+.ticker__item {
+    white-space: nowrap;
+    -webkit-backface-visibility: hidden;
+    /* Фикс возможного глюка с морганием в Сафари */
+}
+
+@media(max-width: 1199px) {
+    .runningLine {
+    padding-top: 1.66666vw;
+    padding-bottom: 1.66666vw;
+    padding-left: 1.66666vw;
+    gap: 2vw;
+    }
+
+    .title {
+        font-size: 1.833333vw;
+    }
+
+    .ticker__item {
+        font-size: 1.66666vw;
+    }
+
+    .block {
+        height: 7.5vw;
+        width: 25vw;
+    }
+
+    .ticker__in {
+        gap: 2vw;
+    }
 }

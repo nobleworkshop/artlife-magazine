@@ -4,7 +4,7 @@ import styles from "./uikit.module.css";
 const UiKitRunningLine = () => {
     return (
         <div className={styles.component}>
-            <h3 className={styles.component__title}>Бегущая строка</h3>
+            <h3 className={styles.component__title}>RunningLine</h3>
 
             <div className={styles.component__preview}>
                 <RunningLine />
@@ -13,10 +13,10 @@ const UiKitRunningLine = () => {
             <div className={styles.component__code}>
                 <pre>
                     <code>
-                        {`import Rss from "../../components/Socials/Social/Rss";`}
+                        {`import RunningLine from "../components/RunningLine/RunningLine";`}
                         <br />
                         <br />
-                        {`<Rss link="/rss" alt="rss" target="_blank" />`}
+                        {`<RunningLine />`}
 
                     </code>
                 </pre>

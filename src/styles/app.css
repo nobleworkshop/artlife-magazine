@@ -14,3 +14,20 @@ body {
 	margin: 0 auto;
 	padding: 0 15px;
 }
+
+.nav {
+	margin: 0 auto;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.nav__link {
+	text-decoration: none;
+	color: var(--text-default);
+}
+
+.nav__link--active, a.nav__link--active {
+	text-decoration: underline;
+}

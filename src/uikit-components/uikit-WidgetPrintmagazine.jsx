@@ -1,4 +1,4 @@
-import Printmagazine from "../components/Printmagazine/Printmagazine";
+import WidgetPrintmagazine from "../components/WidgetPrintmagazine/WidgetPrintmagazine";
 import styles from "./uikit.module.css";
 
 const UiKitPrintmagazine = () => {
@@ -7,16 +7,16 @@ const UiKitPrintmagazine = () => {
             <h3 className={styles.component__title}>Printmagazine</h3>
 
             <div className={styles.component__preview}>
-                <Printmagazine />
+                <WidgetPrintmagazine />
             </div>
 
             <div className={styles.component__code}>
                 <pre>
                     <code>
-                        {`import Printmagazine from "../components/Printmagazine/Printmagazine";`}
+                        {`import WidgetPrintmagazine from "../components/WidgetPrintmagazine/WidgetPrintmagazine";`}
                         <br />
                         <br />
-                        {`<Printmagazine />`}
+                        {`<WidgetPrintmagazine />`}
                     </code>
                 </pre>
             </div>

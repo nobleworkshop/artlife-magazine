@@ -1,7 +1,8 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 import Main from "./pages/main";
 import UiKit from "./pages/uikit";
-import Art from "./pages/art";
+import UiKitWidgets from "./pages/uikit-widgets";
+import UiKitSections from "./pages/uikit-sections";
 
 import "./styles/reset.css";
 import "./styles/variables.css";
@@ -12,15 +13,17 @@ function App() {
 	return (
 		<>
 			<BrowserRouter>
-				<nav>
-					<Link to="/">Main</Link>
-					<Link to="/uikit">UiKit</Link>
-					<Link to="/art">Art</Link>
+				<nav className="nav">
+					<NavLink to="/" className={({ isActive }) => isActive ? "nav__link nav__link--active" : "nav__link"}>Main</NavLink>
+					<NavLink to="/uikit" className={({ isActive }) => isActive ? "nav__link nav__link--active" : "nav__link"}>UiKit</NavLink>
+					<NavLink to="/uikit-widgets" className={({ isActive }) => isActive ? "nav__link nav__link--active" : "nav__link"}>UiKit Widgets</NavLink>
+					<NavLink to="/uikit-sections" className={({ isActive }) => isActive ? "nav__link nav__link--active" : "nav__link"}>UiKit Sections</NavLink>
 				</nav>
 				<Routes>
 					<Route path="/" element={<Main />} />
 					<Route path="/uikit" element={<UiKit />} />
-					<Route path="/art" element={<Art />} />
+					<Route path="/uikit-widgets" element={<UiKitWidgets />} />
+					<Route path="/uikit-sections" element={<UiKitSections />} />
 				</Routes>
 			</BrowserRouter>
 		</>

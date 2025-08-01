@@ -4,10 +4,6 @@ import UiKitArticle from "./../uikit-components/uikit-Article";
 import UiKitDetailsItem from "./../uikit-components/uikit-DetailsItem";
 import UiKitNavLink from "../uikit-components/uikit-NavLink";
 import UiKitLogo from "../uikit-components/uikit-Logo";
-import UiKitInstagram from "../uikit-components/uikit-Instagram";
-import UiKitRss from "../uikit-components/uikit-Rss";
-import UiKitTwitter from "../uikit-components/uikit-Twitter";
-import UiKitYouTube from "../uikit-components/uikit-YouTube";
 import UiKitSocials from "../uikit-components/uikit-Socials";
 import UiKitLeadArticle from "../uikit-components/uikit-LeadArticle";
 import UiKitHeader from "../uikit-components/uikit-Header";
@@ -44,10 +40,6 @@ const UiKit = () => {
 				<UiKitDetailsItem />
 				<UiKitNavLink />
 				<UiKitLogo />
-				<UiKitInstagram />
-				<UiKitRss />
-				<UiKitTwitter />
-				<UiKitYouTube />
 				<UiKitSocials />
 				<UiKitLeadArticle />
 

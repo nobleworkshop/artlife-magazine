@@ -9,6 +9,7 @@ import UiKitRss from "../uikit-components/uikit-Rss";
 import UiKitTwitter from "../uikit-components/uikit-Twitter";
 import UiKitYouTube from "../uikit-components/uikit-YouTube";
 import UiKitSocials from "../uikit-components/uikit-Socials";
+import UiKitLeadArticle from "../uikit-components/uikit-LeadArticle";
 import UiKitHeader from "../uikit-components/uikit-Header";
 import UiKitLinkTo from "../uikit-components/uikit-LinkTo";
 import UiKitRunningLine from "../uikit-components/uikit-RunningLine";
@@ -32,6 +33,7 @@ const UiKit = () => {
 				<UiKitTwitter />
 				<UiKitYouTube />
 				<UiKitSocials />
+				<UiKitLeadArticle />
 				<UiKitHeader />
 				<UiKitLinkTo />
 				<UiKitRunningLine />

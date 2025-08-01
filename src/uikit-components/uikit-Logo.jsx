@@ -15,9 +15,12 @@ const UiKitLogo = () => {
         <div className={styles.component}>
             <h3 className={styles.component__title}>Logo</h3>
 
-            <div className={styles.component__preview}>
+            <div className={styles.component__preview + " " + styles['component__preview--column']}>
                 <p>Логотип когда не ссылка : </p>
-                <Logo alt="Название сайта" /> <br />
+                <Logo alt="Название сайта" />
+            </div>
+
+            <div className={styles.component__preview + " " + styles['component__preview--column']}>
                 <p>Логотип является ссылкой</p>
                 <Logo alt="Название сайта" link="/" />
             </div>

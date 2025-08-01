@@ -1,0 +1,17 @@
+.input {
+	width: 100%;
+	padding: 11px 15px;
+	font-family: var(--font-family);
+	font-size: 16px;
+	background-color:#fff;
+	color: #000;
+	outline: none;
+}
+
+.input::placeholder {
+	color: rgba(0, 0, 0, 0.6);
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 180%;
+}

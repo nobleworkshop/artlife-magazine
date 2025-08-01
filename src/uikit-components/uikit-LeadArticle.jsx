@@ -12,22 +12,32 @@ const UiKitButton = () => {
 					title="Don’t close your eyes"
 					text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam."
 					img={<img src={img} alt="Lead Article img" />}
+					author="Jacob Gronberg"
+					date="2022-03-16"
+					timeToRead="1"
+					badge="Label"
+					badgeLink="/"
 				/>
 			</div>
 
-			{
-				<div className={styles.component__code}>
-					<pre>
-						<code>
-							{`import LeadArticle from "../components/ LeadArticle/LeadsArticle";`}
-							<br />
-							<br />
-							{`<LeadArticle title="Don’t close your eyes" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreet dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut.Porttitor leo a diam."
-							img={<img src={img} alt="Lead Article img" />`}
-						</code>
-					</pre>
-				</div>
-			}
+			<div className={styles.component__code}>
+				<pre>
+					<code>
+{`import LeadArticle from "../components/LeadArticle/LeadArticle";
+
+<LeadArticle
+	title="Don’t close your eyes"
+	text="Lorem ipsum…"
+	img={<img src={img} alt="Lead Article img" />}
+	author="Jacob Gronberg"
+	date="2022-03-16"
+	timeToRead="1"
+	badge="Label"
+	badgeLink="/"
+/>`}
+					</code>
+				</pre>
+			</div>
 		</div>
 	);
 };

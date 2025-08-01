@@ -43,8 +43,12 @@
 .lead-article-content__description {
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-start;
+	align-items: center;
 	gap: 12px 24px;
+
+	@media(max-width:1118px){
+		align-items: flex-start;
+	}
 
 	@media (max-width: 375px) {
 		gap: 12px;

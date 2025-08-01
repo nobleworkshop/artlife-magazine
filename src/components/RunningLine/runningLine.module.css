@@ -4,6 +4,7 @@
 	padding: 20px 0 20px 20px;
 	background-color: var(--black);
 	gap: 24px;
+	overflow: hidden;
 }
 
 .title {

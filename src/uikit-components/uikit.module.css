@@ -22,6 +22,10 @@
 	color: #777;
 }
 
+.component__preview--dark-bg {
+	background-color: #e7e7e7;
+}
+
 .component__preview--column {
 	display: grid;
 	gap: 20px;

@@ -20,8 +20,23 @@ import UiKitPrintmagazine from "../uikit-components/uikit-Printmagazine";
 const UiKit = () => {
 	return (
 		<div className="container">
-			<h1 style={{ fontSize: "32px", fontWeight: 300, marginBottom: "20px" }}>UiKit</h1>
-			<div className="components" style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+			<h1
+				style={{
+					fontSize: "32px",
+					fontWeight: 300,
+					marginBottom: "20px",
+				}}
+			>
+				UiKit
+			</h1>
+			<div
+				className="components"
+				style={{
+					display: "flex",
+					flexDirection: "column",
+					gap: "20px",
+				}}
+			>
 				<h2>Components</h2>
 				<UiKitButton />
 				<UiKitBadge />
@@ -35,10 +50,12 @@ const UiKit = () => {
 				<UiKitYouTube />
 				<UiKitSocials />
 				<UiKitLeadArticle />
+
 				<UiKitHeader />
+				<UiKitRunningLine />
 				<UiKitLinkTo />
 				<UiKitInput />
-				<UiKitRunningLine />
+
 				<UiKitNewsletter />
 				<UiKitPrintmagazine />
 			</div>

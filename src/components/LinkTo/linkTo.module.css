@@ -4,6 +4,7 @@
 	text-decoration: none;
 	color: inherit;
 	transition: color 0.2s ease;
+	gap: 8px;
 }
 
 .text {
@@ -17,8 +18,4 @@
 	width: 16px;
 	height: 16px;
 	transition: transform 0.2s ease;
-}
-
-.link .text:not(:only-child) {
-	margin: 0 8px;
 }

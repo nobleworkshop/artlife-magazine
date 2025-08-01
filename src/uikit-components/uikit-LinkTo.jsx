@@ -9,6 +9,9 @@ const UiKitButton = () => {
 			<div className={styles.component__preview}>
 				<LinkTo title="all articles" link="/" direction="right"/>
 			</div>
+			<div className={styles.component__preview}>
+				<LinkTo title="go back" link="/" direction="left"/>
+			</div>
 
 			<div className={styles.component__code}>
 				<pre>

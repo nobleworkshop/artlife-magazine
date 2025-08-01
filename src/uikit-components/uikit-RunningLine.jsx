@@ -1,23 +1,23 @@
-import Header from "../components/Header/Header";
+import RunningLine from "../components/RunningLine/RunningLine";
 import styles from "./uikit.module.css";
 
-const UikitHeader = () => {
+const UiKitRunningLine = () => {
     return (
-
         <div className={styles.component}>
-            <h3 className={styles.component__title}>Header</h3>
+            <h3 className={styles.component__title}>RunningLine</h3>
 
             <div className={styles.component__preview}>
-                <Header title="art&life"/>
+                <RunningLine />
             </div>
 
             <div className={styles.component__code}>
                 <pre>
                     <code>
-                        {`import Header from "../components/Header/Header";`}
+                        {`import RunningLine from "../components/RunningLine/RunningLine";`}
                         <br />
                         <br />
-                        {`<Header title="art&life | authors | magazine | podcast" />`}
+                        {`<RunningLine />`}
+
                     </code>
                 </pre>
             </div>
@@ -25,4 +25,4 @@ const UikitHeader = () => {
     );
 };
 
-export default UikitHeader;
+export default UiKitRunningLine;

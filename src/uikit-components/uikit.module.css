@@ -1,20 +1,36 @@
-.component {}
+.component {
+}
 
 .component__title {
-	font-size: 18px;
-	font-weight: 800;
 	margin-bottom: 10px;
+	font-size: 18px;
+	font-weight: 600;
 }
 
 .component__preview {
-	background-color: #e7e7e7;
-	padding: 10px;
 	margin-bottom: 10px;
+	padding: 10px;
+	/* background-color: #e7e7e7; */
+	border: 1px dotted #d4d4d4;
+
+	display: flex;
+	gap: 10px;
+}
+
+.component__preview > p {
+	font-size: 12px;
+	color: #777;
+}
+
+.component__preview--column {
+	display: grid;
+	gap: 20px;
 }
 
 .component__code {
-	background-color: #e7e7e7;
 	padding: 10px;
+	overflow-x: auto;
+	background-color: #e7e7e7;
 	font-size: 14px;
 	font-family: monospace;
 }

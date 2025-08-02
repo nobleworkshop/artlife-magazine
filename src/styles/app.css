@@ -10,9 +10,9 @@ body {
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1680px;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding: 0 4.761904761904762vw;
 }
 
 .nav {

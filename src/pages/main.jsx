@@ -14,14 +14,18 @@ import WidgetNewsletter from "../components/WidgetNewsletter/WidgetNewsletter";
 const Main = () => {
 	return (
 		<div className={styles.main + " container"}>
+
+			{/* Header */}
 			<div className={styles["main-header"]}>
 				<Header title="art&life" />
 			</div>
 
+			{/* Running Line */}
 			<div className={styles["main-running-line"]}>
 				<RunningLine />
 			</div>
 
+			{/* Lead Article */}
 			<div className={styles["main-lead-article"]}>
 				<LeadArticle
 					title="Don’t close your eyes"
@@ -35,10 +39,14 @@ const Main = () => {
 				/>
 			</div>
 
+			{/* Two Columns */}
 			<div className={styles["two-columns"]}>
+				{/* Articles Section */}
 				<div className={styles["main-content"]}>
 					<ArticlesSection />
 				</div>
+
+				{/* Widgets */}
 				<div className={styles["main-widgets"]}>
 					<WidgetPrintmagazine />
 					<WidgetMostPopular />

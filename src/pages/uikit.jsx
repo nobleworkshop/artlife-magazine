@@ -13,6 +13,7 @@ import UiKitHeader from "../uikit-components/uikit-Header";
 import UiKitLinkTo from "../uikit-components/uikit-LinkTo";
 import UiKitNewsletter from "../uikit-components/uikit-Newsletter";
 import UiKitPrintmagazine from "../uikit-components/uikit-Printmagazine";
+import UiKitCopyright from "../uikit-components/uikit-Copyright";
 
 const UiKit = () => {
 	return (
@@ -35,6 +36,7 @@ const UiKit = () => {
 				<UiKitLinkTo />
 				<UiKitNewsletter />
 				<UiKitPrintmagazine />
+				<UiKitCopyright />
 			</div>
 		</div>
 	);

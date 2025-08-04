@@ -8,9 +8,7 @@ import UiKitLinkTo from "../uikit-components/uikit-LinkTo";
 import UiKitInput from "../uikit-components/uikit-Input";
 import UiKitRunningLine from "../uikit-components/uikit-RunningLine";
 import UiKitMostPopular from "../uikit-components/uikit-MostPopular";
-
-
-
+import UiKitSectionTitle from "../uikit-components/uikit-SectionTitle";
 
 const UiKit = () => {
 	return (
@@ -45,9 +43,7 @@ const UiKit = () => {
 				<UiKitInput />
 
 				<UiKitMostPopular />
-
-
-
+				<UiKitSectionTitle />
 
 			</div>
 		</div>

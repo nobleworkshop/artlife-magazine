@@ -8,7 +8,7 @@ import UiKitLinkTo from "../uikit-components/uikit-LinkTo";
 import UiKitInput from "../uikit-components/uikit-Input";
 import UiKitRunningLine from "../uikit-components/uikit-RunningLine";
 import UiKitMostPopular from "../uikit-components/uikit-MostPopular";
-
+import UiKitSeoText from "../uikit-components/uikit-SeoText";
 
 
 
@@ -45,7 +45,7 @@ const UiKit = () => {
 				<UiKitInput />
 
 				<UiKitMostPopular />
-
+				<UiKitSeoText />
 
 
 

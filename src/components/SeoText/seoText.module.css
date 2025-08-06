@@ -1,0 +1,8 @@
+.stext {
+    font-size: 80px;
+    font-weight: var(--font-weight-600);
+    text-transform: uppercase;
+    line-height: 110%;
+    color: #f9f9f9;
+    text-wrap: wrap;
+}

@@ -1,6 +1,6 @@
-import PodcastCard from "../components/PodcastCard/PodcastCard";
 import styles from "./uikit.module.css";
-import sampleCover from "../img/podcast-covers/cover5.png";
+import PodcastCard from "../components/PodcastCard/PodcastCard";
+import PodcastCardCover from "../img/podcast-covers/cover5.png";
 
 const UiKitPodcastCard = () => {
 	return (
@@ -9,19 +9,25 @@ const UiKitPodcastCard = () => {
 
 			<div className={styles.component__preview}>
 				<PodcastCard
-					cover={sampleCover}
+					cover={PodcastCardCover}
+					author="Fyrre"
+					number="05"
 					title="The Problem of today’s cultural development"
-					number="Ep 05"
+					date="2022-03-16"
+					duration="80"
 				/>
 			</div>
 
 			<div className={styles.component__code}>
 				<pre>
 					<code>
-							{`import PodcastCard from "../components/PodcastCard/PodcastCard"`};
-							<br />
-							<br />
-							{`<PodcastCard cover={sampleCover} title="The Problem of today’s cultural development" number="Ep 05"/>`}
+						{`import PodcastCard from "../components/PodcastCard/PodcastCard"`}
+						;<br />
+						{`import PodcastCardCover from "../img/podcast-covers/cover5.png"`}
+						;
+						<br />
+						<br />
+						{`<PodcastCard cover={PodcastCardCover} author="Fyrre" number="05" title="The Problem of today’s cultural development" date="2022-03-16" duration="80"/>`}
 					</code>
 				</pre>
 			</div>

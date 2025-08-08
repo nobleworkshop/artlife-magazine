@@ -2,6 +2,7 @@ import UiKitHeader from "../uikit-components/uikit-Header";
 import UiKitLeadArticle from "../uikit-components/uikit-LeadArticle";
 import UiKitArticle from "./../uikit-components/uikit-Article";
 import UiKitAuthorCard from "../uikit-components/uikit-AuthorCard";
+import UiKitPodcastCard from "../uikit-components/uikit-PodcastCard";
 
 const UiKitSections = () => {
 	return (
@@ -29,6 +30,7 @@ const UiKitSections = () => {
 				<UiKitLeadArticle />
 				<UiKitArticle />
 				<UiKitAuthorCard />
+				<UiKitPodcastCard />
 			</div>
 		</div>
 	);

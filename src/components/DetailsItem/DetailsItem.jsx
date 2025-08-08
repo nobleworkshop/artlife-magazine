@@ -3,7 +3,13 @@ import styles from './detailsItem.module.css';
 const DetailsItem = ({ title, value }) => {
 	const renderValue = () => {
 		if (title === "Duration") {
-			return `${value} Min`;
+			if (value < 60) {
+				return `${value} Min`;
+			} else {
+				let hours = (value / 60).toFixed(0); // 1
+				let minutes = value % 60;
+				return `${hours}h ${minutes} Min`;
+			}
 		}
 
 		if (title === "Date") {
@@ -12,6 +18,14 @@ const DetailsItem = ({ title, value }) => {
 			const month = date.toLocaleString("en-US", { month: "long" });
 			const year = date.getFullYear();
 			return `${day}, ${month} ${year}`;
+		}
+
+		if (title === "DateShort") {
+			const date = new Date(value);
+			const day = date.getDate();
+			const month = date.getMonth() + 1;
+			const year = date.getFullYear();
+			return `${day}.${month}.${year}`;
 		}
 		return value;
 	};

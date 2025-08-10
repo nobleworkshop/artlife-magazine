@@ -19,7 +19,7 @@ const PodcastCard = ({ cover, author, number, title, date, duration }) => {
 			</div>
 			<h3 className={styles.title}>{title}</h3>
 			<div className={styles.podcast__details}>
-				<DetailsItem title="DateShort" value={date} />
+				<DetailsItem title="Date" value={date} />
 				<DetailsItem title="Duration" value={duration} />
 			</div>
 		</div>

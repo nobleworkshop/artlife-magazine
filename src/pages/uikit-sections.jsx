@@ -5,6 +5,7 @@ import UiKitAuthorCard from "../uikit-components/uikit-AuthorCard";
 
 import UiKitAuthors from "../uikit-components/uikit-Authors";
 import UiKitPodcastCard from "../uikit-components/uikit-PodcastCard";
+import UiKitCategoriesNavbar from "../uikit-components/uikit-CategoriesNavbar";
 
 const UiKitSections = () => {
 	return (
@@ -34,6 +35,7 @@ const UiKitSections = () => {
 				<UiKitAuthorCard />
 				<UiKitAuthors />
 				<UiKitPodcastCard />
+				<UiKitCategoriesNavbar />
 			</div>
 		</div>
 	);

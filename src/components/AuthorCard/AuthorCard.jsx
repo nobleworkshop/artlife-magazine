@@ -1,4 +1,4 @@
-import styles from './AuthorCard.module.css';
+import styles from './authorCard.module.css';
 import DetailsItem from '../DetailsItem/DetailsItem';
 import defaultImg from '../../img/authors/1.png';
 

@@ -2,6 +2,7 @@ import UiKitHeader from "../uikit-components/uikit-Header";
 import UiKitLeadArticle from "../uikit-components/uikit-LeadArticle";
 import UiKitArticle from "./../uikit-components/uikit-Article";
 import UiKitAuthorCard from "../uikit-components/uikit-AuthorCard";
+import UiKitArticleCard from "../uikit-components/uikit-ArticleCard";
 
 import UiKitAuthors from "../uikit-components/uikit-Authors";
 import UiKitPodcastCard from "../uikit-components/uikit-PodcastCard";
@@ -34,6 +35,7 @@ const UiKitSections = () => {
 				<UiKitAuthorCard />
 				<UiKitAuthors />
 				<UiKitPodcastCard />
+				<UiKitArticleCard />
 			</div>
 		</div>
 	);

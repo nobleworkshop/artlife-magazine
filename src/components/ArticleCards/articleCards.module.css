@@ -22,7 +22,7 @@
 	.articles__grid {
 		grid-template-columns: 1fr 1fr;
 	}
-gi}
+}
 
 @media (max-width: 768px) {
 	.articles__grid {

@@ -1,45 +1,64 @@
-import styles from './footer.module.css'
-import Socials from '../Socials/Socials'
+import { useState } from "react";
+
+import Input from "../Input/Input";
+import Button from "../Button/Button";
+
+import styles from "./fotter.module.css";
 
 const Footer = () => {
-  return (
-    <footer className={styles.footer}>
-      <div className={styles.container}>
-        <div className={styles.brand}>
-          <h3 className={styles.brandName}>FYRRE MAGAZINE</h3>
-        </div>
+	const [email, setEmail] = useState('')
+	const [isSubscribed, setIsSubscribed] = useState(false)
 
-        <nav className={styles.navigation}>
-          <div className={styles.navColumn}>
-            <a href="/art" className={styles.navLink}>Art</a>
-            <a href="/design" className={styles.navLink}>Design</a>
-            <a href="/architecture" className={styles.navLink}>Architecture</a>
-          </div>
+	const handleSubmit = (e) => {
+	  e.preventDefault()
+	  if (email.trim()) {
+		console.log('Newsletter subscription:', email)
+		setIsSubscribed(true)
+		setEmail('')
 
-          <div className={styles.navColumn}>
-            <a href="/magazine" className={styles.navLink}>Magazine</a>
-            <a href="/podcast" className={styles.navLink}>Podcast</a>
-            <a href="/authors" className={styles.navLink}>Authors</a>
-          </div>
+		setTimeout(() => setIsSubscribed(false), 3000);
+	  }
+	};
+	return (
+		<footer className={styles.newsletterSection}>
+			<section className={styles.newsletter}>
+				<div className={styles.runningLine}>
+					<div className={styles.runningText}>
+						Newsletter+++Newsletter+++Newsletter+++Newsletter+++Newsletter+++Newsletter+++Newsletter+++Newsletter+++
+					</div>
+				</div>
 
-          <div className={styles.navColumn}>
-            <a href="/styleguide" className={styles.navLink}>Styleguide</a>
-            <a href="/licensing" className={styles.navLink}>Licensing</a>
-            <a href="/changelog" className={styles.navLink}>Changelog</a>
-          </div>
-        </nav>
-      </div>
+				<div className={styles.container}>
+					<div className={styles.content}>
+						<h2 className={styles.title}>
+							Design News to your inbox
+						</h2>
+						<form onSubmit={handleSubmit} className={styles.form}>
+							<div className={styles.inputGroup}>
+								<Input
+									type="email"
+									className={styles.input}
+									placeholder="Email"
+								/>
+								<Button
+									title="Sign up"
+									className={styles.button}
+									onclick={() => {
+										console.log("Click!");
+									}}
+								/>
+							</div>
+							{isSubscribed && (
+								<p className={styles.success}>
+									Thank you for subscribing!
+								</p>
+							)}
+						</form>
+					</div>
+				</div>
+			</section>
+		</footer>
+	);
+};
 
-      <div className={styles.bottom}>
-        <div className={styles.copyright}>
-          <p>© 2025 FYRRE MAGAZINE. ALL RIGHTS RESERVED.</p>
-		</div>
-        <div className={styles.socials}>
-          <Socials />
-        </div>
-      </div>
-    </footer>
-  )
-}
-
-export default Footer
+export default Footer;

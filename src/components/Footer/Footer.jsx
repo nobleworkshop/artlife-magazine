@@ -31,9 +31,6 @@ const Footer = () => {
       </div>
 
       <div className={styles.bottom}>
-        <div className={styles.copyright}>
-          © Made by Pawel Gola - Powered by Webflow
-        </div>
         <div className={styles.socials}>
           <Socials />
         </div>

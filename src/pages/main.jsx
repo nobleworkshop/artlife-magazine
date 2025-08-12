@@ -10,6 +10,7 @@ import ArticlesSection from "./main/ArticlesSection";
 import WidgetPrintmagazine from "../components/WidgetPrintmagazine/WidgetPrintmagazine";
 import WidgetMostPopular from "../components/WidgetMostPopular/WidgetMostPopular";
 import WidgetNewsletter from "../components/WidgetNewsletter/WidgetNewsletter";
+import NewsletterSection from "../components/NewsletterSection/NewsletterSection";
 
 const Main = () => {
 	return (
@@ -24,7 +25,7 @@ const Main = () => {
 
 			<div className={styles["main-lead-article"]}>
 				<LeadArticle
-					title="Don’t close your eyes"
+					title="Don't close your eyes"
 					text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam."
 					img={<img src={LeadArticleImg} alt="Lead Article img" />}
 					author="Jacob Gronberg"
@@ -45,6 +46,7 @@ const Main = () => {
 					<WidgetNewsletter />
 				</div>
 			</div>
+			<NewsletterSection />
 		</div>
 	);
 };

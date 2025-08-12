@@ -1,0 +1,14 @@
+.tagline {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.input_wrapper {
+    margin-bottom: 12px;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: end;
+}

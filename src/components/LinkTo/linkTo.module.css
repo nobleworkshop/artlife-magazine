@@ -10,7 +10,7 @@
 .text {
 	font-family: var(--font-family);
 	font-weight: 600;
-	font-size: 16px;
+	font-size: clamp(0.875rem, 0.846rem + 0.15vw, 1rem);
 	text-transform: uppercase;
 }
 

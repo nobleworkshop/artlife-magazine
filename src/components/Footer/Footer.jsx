@@ -31,6 +31,9 @@ const Footer = () => {
       </div>
 
       <div className={styles.bottom}>
+        <div className={styles.copyright}>
+          <p>© 2025 FYRRE MAGAZINE. ALL RIGHTS RESERVED.</p>
+		</div>
         <div className={styles.socials}>
           <Socials />
         </div>

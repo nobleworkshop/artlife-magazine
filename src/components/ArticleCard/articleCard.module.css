@@ -41,4 +41,5 @@
 	align-items: center;
 	gap: clamp(0.5rem, 0.382rem + 0.59vw, 1rem);
 	flex-wrap: wrap;
+	margin-top: auto;
 }

@@ -5,15 +5,15 @@ import UiKitNavLink from "../uikit-components/uikit-NavLink";
 import UiKitLogo from "../uikit-components/uikit-Logo";
 import UiKitSocials from "../uikit-components/uikit-Socials";
 import UiKitLinkTo from "../uikit-components/uikit-LinkTo";
+import UiKitNewsletter from "../uikit-components/uikit-Newsletter";
+import UiKitPrintmagazine from "../uikit-components/uikit-Printmagazine";
+import UiKitCopyright from "../uikit-components/uikit-Copyright";
 import UiKitInput from "../uikit-components/uikit-Input";
 import UiKitRunningLine from "../uikit-components/uikit-RunningLine";
 import UiKitMostPopular from "../uikit-components/uikit-MostPopular";
 import UiKitFooter from "../uikit-components/uikit-Footer";
 import UiKitNewsletter from "../uikit-components/uikit-Newsletter";
-
-
-
-
+import UiKitSectionTitle from "../uikit-components/uikit-SectionTitle";
 
 const UiKit = () => {
 	return (
@@ -42,18 +42,16 @@ const UiKit = () => {
 				<UiKitNavLink />
 				<UiKitLogo />
 				<UiKitSocials />
-
 				<UiKitRunningLine />
 				<UiKitLinkTo />
+				<UiKitNewsletter />
+				<UiKitPrintmagazine />
+				<UiKitCopyright />
 				<UiKitInput />
-
 				<UiKitMostPopular />
 				<UiKitFooter />
 				<UiKitNewsletter />
-
-
-
-
+				<UiKitSectionTitle />
 			</div>
 		</div>
 	);

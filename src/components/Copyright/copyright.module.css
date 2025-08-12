@@ -1,0 +1,6 @@
+.copyright {
+	font-weight: var(--font-weight);
+	font-size: 14px;
+	line-height: 160%;
+	color: var(--white);
+}

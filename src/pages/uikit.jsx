@@ -42,8 +42,8 @@ const UiKit = () => {
 				<UiKitSocials />
 				<UiKitRunningLine />
 				<UiKitLinkTo />
-				<UiKitNewsletter />
-				<UiKitPrintmagazine />
+				{/* <UiKitNewsletter /> */}
+				{/* <UiKitPrintmagazine /> */}
 				<UiKitCopyright />
 				<UiKitInput />
 				<UiKitMostPopular />

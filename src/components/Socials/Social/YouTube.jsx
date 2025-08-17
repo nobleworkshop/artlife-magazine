@@ -4,8 +4,8 @@ import youtube from "../../../img/social/youtube.svg";
 
 const YouTube = ({ link, alt, target }) => {
     return (
-        <Link to={link} target={target} className={styles.youtube} >
-            <img src={youtube} alt={alt} />
+        <Link to={link} target={target} className={styles.socialLink} >
+            <img src={youtube} alt={alt} className={styles.socialIcon} />
         </Link>
     );
 };

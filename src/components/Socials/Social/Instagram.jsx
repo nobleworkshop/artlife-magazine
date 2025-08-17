@@ -4,8 +4,8 @@ import instagram from "../../../img/social/instagram.svg";
 
 const Instagram = ({ link, alt, target }) => {
     return (
-        <Link to={link} target={target} className={styles.Instagram}>
-            <img src={instagram} alt={alt} />
+        <Link to={link} target={target} className={styles.socialLink}>
+            <img src={instagram} alt={alt} className={styles.socialIcon} />
         </Link>
     );
 };

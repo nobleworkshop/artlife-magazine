@@ -4,8 +4,8 @@ import styles from "./social.module.css";
 
 const Rss = ({ link, alt, target }) => {
     return (
-        <Link to={link} target={target} className={styles.rss} >
-            <img src={rss} alt={alt} />
+        <Link to={link} target={target} className={styles.socialLink} >
+            <img src={rss} alt={alt} className={styles.socialIcon} />
         </Link>
     );
 };

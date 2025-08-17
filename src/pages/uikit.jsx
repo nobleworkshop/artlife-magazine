@@ -44,10 +44,7 @@ const UiKit = () => {
 				<UiKitCopyright />
 				<UiKitInput />
 				<UiKitMostPopular />
-
-
-								<UiKitSectionTitle />
-				<UiKitFooter />
+<UiKitSectionTitle />
 			</div>
 		</div>
 	);

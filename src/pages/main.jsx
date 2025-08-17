@@ -1,21 +1,22 @@
 import styles from "./main.module.css";
-// import Header from "../components/Header/Header";
-// import RunningLine from "../components/RunningLine/RunningLine";
+import Header from "../components/Header/Header";
+import RunningLine from "../components/RunningLine/RunningLine";
 
-// import LeadArticle from "../components/LeadArticle/LeadArticle";
-// import LeadArticleImg from "../img/leadArticle-img.png";
+import LeadArticle from "../components/LeadArticle/LeadArticle";
+import LeadArticleImg from "../img/leadArticle-img.png";
 
-// import ArticlesSection from "./main/ArticlesSection";
+import ArticlesSection from "./main/ArticlesSection";
 
-// import WidgetPrintmagazine from "../components/WidgetPrintmagazine/WidgetPrintmagazine";
-// import WidgetMostPopular from "../components/WidgetMostPopular/WidgetMostPopular";
-// import WidgetNewsletter from "../components/WidgetNewsletter/WidgetNewsletter";
-// import Footer from "../components/Footer/Footer";
+import WidgetPrintmagazine from "../components/WidgetPrintmagazine/WidgetPrintmagazine";
+import WidgetMostPopular from "../components/WidgetMostPopular/WidgetMostPopular";
+import WidgetNewsletter from "../components/WidgetNewsletter/WidgetNewsletter";
+import Footer from "../components/Footer/Footer";
+
 
 const Main = () => {
 	return (
 		<div className={styles.main + " container"}>
-			{/* <div className={styles["main-header"]}>
+			<div className={styles["main-header"]}>
 				<Header title="art&life" />
 			</div>
 
@@ -27,7 +28,7 @@ const Main = () => {
 				<LeadArticle
 					title="Don't close your eyes"
 					text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam."
-					img={<img src={LeadArticleImg} alt="Lead Article img" />}
+					// img={<img src={LeadArticleImg} alt="Lead Article img" />}
 					author="Jacob Gronberg"
 					date="2022-03-16"
 					timeToRead="1"
@@ -45,8 +46,9 @@ const Main = () => {
 					<WidgetMostPopular />
 					<WidgetNewsletter />
 				</div>
-			</div> */}
-			{/* <Footer /> */}
+			</div>
+
+			<Footer />
 		</div>
 	);
 };

@@ -2,7 +2,7 @@ import UiKitHeader from "../uikit-components/uikit-Header";
 import UiKitLeadArticle from "../uikit-components/uikit-LeadArticle";
 import UiKitArticle from "./../uikit-components/uikit-Article";
 import UiKitAuthorCard from "../uikit-components/uikit-AuthorCard";
-import UiKitNewsletterSection from "../uikit-components/uikit-NewsletterSection";
+
 import UiKitAuthors from "../uikit-components/uikit-Authors";
 import UiKitPodcastCard from "../uikit-components/uikit-PodcastCard";
 import UiKitCategoriesNavbar from "../uikit-components/uikit-CategoriesNavbar";

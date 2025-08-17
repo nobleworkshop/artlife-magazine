@@ -1,64 +1,67 @@
-import { useState } from "react";
-
-import Input from "../Input/Input";
-import Button from "../Button/Button";
-
-import styles from "./fotter.module.css";
+import React from 'react'
+import Logo from '../Logo/Logo'
+import Socials from '../Socials/Socials'
+import LinkTo from '../LinkTo/LinkTo'
+import styles from './footer.module.css'
 
 const Footer = () => {
-	const [email, setEmail] = useState('')
-	const [isSubscribed, setIsSubscribed] = useState(false)
+  const navigationLinks = {
+    firstColumn: [
+      { text: 'Art', href: '/art' },
+      { text: 'Design', href: '/design' },
+      { text: 'Architecture', href: '/architecture' }
+    ],
+    secondColumn: [
+      { text: 'Magazine', href: '/magazine' },
+      { text: 'Podcast', href: '/podcast' },
+      { text: 'Authors', href: '/authors' }
+    ],
+    thirdColumn: [
+      { text: 'Styleguide', href: '/styleguide' },
+      { text: 'Licensing', href: '/licensing' },
+      { text: 'Changelog', href: '/changelog' }
+    ]
+  }
 
-	const handleSubmit = (e) => {
-	  e.preventDefault()
-	  if (email.trim()) {
-		console.log('Newsletter subscription:', email)
-		setIsSubscribed(true)
-		setEmail('')
+  return (
+    <footer className={styles.footer}>
+      <div className={styles.container}>
+        {/* Логотип и копирайт */}
+        <div className={styles.brandSection}>
+          <Logo />
+          <p className={styles.copyright}>
+            © Made by Pawel Gola - Powered by Webflow
+          </p>
+        </div>
 
-		setTimeout(() => setIsSubscribed(false), 3000);
-	  }
-	};
-	return (
-		<footer className={styles.newsletterSection}>
-			<section className={styles.newsletter}>
-				<div className={styles.runningLine}>
-					<div className={styles.runningText}>
-						Newsletter+++Newsletter+++Newsletter+++Newsletter+++Newsletter+++Newsletter+++Newsletter+++Newsletter+++
-					</div>
-				</div>
+        {/* Навигационные ссылки */}
+        <div className={styles.navigationSection}>
+          <div className={styles.navColumn}>
+            {navigationLinks.firstColumn.map((link, index) => (
+              <LinkTo key={index} title={link.text} link={link.href} />
+            ))}
+          </div>
 
-				<div className={styles.container}>
-					<div className={styles.content}>
-						<h2 className={styles.title}>
-							Design News to your inbox
-						</h2>
-						<form onSubmit={handleSubmit} className={styles.form}>
-							<div className={styles.inputGroup}>
-								<Input
-									type="email"
-									className={styles.input}
-									placeholder="Email"
-								/>
-								<Button
-									title="Sign up"
-									className={styles.button}
-									onclick={() => {
-										console.log("Click!");
-									}}
-								/>
-							</div>
-							{isSubscribed && (
-								<p className={styles.success}>
-									Thank you for subscribing!
-								</p>
-							)}
-						</form>
-					</div>
-				</div>
-			</section>
-		</footer>
-	);
-};
+          <div className={styles.navColumn}>
+            {navigationLinks.secondColumn.map((link, index) => (
+              <LinkTo key={index} title={link.text} link={link.href} />
+            ))}
+          </div>
 
-export default Footer;
+          <div className={styles.navColumn}>
+            {navigationLinks.thirdColumn.map((link, index) => (
+              <LinkTo key={index} title={link.text} link={link.href} />
+            ))}
+          </div>
+        </div>
+
+        {/* Социальные сети */}
+        <div className={styles.socialsSection}>
+          <Socials />
+        </div>
+      </div>
+    </footer>
+  )
+}
+
+export default Footer

@@ -9,9 +9,8 @@ import UiKitCopyright from "../uikit-components/uikit-Copyright";
 import UiKitInput from "../uikit-components/uikit-Input";
 import UiKitRunningLine from "../uikit-components/uikit-RunningLine";
 import UiKitMostPopular from "../uikit-components/uikit-MostPopular";
-import UiKitFooter from "../uikit-components/uikit-Footer1";
-import UiKitNewsletter from "../uikit-components/uikit-Newsletter";
 import UiKitSectionTitle from "../uikit-components/uikit-SectionTitle";
+import UiKitFooter from "../uikit-components/uikit-Footer";
 
 const UiKit = () => {
 	return (
@@ -45,9 +44,10 @@ const UiKit = () => {
 				<UiKitCopyright />
 				<UiKitInput />
 				<UiKitMostPopular />
+
+
+								<UiKitSectionTitle />
 				<UiKitFooter />
-				<UiKitNewsletter />
-				<UiKitSectionTitle />
 			</div>
 		</div>
 	);

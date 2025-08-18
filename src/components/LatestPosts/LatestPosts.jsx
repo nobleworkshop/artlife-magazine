@@ -12,7 +12,7 @@ const LatestPosts = () => {
 				<LinkTo title="see all" link="/articles" direction="right" />
 			</div>
 
-			<div className={styles.articles__grid}>
+			<div className={styles.latestPosts__grid}>
 				{articles.slice(-3).reverse().map((article) => (
 					<ArticleCard
 						key={article.id}

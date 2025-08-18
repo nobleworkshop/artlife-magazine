@@ -15,7 +15,7 @@ import Footer from "../components/Footer/Footer";
 
 const Main = () => {
 	return (
-		<div className={styles.main + " container"}>
+		<><div className={styles.main + " container"}>
 			<div className={styles["main-header"]}>
 				<Header title="art&life" />
 			</div>
@@ -47,9 +47,11 @@ const Main = () => {
 					<WidgetNewsletter />
 				</div>
 			</div>
-
+		</div>
+		<div className={styles["footer-container"]}>
 			<Footer />
 		</div>
+		</>
 	);
 };
 

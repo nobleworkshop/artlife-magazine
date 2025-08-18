@@ -1,15 +1,15 @@
 .newsletterSection {
-	background-color: #000;
-	color: #fff;
+	background-color: var(--black);
+	color: var(--white);
 	padding: 128px 0;
 }
 
 .content {
-	max-width: 1200px;
+	max-width: 1520px;
 	margin: 0 auto;
 	padding: 0;
 	display: grid;
-	grid-template-columns: 2fr 1fr;
+	grid-template-columns: 1fr 1fr;
 	gap: 4rem;
 	align-items: center;
 }
@@ -22,9 +22,9 @@
 
 .title {
 	margin: 0;
-	font-size: clamp(2.5rem, 4vw, 4rem);
-	font-weight: 700;
-	line-height: 1.1;
+	font-size: clamp(24px, 10.82px + 4.12vw, 80px);
+	font-weight: 600;
+	line-height: 110%;
 	text-transform: uppercase;
 	letter-spacing: -0.02em;
 }
@@ -34,23 +34,26 @@
 }
 
 .form {
+	padding-right: 31px;
 	display: flex;
 	gap: 1rem;
 	align-items: center;
+	justify-content: end;
 }
 
 .emailInput {
+	max-width: 309px;
 	flex: 1;
 	padding: 1rem 1.25rem;
 	border: none;
-	background-color: #fff;
-	color: #000;
+	background-color: var(--white);
+	color: var(--black);
 	font-size: 1rem;
 	font-weight: 400;
 }
 
 .emailInput::placeholder {
-	color: #666;
+	color: var(--gray);
 }
 
 .emailInput:focus {
@@ -59,12 +62,13 @@
 }
 
 .signupButton {
-	padding: 1rem 2rem;
+	max-width: 104px;
+	padding: 1rem 1rem;
 	border: none;
-	background-color: #fff;
-	color: #000;
+	background-color: var(--white);
+	color: var(--black);
 	font-size: 1rem;
-	font-weight: 600;
+	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 	cursor: pointer;
@@ -72,7 +76,7 @@
 }
 
 .signupButton:hover {
-	background-color: #f0f0f0;
+	background-color: var(--gray);
 }
 
 /* Адаптивность для планшетов */

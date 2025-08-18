@@ -1,6 +1,6 @@
 import React from 'react'
 import Socials from '../Socials/Socials'
-import NewsletterSignup from '../NewsletterSignup/NewsletterSignup'
+import FooterNewsletterSignup from '../FooterNewsletterSignup/FooterNewsletterSignup'
 import RunningLine from '../RunningLine/RunningLine'
 import { Link } from 'react-router-dom'
 import styles from './footer.module.css'
@@ -27,10 +27,10 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       {/* Бегущая строка */}
-      <RunningLine />
+      <RunningLine  className={styles.max_width}/>
 
       {/* Секция подписки на рассылку */}
-      <NewsletterSignup />
+      <FooterNewsletterSignup />
 
       <div className={styles.container}>
         {/* FYRRE MAGAZINE */}

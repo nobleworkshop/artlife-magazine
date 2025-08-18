@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styles from './newsletterSignup.module.css'
+import styles from './footernewsletterSignup.module.css'
 
 const NewsletterSignup = () => {
   const [email, setEmail] = useState('')
@@ -16,9 +16,8 @@ const NewsletterSignup = () => {
       <div className={styles.content}>
         <div className={styles.textContent}>
           <h2 className={styles.title}>
-            <span className={styles.titleLine}>DESIGN NEWS TO</span>
-            <span className={styles.titleLine}>YOUR INBOX</span>
-          </h2>
+            <span className={styles.titleLine}>DESIGN NEWS TO YOUR INBOX</span>
+        </h2>
         </div>
 
         <form className={styles.form} onSubmit={handleSubmit}>

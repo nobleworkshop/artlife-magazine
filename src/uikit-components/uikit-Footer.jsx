@@ -16,7 +16,9 @@ const UiKitFooter = () => {
 						{`import Footer from "../components/Footer/Footer";`}
 						<br />
 						<br />
-						{`<Footer />`}
+						{`<div className={styles["footer-container"]}>
+			<Footer />
+		</div>`}
 					</code>
 				</pre>
 			</div>

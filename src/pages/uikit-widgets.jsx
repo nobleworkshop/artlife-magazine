@@ -1,29 +1,17 @@
-import UiKitWidget from "../uikit-components/uikit-Widget";
-import UiKitWidgetPrintmagazine from "../uikit-components/uikit-WidgetPrintmagazine";
-import UiKitWidgetMostPopular from "../uikit-components/uikit-WidgetMostPopular";
-import UiKitWidgetNewsletter from "../uikit-components/uikit-WidgetNewsletter";
+import UiKitWidget from "@uikit/uikit-Widget";
+import UiKitWidgetPrintmagazine from "@uikit/uikit-WidgetPrintmagazine";
+import UiKitWidgetMostPopular from "@uikit/uikit-WidgetMostPopular";
+import UiKitWidgetNewsletter from "@uikit/uikit-WidgetNewsletter";
+import styles from "./uikit.module.css";
 
 const UiKitWidgets = () => {
 	return (
 		<div className="container">
-			<h1
-				style={{
-					fontSize: "32px",
-					fontWeight: 300,
-					marginBottom: "20px",
-				}}
-			>
+			<h1 className={styles.uikit__title}>
 				UiKit
 			</h1>
-			<div
-				className="components"
-				style={{
-					display: "flex",
-					flexDirection: "column",
-					gap: "20px",
-				}}
-			>
-				<h2>Widgets</h2>
+			<div className={styles.uikit__wrapper}>
+				<h2 className={styles.uikit__subtitle}>Widgets</h2>
 
 				<UiKitWidget />
 				<UiKitWidgetMostPopular />

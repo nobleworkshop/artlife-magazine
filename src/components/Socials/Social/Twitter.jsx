@@ -4,8 +4,8 @@ import twitter from "../../../img/social/twitter.svg";
 
 const Twitter = ({ link, alt, target }) => {
     return (
-        <Link to={link} target={target} className={styles.twitter} >
-            <img src={twitter} alt={alt} />
+        <Link to={link} target={target} className={styles.socialLink} >
+            <img src={twitter} alt={alt} className={styles.socialIcon} />
         </Link>
     );
 };

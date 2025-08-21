@@ -1,3 +1,13 @@
+.socialLink {
+	display: inline-block;
+}
+
+.socialIcon {
+	width: 24px;
+	height: 24px;
+	filter: brightness(0) invert(1);
+}
+
 .instagramm {}
 
 .rss {}

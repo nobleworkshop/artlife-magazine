@@ -1,0 +1,115 @@
+.container {
+	/* padding: 128px 0; */
+	padding:clamp(2rem, 0.5rem + 7.5vw, 8rem) 0;
+
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 2rem;
+	align-items: center;
+
+	background-color: var(--black);
+	color: var(--white);
+}
+
+.title {
+	margin: 0;
+	font-size: clamp(24px, 10.82px + 4.12vw, 80px);
+	font-weight: 600;
+	line-height: 110%;
+	text-transform: uppercase;
+	letter-spacing: -0.02em;
+}
+
+.form {
+	display: flex;
+	gap: 12px;
+	justify-content: flex-end;
+}
+
+.emailInput {
+	max-width: 309px;
+	flex: 1;
+	padding: 1rem 1.25rem;
+	border: none;
+	background-color: var(--white);
+	color: var(--black);
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+.emailInput::placeholder {
+	color: var(--gray);
+}
+
+.emailInput:focus {
+	outline: none;
+	box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+}
+
+.signupButton {
+	max-width: 104px;
+	padding: 1rem 1rem;
+	border: none;
+	background-color: var(--white);
+	color: var(--black);
+	font-size: 1rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+.signupButton:hover {
+	background-color: var(--gray);
+}
+
+/* Адаптивность для планшетов */
+@media (max-width: 768px) {
+	.content {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+		text-align: center;
+		padding: 0;
+	}
+
+	.form {
+		flex-direction: column;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.emailInput {
+		width: 100%;
+	}
+
+	.signupButton {
+		width: 100%;
+	}
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 480px) {
+	.newsletterSection {
+		padding: 3rem 0;
+	}
+
+	.content {
+		padding: 0;
+		gap: 1.5rem;
+	}
+
+	.title {
+		font-size: clamp(2rem, 6vw, 2.5rem);
+	}
+
+	.form {
+		gap: 0.75rem;
+	}
+
+	.emailInput,
+	.signupButton {
+		padding: 0.875rem 1rem;
+		font-size: 0.875rem;
+	}
+}

@@ -16,20 +16,6 @@
 	gap: 96px;
 }
 
-/*
-.two-columns__left {
-	grid-column: 1 / 2;
-}
-
-.two-columns__right {
-	grid-column: 2 / 3;
-} */
-.footer-container {
-	max-width: 100%;
-	background-color: black;
-	padding-bottom: 65px;
-}
-
 .main-widgets {
 	display: flex;
 	flex-direction: column;

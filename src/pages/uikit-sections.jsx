@@ -41,7 +41,7 @@ const UiKitSections = () => {
 				<UiKitPodcast />
 				<UiKitArticleCard />
 				<UiKitArticleCards />
-        <UiKitFooter />
+        		<UiKitFooter />
 			</div>
 		</div>
 	);

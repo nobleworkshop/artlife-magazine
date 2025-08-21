@@ -15,7 +15,6 @@ import Footer from "../components/Footer/Footer";
 const Main = () => {
 	return (
 		<>
-			{/*
 			<div className={styles.main + " container"}>
 				<div className={styles["main-header"]}>
 					<Header title="art&life" />
@@ -49,7 +48,7 @@ const Main = () => {
 					</div>
 				</div>
 			</div>
-*/}
+
 			<Footer />
 		</>
 	);

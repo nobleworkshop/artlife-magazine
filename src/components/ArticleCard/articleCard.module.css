@@ -1,7 +1,6 @@
 .card{
 	display: flex;
 	flex-direction: column;
-	max-width: 507px;
 	gap: clamp(1rem, 0.765rem + 1.18vw, 2rem);
 	border: 1px solid #000;
 	padding: clamp(1.5rem, 1.147rem + 1.76vw, 3rem);

@@ -1,3 +1,4 @@
+
 import UiKitHeader from "@uikit/uikit-Header";
 import UiKitLeadArticle from "@uikit/uikit-LeadArticle";
 import UiKitArticle from "@uikit/uikit-Article";
@@ -10,6 +11,7 @@ import UiKitPodcast from "@uikit/uikit-Podcast";
 import UiKitArticleCard from "@uikit/uikit-ArticleCard";
 import UiKitArticleCards from "@uikit/uikit-ArticleCards";
 import styles from "./uikit.module.css";
+import UiKitLatestPosts from "@uikit/uikit-LatestPosts";
 
 const UiKitSections = () => {
 	return (
@@ -29,7 +31,8 @@ const UiKitSections = () => {
 				<UiKitPodcast />
 				<UiKitArticleCard />
 				<UiKitArticleCards />
-        		<UiKitFooter />
+				<UiKitLatestPosts />
+        <UiKitFooter />
 			</div>
 		</div>
 	);

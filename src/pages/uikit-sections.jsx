@@ -7,6 +7,8 @@ import UiKitAuthors from "../uikit-components/uikit-Authors";
 import UiKitPodcastCard from "../uikit-components/uikit-PodcastCard";
 import UiKitCategoriesNavbar from "../uikit-components/uikit-CategoriesNavbar";
 import UiKitPodcast from "../uikit-components/uikit-Podcast";
+import UiKitArticleCard from "../uikit-components/uikit-ArticleCard";
+import UiKitArticleCards from "../uikit-components/uikit-ArticleCards";
 
 const UiKitSections = () => {
 	return (
@@ -37,7 +39,9 @@ const UiKitSections = () => {
 				<UiKitPodcastCard />
 				<UiKitCategoriesNavbar />
 				<UiKitPodcast />
-				<UiKitFooter />
+				<UiKitArticleCard />
+				<UiKitArticleCards />
+        <UiKitFooter />
 			</div>
 		</div>
 	);

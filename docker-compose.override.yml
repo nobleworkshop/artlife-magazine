@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  app-dev:
+    # Дополнительные настройки для разработки
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
+    # Автоматический перезапуск при изменениях
+    restart: unless-stopped
+    # Логирование
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

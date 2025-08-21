@@ -1,37 +1,26 @@
-import UiKitHeader from "../uikit-components/uikit-Header";
-import UiKitLeadArticle from "../uikit-components/uikit-LeadArticle";
-import UiKitArticle from "./../uikit-components/uikit-Article";
-import UiKitAuthorCard from "../uikit-components/uikit-AuthorCard";
-import UiKitFooter from "../uikit-components/uikit-Footer";
-import UiKitAuthors from "../uikit-components/uikit-Authors";
-import UiKitPodcastCard from "../uikit-components/uikit-PodcastCard";
-import UiKitCategoriesNavbar from "../uikit-components/uikit-CategoriesNavbar";
-import UiKitPodcast from "../uikit-components/uikit-Podcast";
-import UiKitArticleCard from "../uikit-components/uikit-ArticleCard";
-import UiKitArticleCards from "../uikit-components/uikit-ArticleCards";
-import UiKitLatestPosts from "../uikit-components/uikit-LatestPosts";
+
+import UiKitHeader from "@uikit/uikit-Header";
+import UiKitLeadArticle from "@uikit/uikit-LeadArticle";
+import UiKitArticle from "@uikit/uikit-Article";
+import UiKitAuthorCard from "@uikit/uikit-AuthorCard";
+import UiKitFooter from "@uikit/uikit-Footer";
+import UiKitAuthors from "@uikit/uikit-Authors";
+import UiKitPodcastCard from "@uikit/uikit-PodcastCard";
+import UiKitCategoriesNavbar from "@uikit/uikit-CategoriesNavbar";
+import UiKitPodcast from "@uikit/uikit-Podcast";
+import UiKitArticleCard from "@uikit/uikit-ArticleCard";
+import UiKitArticleCards from "@uikit/uikit-ArticleCards";
+import styles from "./uikit.module.css";
+import UiKitLatestPosts from "@uikit/uikit-LatestPosts";
 
 const UiKitSections = () => {
 	return (
 		<div className="container">
-			<h1
-				style={{
-					fontSize: "32px",
-					fontWeight: 300,
-					marginBottom: "20px",
-				}}
-			>
+			<h1 className={styles.uikit__title}>
 				UiKit
 			</h1>
-			<div
-				className="components"
-				style={{
-					display: "flex",
-					flexDirection: "column",
-					gap: "20px",
-				}}
-			>
-				<h2>Sections</h2>
+			<div className={styles.uikit__wrapper}>
+				<h2 className={styles.uikit__subtitle}>Sections</h2>
 				<UiKitHeader />
 				<UiKitLeadArticle />
 				<UiKitArticle />

@@ -1,38 +1,23 @@
-import UiKitButton from "./../uikit-components/uikit-Button";
-import UiKitBadge from "./../uikit-components/uikit-Badge";
-import UiKitDetailsItem from "./../uikit-components/uikit-DetailsItem";
-import UiKitNavLink from "../uikit-components/uikit-NavLink";
-import UiKitLogo from "../uikit-components/uikit-Logo";
-import UiKitSocials from "../uikit-components/uikit-Socials";
-import UiKitLinkTo from "../uikit-components/uikit-LinkTo";
-import UiKitCopyright from "../uikit-components/uikit-Copyright";
-import UiKitInput from "../uikit-components/uikit-Input";
-import UiKitRunningLine from "../uikit-components/uikit-RunningLine";
-import UiKitMostPopular from "../uikit-components/uikit-MostPopular";
-import UiKitSectionTitle from "../uikit-components/uikit-SectionTitle";
-import UiKitFooter from "../uikit-components/uikit-Footer";
+import UiKitButton from "@uikit/uikit-Button";
+import UiKitBadge from "@uikit/uikit-Badge";
+import UiKitDetailsItem from "@uikit/uikit-DetailsItem";
+import UiKitNavLink from "@uikit/uikit-NavLink";
+import UiKitLogo from "@uikit/uikit-Logo";
+import UiKitSocials from "@uikit/uikit-Socials";
+import UiKitLinkTo from "@uikit/uikit-LinkTo";
+import UiKitCopyright from "@uikit/uikit-Copyright";
+import UiKitInput from "@uikit/uikit-Input";
+import UiKitRunningLine from "@uikit/uikit-RunningLine";
+import UiKitMostPopular from "@uikit/uikit-MostPopular";
+import UiKitSectionTitle from "@uikit/uikit-SectionTitle";
+import styles from "./uikit.module.css";
 
 const UiKit = () => {
 	return (
 		<div className="container">
-			<h1
-				style={{
-					fontSize: "32px",
-					fontWeight: 300,
-					marginBottom: "20px",
-				}}
-			>
-				UiKit
-			</h1>
-			<div
-				className="components"
-				style={{
-					display: "flex",
-					flexDirection: "column",
-					gap: "20px",
-				}}
-			>
-				<h2>Components</h2>
+			<h1 className={styles.uikit__title}>UiKit</h1>
+			<div className={styles.uikit__wrapper}>
+				<h2 className={styles.uikit__subtitle}>Components</h2>
 				<UiKitButton />
 				<UiKitBadge />
 				<UiKitDetailsItem />
@@ -44,7 +29,7 @@ const UiKit = () => {
 				<UiKitCopyright />
 				<UiKitInput />
 				<UiKitMostPopular />
-<UiKitSectionTitle />
+				<UiKitSectionTitle />
 			</div>
 		</div>
 	);

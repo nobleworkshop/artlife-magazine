@@ -1,16 +1,16 @@
 import styles from "./main.module.css";
-import Header from "../components/Header/Header";
-import RunningLine from "../components/RunningLine/RunningLine";
+import Header from "@components/Header/Header";
+import RunningLine from "@components/RunningLine/RunningLine";
 
-import LeadArticle from "../components/LeadArticle/LeadArticle";
+import LeadArticle from "@components/LeadArticle/LeadArticle";
 import LeadArticleImg from "../img/leadArticle-img.png";
 
 import ArticlesSection from "./main/ArticlesSection";
 
-import WidgetPrintmagazine from "../components/WidgetPrintmagazine/WidgetPrintmagazine";
-import WidgetMostPopular from "../components/WidgetMostPopular/WidgetMostPopular";
-import WidgetNewsletter from "../components/WidgetNewsletter/WidgetNewsletter";
-import Footer from "../components/Footer/Footer";
+import WidgetPrintmagazine from "@components/WidgetPrintmagazine/WidgetPrintmagazine";
+import WidgetMostPopular from "@components/WidgetMostPopular/WidgetMostPopular";
+import WidgetNewsletter from "@components/WidgetNewsletter/WidgetNewsletter";
+import Footer from "@components/Footer/Footer";
 
 const Main = () => {
 	return (

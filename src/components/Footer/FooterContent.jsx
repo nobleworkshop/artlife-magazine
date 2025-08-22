@@ -59,7 +59,7 @@ const FooterContent = () => {
 					© Made by Pawel Gola - Powered by Webflow
 				</p>
 				<div className={styles["footer-copyright-socials"]}>
-					<Socials />
+					<Socials invert={true} />
 				</div>
 			</div>
 		</>

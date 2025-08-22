@@ -4,10 +4,24 @@ import Magazine from "./pages/magazine";
 import UiKit from "./pages/uikit";
 import UiKitWidgets from "./pages/uikit-widgets";
 import UiKitSections from "./pages/uikit-sections";
+import Podcast from "./pages/podcast";
 
 import "./styles/reset.css";
 import "./styles/variables.css";
 import "./styles/app.css";
+
+function Link({ to, title }) {
+	return (
+		<NavLink
+			to={to}
+			className={({ isActive }) =>
+				isActive ? "nav__link nav__link--active" : "nav__link"
+			}
+		>
+			{title}
+		</NavLink>
+	);
+}
 
 function App() {
 
@@ -15,15 +29,17 @@ function App() {
 		<>
 			<BrowserRouter>
 				<nav className="nav">
-					<NavLink to="/" className={({ isActive }) => isActive ? "nav__link nav__link--active" : "nav__link"}>Main</NavLink>
-					<NavLink to="/magazine" className={({ isActive }) => isActive ? "nav__link nav__link--active" : "nav__link"}>Magazine</NavLink>
-					<NavLink to="/uikit" className={({ isActive }) => isActive ? "nav__link nav__link--active" : "nav__link"}>UiKit</NavLink>
-					<NavLink to="/uikit-widgets" className={({ isActive }) => isActive ? "nav__link nav__link--active" : "nav__link"}>UiKit Widgets</NavLink>
-					<NavLink to="/uikit-sections" className={({ isActive }) => isActive ? "nav__link nav__link--active" : "nav__link"}>UiKit Sections</NavLink>
+					<Link to="/" title="Main" />
+					<Link to="/magazine" title="Magazine" />
+					<Link to="/podcast" title="Podcast" />
+					<Link to="/uikit" title="UiKit" />
+					<Link to="/uikit-widgets" title="UiKit Widgets" />
+					<Link to="/uikit-sections" title="UiKit Sections" />
 				</nav>
 				<Routes>
 					<Route path="/" element={<Main />} />
 					<Route path="/magazine" element={<Magazine />} />
+					<Route path="/podcast" element={<Podcast />} />
 					<Route path="/uikit" element={<UiKit />} />
 					<Route path="/uikit-widgets" element={<UiKitWidgets />} />
 					<Route path="/uikit-sections" element={<UiKitSections />} />

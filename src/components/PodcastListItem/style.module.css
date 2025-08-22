@@ -1,8 +1,8 @@
 .podcastListItem {
+	/* padding: 48px 0; */
 	width: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 	gap: clamp(0.8rem, 0.25rem + 3.75vw, 4rem);
 }
 
@@ -11,6 +11,7 @@
 	font-size: 24px;
 	line-height: 1.2;
 	color: var(--color-primary);
+	width: 30px;
 }
 
 .podcastListItem__image {
@@ -28,6 +29,7 @@
 }
 
 .podcastListItem__info {
+	margin-left: auto;
 	display: flex;
 	align-items: center;
 	gap: clamp(1rem, -2.646rem + 7.59vw, 4rem);

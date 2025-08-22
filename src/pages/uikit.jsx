@@ -10,6 +10,7 @@ import UiKitInput from "@uikit/uikit-Input";
 import UiKitRunningLine from "@uikit/uikit-RunningLine";
 import UiKitMostPopular from "@uikit/uikit-MostPopular";
 import UiKitSectionTitle from "@uikit/uikit-SectionTitle";
+import UiKitPodcastListItem from "@uikit/uikit-PodcastListItem";
 import styles from "./uikit.module.css";
 
 const UiKit = () => {
@@ -30,6 +31,7 @@ const UiKit = () => {
 				<UiKitInput />
 				<UiKitMostPopular />
 				<UiKitSectionTitle />
+				<UiKitPodcastListItem />
 			</div>
 		</div>
 	);

@@ -1,0 +1,29 @@
+.post__header {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* расстояние между заголовком и описанием */
+}
+
+.post__title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.post__desc {
+  font-size: 14px;
+  color: #666;
+}
+
+
+.post__image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.post__img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}

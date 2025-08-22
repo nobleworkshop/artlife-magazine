@@ -12,6 +12,7 @@ import UiKitArticleCard from "@uikit/uikit-ArticleCard";
 import UiKitArticleCards from "@uikit/uikit-ArticleCards";
 import styles from "./uikit.module.css";
 import UiKitLatestPosts from "@uikit/uikit-LatestPosts";
+import UiKitPost from "../uikit-components/uikit-Post";
 
 const UiKitSections = () => {
 	return (
@@ -33,6 +34,7 @@ const UiKitSections = () => {
 				<UiKitArticleCards />
 				<UiKitLatestPosts />
         <UiKitFooter />
+				<UiKitPost />
 			</div>
 		</div>
 	);

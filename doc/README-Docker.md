@@ -19,7 +19,7 @@
 docker-compose --profile dev up --build
 ```
 
-Приложение будет доступно по адресу: http://localhost:5173
+Приложение будет доступно по адресу: <http://localhost:5173>
 
 ### Продакшн
 
@@ -31,11 +31,11 @@ docker-compose --profile dev up --build
 docker-compose --profile prod up --build -d
 ```
 
-Приложение будет доступно по адресу: http://localhost:8080
+Приложение будет доступно по адресу: <http://localhost:8080>
 
 ## 📁 Структура Docker файлов
 
-```
+```text
 ├── Dockerfile                 # Многоэтапная сборка
 ├── docker-compose.yml         # Основная конфигурация
 ├── docker-compose.override.yml # Локальные настройки
@@ -48,7 +48,7 @@ docker-compose --profile prod up --build -d
 
 ## 🔧 Команды Docker
 
-### Разработка
+### Команды разработки
 
 ```bash
 # Запуск
@@ -67,7 +67,7 @@ docker-compose --profile dev up --build
 docker-compose --profile dev logs -f
 ```
 
-### Продакшн
+### Продакшен
 
 ```bash
 # Запуск
@@ -151,6 +151,7 @@ VITE_API_URL=http://localhost:3000
 ### Порт
 
 По умолчанию:
+
 - Разработка: 5173
 - Продакшн: 8080
 

@@ -3,6 +3,7 @@
 ## 🎯 Начало работы
 
 ### Требования к разработчику
+
 - **Node.js**: версия 20.0.0+
 - **npm**: версия 9.0.0+
 - **Git**: последняя версия
@@ -10,6 +11,7 @@
 - **VS Code**: рекомендуемый редактор
 
 ### Первоначальная настройка
+
 ```bash
 # Клонирование репозитория
 git clone <repository-url>
@@ -27,6 +29,7 @@ npm run dev
 ### JavaScript/React стандарты
 
 #### 1. Именование
+
 ```javascript
 // ✅ Правильно
 const ArticleCard = ({ article, onClick }) => { ... }
@@ -40,6 +43,7 @@ const articlePublished = article.status === 'published'
 ```
 
 #### 2. Структура компонента
+
 ```javascript
 // 1. Импорты
 import React, { useState, useEffect } from 'react'
@@ -73,6 +77,7 @@ export default ComponentName
 ```
 
 #### 3. Использование алиасов
+
 ```javascript
 // ✅ Правильно - используйте алиасы
 import Button from '@components/Button/Button.jsx'
@@ -87,6 +92,7 @@ import styles from '../../styles/app.css'
 ### CSS стандарты
 
 #### 1. CSS Modules
+
 ```css
 /* ComponentName.module.css */
 .container {
@@ -114,6 +120,7 @@ import styles from '../../styles/app.css'
 ```
 
 #### 2. CSS переменные
+
 ```css
 /* Используйте глобальные переменные */
 :root {
@@ -131,6 +138,7 @@ import styles from '../../styles/app.css'
 ```
 
 #### 3. Responsive дизайн
+
 ```css
 /* Mobile First подход */
 .container {
@@ -153,6 +161,7 @@ import styles from '../../styles/app.css'
 ## 🏗️ Создание новых компонентов
 
 ### 1. Создание структуры папки
+
 ```bash
 mkdir src/components/NewComponent
 cd src/components/NewComponent
@@ -160,6 +169,7 @@ touch NewComponent.jsx NewComponent.module.css index.js
 ```
 
 ### 2. Шаблон компонента
+
 ```javascript
 // NewComponent.jsx
 import React from 'react'
@@ -192,6 +202,7 @@ export default NewComponent
 ```
 
 ### 3. Стили компонента
+
 ```css
 /* NewComponent.module.css */
 .container {
@@ -226,12 +237,14 @@ export default NewComponent
 ```
 
 ### 4. Экспорт компонента
+
 ```javascript
 // index.js
 export { default } from './NewComponent'
 ```
 
 ### 5. Создание UI Kit версии
+
 ```javascript
 // src/uikit-components/uikit-NewComponent.jsx
 import React from 'react'
@@ -269,6 +282,7 @@ export default UikitNewComponent
 ## 🔄 Рабочий процесс
 
 ### 1. Создание feature branch
+
 ```bash
 # Обновление main ветки
 git checkout main
@@ -282,6 +296,7 @@ git checkout -b fix/button-styling
 ```
 
 ### 2. Разработка
+
 ```bash
 # Регулярные коммиты
 git add .
@@ -292,12 +307,14 @@ git push origin feature/new-component
 ```
 
 ### 3. Создание Pull Request
+
 - Перейдите в GitHub/GitLab
 - Создайте Pull Request из feature ветки в main
 - Добавьте описание изменений
 - Укажите связанные задачи
 
 ### 4. Code Review
+
 - Другой разработчик проверяет код
 - Комментарии и предложения по улучшению
 - Исправление замечаний
@@ -306,6 +323,7 @@ git push origin feature/new-component
 ## 🧪 Тестирование
 
 ### Unit тесты
+
 ```javascript
 // __tests__/NewComponent.test.js
 import { render, screen, fireEvent } from '@testing-library/react'
@@ -340,6 +358,7 @@ describe('NewComponent', () => {
 ```
 
 ### Integration тесты
+
 ```javascript
 // __tests__/ArticleList.test.js
 import { render, screen } from '@testing-library/react'
@@ -359,6 +378,7 @@ test('renders all articles', () => {
 ```
 
 ### Запуск тестов
+
 ```bash
 # Запуск всех тестов
 npm test
@@ -373,12 +393,14 @@ npm test -- --coverage
 ## 🔍 Отладка
 
 ### React Developer Tools
+
 1. Установите расширение для браузера
 2. Откройте DevTools
 3. Перейдите на вкладку Components
 4. Исследуйте состояние компонентов
 
 ### Console логирование
+
 ```javascript
 function ArticleCard({ article, onClick }) {
   console.log('ArticleCard props:', { article, onClick })
@@ -401,6 +423,7 @@ function ArticleCard({ article, onClick }) {
 ```
 
 ### Debugger
+
 ```javascript
 function handleArticleClick(articleId) {
   debugger // Точка останова
@@ -412,6 +435,7 @@ function handleArticleClick(articleId) {
 ## 📱 Адаптивная разработка
 
 ### 1. Mobile First подход
+
 ```css
 /* Начинайте с мобильных стилей */
 .container {
@@ -430,6 +454,7 @@ function handleArticleClick(articleId) {
 ```
 
 ### 2. Тестирование на разных устройствах
+
 ```bash
 # Chrome DevTools
 # 1. Откройте DevTools (F12)
@@ -438,6 +463,7 @@ function handleArticleClick(articleId) {
 ```
 
 ### 3. Responsive изображения
+
 ```javascript
 function ResponsiveImage({ src, alt, sizes }) {
   return (
@@ -461,6 +487,7 @@ function ResponsiveImage({ src, alt, sizes }) {
 ## 🚀 Оптимизация производительности
 
 ### 1. React.memo
+
 ```javascript
 import React, { memo } from 'react'
 
@@ -473,6 +500,7 @@ const ArticleCard = memo(({ article, onClick }) => (
 ```
 
 ### 2. useCallback
+
 ```javascript
 import { useCallback } from 'react'
 
@@ -496,6 +524,7 @@ function ArticleList({ articles, onArticleClick }) {
 ```
 
 ### 3. useMemo
+
 ```javascript
 import { useMemo } from 'react'
 
@@ -523,6 +552,7 @@ function ArticleList({ articles, sortBy }) {
 ```
 
 ### 4. Lazy loading
+
 ```javascript
 import { lazy, Suspense } from 'react'
 
@@ -540,6 +570,7 @@ function App() {
 ## 🔒 Безопасность
 
 ### 1. Защита от XSS
+
 ```javascript
 // ✅ Безопасно - React автоматически экранирует
 function SafeComponent({ userInput }) {
@@ -553,6 +584,7 @@ function DangerousComponent({ htmlContent }) {
 ```
 
 ### 2. Валидация props
+
 ```javascript
 import PropTypes from 'prop-types'
 
@@ -582,16 +614,19 @@ ArticleCard.defaultProps = {
 ## 📚 Полезные ресурсы
 
 ### Документация
+
 - [React Documentation](https://react.dev/)
 - [Vite Documentation](https://vitejs.dev/)
 - [CSS Modules](https://github.com/css-modules/css-modules)
 
 ### Инструменты разработки
+
 - [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
 - [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
 - [ESLint](https://eslint.org/)
 
 ### Лучшие практики
+
 - [React Best Practices](https://react.dev/learn)
 - [Performance Optimization](https://react.dev/learn/render-and-commit)
 - [Security Best Practices](https://react.dev/learn/security)
@@ -599,6 +634,7 @@ ArticleCard.defaultProps = {
 ## 🚨 Частые ошибки и их решения
 
 ### 1. Забыли использовать алиасы
+
 ```javascript
 // ❌ Проблема
 import Button from '../../../components/Button/Button.jsx'
@@ -608,6 +644,7 @@ import Button from '@components/Button/Button.jsx'
 ```
 
 ### 2. Неправильная структура CSS Modules
+
 ```css
 /* ❌ Проблема - глобальные стили */
 .container { ... }
@@ -617,6 +654,7 @@ import Button from '@components/Button/Button.jsx'
 ```
 
 ### 3. Забыли добавить key в map
+
 ```javascript
 // ❌ Проблема
 {articles.map(article => (
@@ -630,6 +668,7 @@ import Button from '@components/Button/Button.jsx'
 ```
 
 ### 4. Неправильное использование useEffect
+
 ```javascript
 // ❌ Проблема - бесконечный цикл
 useEffect(() => {

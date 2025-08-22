@@ -7,6 +7,9 @@ import LeadArticleImg from "../img/leadArticle-img.png";
 
 import ArticlesSection from "./main/ArticlesSection";
 
+import Podcast from "@components/Podcast/Podcast";
+import Authors from "@components/Authors/Authors";
+
 import WidgetPrintmagazine from "@components/WidgetPrintmagazine/WidgetPrintmagazine";
 import WidgetMostPopular from "@components/WidgetMostPopular/WidgetMostPopular";
 import WidgetNewsletter from "@components/WidgetNewsletter/WidgetNewsletter";
@@ -46,6 +49,14 @@ const Main = () => {
 						<WidgetMostPopular />
 						<WidgetNewsletter />
 					</div>
+				</div>
+
+				<div className={styles["main-podcast"]}>
+					<Podcast />
+				</div>
+
+				<div className={styles["main-authors"]}>
+					<Authors />
 				</div>
 			</div>
 

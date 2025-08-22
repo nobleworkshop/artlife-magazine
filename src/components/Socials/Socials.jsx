@@ -4,13 +4,13 @@ import Instagram from "./Social/Instagram";
 import Twitter from "./Social/Twitter";
 import styles from "./socials.module.css";
 
-const Socials = () => {
+const Socials = ({invert = false}) => {
     return (
         <div className={styles.socialsContainer}>
-            <Instagram link="/Instagram" alt="Instagram" target="_blank" />
-            <Twitter link="/twitter" alt="Twitter" target="_blank" />
-            <YouTube link="/Youtube" alt="YouTube" target="_blank" />
-            <Rss link="/rss" alt="rss" target="_blank" />
+            <Instagram invert={invert} link="/Instagram" alt="Instagram" target="_blank" />
+            <Twitter invert={invert} link="/twitter" alt="Twitter" target="_blank" />
+            <YouTube invert={invert} link="/Youtube" alt="YouTube" target="_blank" />
+            <Rss invert={invert} link="/rss" alt="rss" target="_blank" />
         </div>
     );
 };

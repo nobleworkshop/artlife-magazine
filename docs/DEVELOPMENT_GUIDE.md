@@ -243,7 +243,7 @@ export default NewComponent
 export { default } from './NewComponent'
 ```
 
-### 5. Создание UI Kit версии
+### 5. Создание UI Kit 
 
 ```javascript
 // src/uikit-components/uikit-NewComponent.jsx
@@ -285,8 +285,8 @@ export default UikitNewComponent
 
 ```bash
 # Обновление main ветки
-git checkout main
-git pull origin main
+git checkout develop
+git pull origin develop
 
 # Создание feature branch
 git checkout -b feature/new-component
@@ -300,7 +300,7 @@ git checkout -b fix/button-styling
 ```bash
 # Регулярные коммиты
 git add .
-git commit -m "feat: add new component with responsive design"
+git commit -m "feat: ADD добавление нового компонента"
 
 # Push в удаленный репозиторий
 git push origin feature/new-component
@@ -308,7 +308,7 @@ git push origin feature/new-component
 
 ### 3. Создание Pull Request
 
-- Перейдите в GitHub/GitLab
+- Перейдите в GitHub
 - Создайте Pull Request из feature ветки в main
 - Добавьте описание изменений
 - Укажите связанные задачи
@@ -357,7 +357,7 @@ describe('NewComponent', () => {
 })
 ```
 
-### Integration тесты
+### Integration тесты(в разработке)
 
 ```javascript
 // __tests__/ArticleList.test.js
@@ -432,20 +432,20 @@ function handleArticleClick(articleId) {
 }
 ```
 
-## 📱 Адаптивная разработка
+## 📱 Респонсивно-адаптивная разработка
 
-### 1. Mobile First подход
+### 1. Desctop подход
 
 ```css
-/* Начинайте с мобильных стилей */
+/* Начинайте с desctop стилей */
 .container {
   padding: 16px;
   margin: 0 auto;
   max-width: 100%;
 }
 
-/* Затем добавляйте стили для больших экранов */
-@media (min-width: 768px) {
+/* Затем добавляйте стили для маленьких экранов */
+@media (max-width: 768px) {
   .container {
     padding: 24px;
     max-width: 720px;
@@ -455,7 +455,7 @@ function handleArticleClick(articleId) {
 
 ### 2. Тестирование на разных устройствах
 
-```bash
+```text
 # Chrome DevTools
 # 1. Откройте DevTools (F12)
 # 2. Нажмите Ctrl+Shift+M для мобильного режима
@@ -646,11 +646,12 @@ import Button from '@components/Button/Button.jsx'
 ### 2. Неправильная структура CSS Modules
 
 ```css
-/* ❌ Проблема - глобальные стили */
+/* ❌ Проблема - глобальные стили используется в app.css*/
 .container { ... }
 
-/* ✅ Решение - локальные стили */
+/* ✅ Решение - локальные стили Component.module.css*/
 .container { ... }
+/* это два разных свойства и не приведут к ошибке  */
 ```
 
 ### 3. Забыли добавить key в map
@@ -680,9 +681,3 @@ useEffect(() => {
   setCount(prevCount => prevCount + 1)
 }, [])
 ```
-
----
-
-**Версия руководства**: 1.0.0  
-**Целевая аудитория**: Разработчики React  
-**Последнее обновление**: Декабрь 2024

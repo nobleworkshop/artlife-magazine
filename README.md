@@ -9,9 +9,11 @@ develop - разработка
 [task-name] - ветки по названиям задач
 
 ## Дизайн проект
+
 [Макет в Figma](https://www.figma.com/design/TVOaVWXeBRP3hac0NbKB74/)
 
 ## Ссылка на проект (доска с задачами)
+
 [Доска с задачами](https://github.com/users/nobleworkshop/projects/1)
 
 ## Структура проекта

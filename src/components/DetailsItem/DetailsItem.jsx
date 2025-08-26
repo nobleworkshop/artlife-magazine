@@ -1,4 +1,5 @@
 import styles from './detailsItem.module.css';
+import Socials from "@components/Socials/Socials";
 
 const DetailsItem = ({ title, value }) => {
 	const renderValue = () => {
@@ -26,6 +27,10 @@ const DetailsItem = ({ title, value }) => {
 			const month = date.getMonth() + 1;
 			const year = date.getFullYear();
 			return `${day}.${month}.${year}`;
+		}
+
+		if (title === "Share") {
+			return <Socials showRss={false} />;
 		}
 
 		return value;

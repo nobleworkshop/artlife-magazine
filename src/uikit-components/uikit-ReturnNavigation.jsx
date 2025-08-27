@@ -16,7 +16,7 @@ const UiKitReturnNavigation = () => {
                         {`import ReturnNavigation from "../components/ReturnNavigation/ReturnNavigation";`}
                         <br />
                         <br />
-                        {`<ReturnNavigation />`}
+                        {`<ReturnNavigation title="magazine" link='/' />`}
 
                     </code>
                 </pre>

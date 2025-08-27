@@ -12,6 +12,6 @@
 	font-size: clamp(1rem, 0.742rem + 1.29vw, 2rem);
 	line-height: 110%;
 	text-transform: uppercase;
+	color: var(--color-black);
+	text-decoration: none;
 }
-
-

@@ -1,0 +1,17 @@
+.returnNav {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	justify-content: space-between;
+}
+
+.returnNav__title {
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: clamp(1rem, 0.742rem + 1.29vw, 2rem);
+	line-height: 110%;
+	text-transform: uppercase;
+}
+
+

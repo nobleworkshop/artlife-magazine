@@ -1,8 +1,11 @@
 import React from 'react'
-import AuthorProfile from '../components/AuthorProfile/AuthorProfile'
-import AuthorArticles from '../components/AuthorArticles/AuthorArticles'
-import LinkTo from '../components/LinkTo/LinkTo'
+import AuthorProfile from '@components/AuthorProfile/AuthorProfile'
+import AuthorArticles from '@components/AuthorArticles/AuthorArticles'
+import LinkTo from '@components/LinkTo/LinkTo'
 import styles from './author-profile.module.css'
+import Header from '@components/Header/Header'
+import Footer from '@components/Footer/Footer'
+
 
 const AuthorProfilePage = () => {
   const authorData = {
@@ -49,8 +52,11 @@ const AuthorProfilePage = () => {
   ]
 
   return (
+	<>
+	<div className={styles.main + " container"}>
     <div className={styles.authorProfilePage}>
       <div className={styles.container}>
+		<Header />
         <div className={styles.navigationGrid}>
           <LinkTo
             title="Go Back"
@@ -68,6 +74,9 @@ const AuthorProfilePage = () => {
         />
       </div>
     </div>
+	</div>
+	<Footer />
+	</>
   )
 }
 

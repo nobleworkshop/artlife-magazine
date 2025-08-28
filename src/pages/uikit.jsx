@@ -11,6 +11,8 @@ import UiKitRunningLine from "@uikit/uikit-RunningLine";
 import UiKitMostPopular from "@uikit/uikit-MostPopular";
 import UiKitSectionTitle from "@uikit/uikit-SectionTitle";
 import UiKitPodcastListItem from "@uikit/uikit-PodcastListItem";
+import UiKitAuthorProfile from "@uikit/uikit-AuthorProfile";
+import UiKitAuthorArticles from "@uikit/uikit-AuthorArticles";
 import styles from "./uikit.module.css";
 
 const UiKit = () => {
@@ -32,6 +34,8 @@ const UiKit = () => {
 				<UiKitMostPopular />
 				<UiKitSectionTitle />
 				<UiKitPodcastListItem />
+				<UiKitAuthorProfile />
+				<UiKitAuthorArticles />
 			</div>
 		</div>
 	);

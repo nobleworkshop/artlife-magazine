@@ -1,0 +1,217 @@
+.authorProfile {
+	display: flex;
+	gap: 96px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+	width: 350px;
+	flex-shrink: 0;
+}
+
+.profileImageContainer {
+	width: 350px;
+	height: 350px;
+	border-radius: 1000px;
+	overflow: hidden;
+	position: relative;
+}
+
+.profileImage {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.sidebarContent {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	width: 100%;
+}
+
+.divider {
+	width: 100%;
+	height: 1px;
+	background-color: var(--black);
+}
+
+.socialSection {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 12px;
+}
+
+.socialIcons {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+}
+
+.socialLink {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 20px;
+	height: 20px;
+	transition: opacity 0.2s ease;
+}
+
+.socialLink:hover {
+	opacity: 0.7;
+}
+
+.socialIcon {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.followText {
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1.35em;
+	text-transform: uppercase;
+	color: var(--black);
+	width: 198px;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+	flex: 1;
+}
+
+.headerSection {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	width: 100%;
+}
+
+.authorName {
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: 104px;
+	line-height: 1.1em;
+	text-transform: uppercase;
+	color: var(--black);
+	margin: 0;
+}
+
+.shortBio {
+	font-family: var(--font-family);
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 1.8em;
+	color: var(--black);
+	margin: 0;
+}
+
+.longBio {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.8em;
+	color: var(--black);
+	margin: 0;
+	width: 754px;
+	max-width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+	.authorProfile {
+		gap: 60px;
+		padding: 0 16px;
+	}
+
+	.sidebar {
+		width: 300px;
+	}
+
+	.profileImageContainer {
+		width: 300px;
+		height: 300px;
+	}
+
+	.authorName {
+		font-size: 80px;
+	}
+
+	.longBio {
+		width: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+	.authorProfile {
+		flex-direction: column;
+		gap: 48px;
+		padding: 0 16px;
+	}
+
+	.sidebar {
+		width: 100%;
+		align-items: center;
+	}
+
+	.profileImageContainer {
+		width: 280px;
+		height: 280px;
+	}
+
+	.socialSection {
+		justify-content: center;
+		gap: 24px;
+	}
+
+	.followText {
+		width: auto;
+	}
+
+	.authorName {
+		font-size: 60px;
+		text-align: center;
+	}
+
+	.shortBio {
+		text-align: center;
+	}
+
+	.longBio {
+		text-align: center;
+	}
+}
+
+@media (max-width: 480px) {
+	.authorProfile {
+		padding: 0 12px;
+	}
+
+	.profileImageContainer {
+		width: 240px;
+		height: 240px;
+	}
+
+	.authorName {
+		font-size: 48px;
+	}
+
+	.shortBio {
+		font-size: 18px;
+	}
+
+	.longBio {
+		font-size: 14px;
+	}
+}

@@ -1,10 +1,10 @@
-.authorProfilePage {
+.author-profile {
 	min-height: 100vh;
 	background-color: var(--background-default);
 	padding: 40px 0;
 }
 
-.container {
+.author-profile__container {
 	margin: 0 auto;
 	padding: 0 20px;
 	display: flex;
@@ -12,8 +12,7 @@
 	gap: 80px;
 }
 
-.navigationGrid {
-	padding: 0 80px;
+.author-profile__navigation {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -22,13 +21,13 @@
 	margin-bottom: 48px;
 }
 
-.goBackButton {
+.author-profile__go-back-button {
 	font-size: 16px;
 	font-weight: 600;
 	text-transform: uppercase;
 }
 
-.pageTitle {
+.author-profile__title {
 	font-family: var(--font-family);
 	font-weight: 600;
 	font-size: 32px;
@@ -39,54 +38,54 @@
 }
 
 @media (max-width: 1200px) {
-	.container {
+	.author-profile__container {
 		gap: 60px;
 		padding: 0 16px;
 	}
 
-	.navigationGrid {
+	.author-profile__navigation {
 		gap: 32px;
 		margin-bottom: 32px;
 	}
 
-	.pageTitle {
+	.author-profile__title {
 		font-size: 28px;
 	}
 }
 
 @media (max-width: 768px) {
-	.authorProfilePage {
+	.author-profile {
 		padding: 20px 0;
 	}
 
-	.container {
+	.author-profile__container {
 		gap: 40px;
 		padding: 0 12px;
 	}
 
-	.navigationGrid {
+	.author-profile__navigation {
 		flex-direction: column;
 		gap: 16px;
 		margin-bottom: 24px;
 		align-items: flex-start;
 	}
 
-	.pageTitle {
+	.author-profile__title {
 		font-size: 24px;
 	}
 }
 
 @media (max-width: 480px) {
-	.authorProfilePage {
+	.author-profile {
 		padding: 16px 0;
 	}
 
-	.container {
+	.author-profile__container {
 		gap: 32px;
 		padding: 0 8px;
 	}
 
-	.navigationGrid {
+	.author-profile__navigation {
 		display: flex;
 		padding: 0 0 0 30px;
 		flex-direction: row;
@@ -97,7 +96,7 @@
 		width: 100%;
 	}
 
-	.pageTitle {
+	.author-profile__title {
 		font-size: 20px;
 	}
 }

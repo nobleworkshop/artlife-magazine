@@ -14,7 +14,7 @@ RUN npm ci --only=production
 FROM base AS development
 RUN npm ci
 COPY . .
-EXPOSE 5173
+EXPOSE 5173 3001
 CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
 
 # Этап сборки

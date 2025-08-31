@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import LinkTo from "../LinkTo/LinkTo";
-import styles from "./ReturnNavigation.module.css";
+import LinkTo from "@components/LinkTo/LinkTo";
+import styles from "./returnNavigation.module.css";
 
 const ReturnNavigation = ({ title, link }) => {
 	return (

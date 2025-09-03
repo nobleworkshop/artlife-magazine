@@ -15,7 +15,7 @@ const ArticleCards = () => {
 							img={article.img}
 							title={article.title}
 							text={article.text}
-							author={article.author}
+							authorName={article.authorName}  // исправлено
 							date={article.date}
 							timeToRead={article.timeToRead}
 							badgeName={article.badgeName}

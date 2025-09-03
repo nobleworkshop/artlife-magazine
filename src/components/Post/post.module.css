@@ -1,22 +1,15 @@
 .post {
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 192px;
-	position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
-.post::after {
-	content: "";
-	display: block;
-	width: 100%;
-	height: 1px;
-	background: rgba(0, 0, 0, 1);
-	position: absolute;
-	bottom: -192px;
-	left: 0;
+.post__line {
+  height: 1px;
+  background-color: rgba(0, 0, 0, 1);
+  margin: 192px 0 0 0;
 
-	@media (max-width: 767px) {
-		bottom: -96px;
+  @media (max-width: 767px) {
+	margin: 96px 0 0 0;
 	}
 }
 
@@ -87,6 +80,11 @@
 	display: flex;
 	gap: 64px;
 	margin: 0 auto;
+
+	@media (max-width: 1226px) {
+		width: 80%;
+		gap: 40px;
+	}
 
 	@media (max-width: 1023px) {
 		flex-direction: column;

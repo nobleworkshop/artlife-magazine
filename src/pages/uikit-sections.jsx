@@ -33,7 +33,7 @@ const UiKitSections = () => {
 				<UiKitArticleCard />
 				<UiKitArticleCards />
 				<UiKitLatestPosts />
-        <UiKitFooter />
+        		<UiKitFooter />
 				<UiKitPost />
 			</div>
 		</div>

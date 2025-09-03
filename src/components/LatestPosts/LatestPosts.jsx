@@ -19,7 +19,7 @@ const LatestPosts = () => {
 						img={article.img}
 						title={article.title}
 						text={article.text}
-						author={article.author}
+						authorName={article.authorName}
 						date={article.date}
 						timeToRead={article.timeToRead}
 						badgeName={article.badgeName}

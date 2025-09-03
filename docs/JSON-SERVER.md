@@ -212,11 +212,11 @@ import { useApi } from '../../hooks/useApi'
 
 function MyComponent() {
   const { data, loading, error } = useApi('podcasts')
-  
+
   if (loading) return <div>Загрузка...</div>
   if (error) return <div>Ошибка: {error}</div>
   if (!data) return <div>Нет данных</div>
-  
+
   return (
     <div>
       {data.map(item => (
@@ -235,7 +235,7 @@ import { useState, useEffect } from 'react'
 function MyComponent() {
   const [podcasts, setPodcasts] = useState([])
   const [loading, setLoading] = useState(true)
-  
+
   useEffect(() => {
     const fetchPodcasts = async () => {
       try {
@@ -248,12 +248,12 @@ function MyComponent() {
         setLoading(false)
       }
     }
-    
+
     fetchPodcasts()
   }, [])
-  
+
   if (loading) return <div>Загрузка...</div>
-  
+
   return (
     <div>
       {podcasts.map(podcast => (

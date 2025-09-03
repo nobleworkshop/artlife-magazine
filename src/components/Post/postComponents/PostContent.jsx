@@ -40,26 +40,19 @@ const PostQuote = ({ quoteText, quoteAuthor }) => {
   );
 };
 
-const PostContent = ({ img, authorPhoto, authorName, date, timeToRead, children }) => {
+const PostContent = ({ data, children }) => {
   return (
     <div className={styles.postContent}>
-      {img && (
+      {data.img && (
         <div className={styles.post__img}>
-          <img src={img} alt="Post image" />
+          <img src={data.img} alt="Post image" />
         </div>
       )}
       <div className={styles.post__wrapper}>
-        <PostAside
-          authorPhoto={authorPhoto}
-          authorName={authorName}
-          date={date}
-          timeToRead={timeToRead}
-        />
-        <div className={styles.post__main}>
-          {children}
-        </div>
+        <PostAside data={data} />
+        <div className={styles.post__main}>{children}</div>
       </div>
-		<hr className={styles.post__line} />
+      <hr className={styles.post__line} />
     </div>
   );
 };

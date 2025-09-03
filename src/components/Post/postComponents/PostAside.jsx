@@ -1,25 +1,25 @@
 import styles from "./../post.module.css";
 import DetailsItem from "@components/DetailsItem/DetailsItem";
 
-const PostAside = ({ authorPhoto, authorName, date, timeToRead }) => {
+const PostAside = ({ data }) => {
   return (
     <aside className={styles.post__author}>
       <div className={styles.post__authorInfo}>
-        {authorPhoto && (
+        {data.authorPhoto && (
           <img
-            src={authorPhoto}
-            alt={authorName}
+            src={data.authorPhoto}
+            alt={data.authorName}
             className={styles.photo}
           />
         )}
-        <h3 className={styles.name}>{authorName}</h3>
+        <h3 className={styles.name}>{data.authorName}</h3>
       </div>
 
       <hr className={styles.divider} />
 
       <div className={styles.post__detailsItems}>
-        <DetailsItem title="Date" value={date} />
-        <DetailsItem title="Read" value={timeToRead} />
+        <DetailsItem title="Date" value={data.date} />
+        <DetailsItem title="Read" value={data.timeToRead} />
         <DetailsItem title="Share" />
       </div>
     </aside>

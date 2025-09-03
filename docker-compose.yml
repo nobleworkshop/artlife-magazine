@@ -1,6 +1,22 @@
 version: "3.8"
 
 services:
+    # JSON Server для API
+    json-server:
+        build:
+            context: .
+            target: development
+        ports:
+            - "3001:3001"
+        volumes:
+            - .:/app
+            - /app/node_modules
+        environment:
+            - NODE_ENV=development
+        command: ["npm", "run", "server"]
+        profiles:
+            - dev
+
     # Разработка
     app-dev:
         build:
@@ -13,6 +29,8 @@ services:
             - /app/node_modules
         environment:
             - NODE_ENV=development
+        depends_on:
+            - json-server
         profiles:
             - dev
 

@@ -4,11 +4,11 @@
 
 ### Требования к разработчику
 
--   **Node.js**: версия 20.0.0+
--   **npm**: версия 9.0.0+
--   **Git**: последняя версия
--   **Docker**: версия 20.10.0+ (опционально)
--   **VS Code**: рекомендуемый редактор
+-**Node.js**: версия 20.0.0+
+-**npm**: версия 9.0.0+
+-**Git**: последняя версия
+-**Docker**: версия 20.10.0+ (опционально)
+-**VS Code**: рекомендуемый редактор
 
 ### Первоначальная настройка
 
@@ -26,14 +26,14 @@ npm run dev
 
 ## 📋 Стандарты кода
 
-#### 1. Оформление кода
+### 1. Оформление кода
 
--   Использование файла .editorconfig в редакторе
--   Отступы с помощью одного символа TAB
+-Использование файла .editorconfig в редакторе
+-Отступы с помощью одного символа TAB
 
 ### JavaScript/React стандарты
 
-#### 1. Именование
+### 1. Именование
 
 ```javascript
 // ✅ Правильно
@@ -47,7 +47,7 @@ const ArticleClick = (articleId) => { ... }
 const articlePublished = article.status === 'published'
 ```
 
-#### 2. Структура компонента
+### 2. Структура компонента
 
 ```javascript
 // 1. Импорты
@@ -56,28 +56,28 @@ import styles from "./ComponentName.module.css";
 
 // 2. Компонент
 function ComponentName({ prop1, prop2, children }) {
-	// 3. Хуки состояния
-	const [state, setState] = useState(initialValue);
+  // 3. Хуки состояния
+  const [state, setState] = useState(initialValue);
 
-	// 4. Эффекты
-	useEffect(() => {
-		// логика эффекта
-	}, [dependencies]);
+  // 4. Эффекты
+useEffect(() => {
+    // логика эффекта
+  }, [dependencies]);
 
-	// 5. Обработчики событий
-	const handleClick = () => {
-		// логика обработчика
-	};
+  // 5. Обработчики событий
+  const handleClick = () => {
+    // логика обработчика
+  };
 
-	// 6. Рендер
-	return <div className={styles.container}>{children}</div>;
+  // 6. Рендер
+  return <div className={styles.container}>{children}</div>;
 }
 
 // 7. Экспорт
 export default ComponentName;
 ```
 
-#### 3. Использование алиасов
+### 3. Использование алиасов
 
 ```javascript
 // ✅ Правильно - используйте алиасы
@@ -92,77 +92,77 @@ import styles from "../../styles/app.css";
 
 ### CSS стандарты
 
-#### 0. Общие стили в src/styles/app.css
+### 0. Общие стили в src/styles/app.css
 
 ```css
 .container {
-	max-width: 1680px;
-	margin: 0 auto;
-	padding: 0 4.761904761904762vw;
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 4.761904761904762vw;
 }
 ```
 
-#### 1. CSS Modules вместе с BEM naming
+### 1. CSS Modules вместе с BEM naming
 
 ```css
 /* ComponentName.module.css */
 
 .сomponentName__title {
-	font-size: var(--font-size-xl);
-	font-weight: 600;
-	color: var(--text-primary);
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  color: var(--text-primary);
 }
 
 /* Модификаторы */
 .сomponentName__title--large {
-	font-size: var(--font-size-xxl);
+  font-size: var(--font-size-xxl);
 }
 
 /* Состояния */
 .button:disabled {
-	opacity: 0.5;
-	cursor: not-allowed;
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 ```
 
-#### 2. CSS переменные
+### 2. CSS переменные
 
 ```css
 /* Используйте глобальные переменные */
 :root {
-	--spacing-unit: 8px;
-	--border-radius: 4px;
-	--transition: all 0.3s ease;
+  --spacing-unit: 8px;
+  --border-radius: 4px;
+  --transition: all 0.3s ease;
 }
 
 /* В компонентах */
 .button {
-	padding: calc(var(--spacing-unit) * 2);
-	border-radius: var(--border-radius);
-	transition: var(--transition);
+  padding: calc(var(--spacing-unit) * 2);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
 }
 ```
 
-#### 3. Responsive дизайн
+### 3. Responsive дизайн
 
 Использование clamp() функций для размеров текста, отступов.
 
 ```css
 /* Mobile First подход */
 .container {
-	padding: 16px;
+  padding: 16px;
 }
 
 @media (min-width: 768px) {
-	.container {
-		padding: 24px;
-	}
+  .container {
+    padding: 24px;
+  }
 }
 
 @media (min-width: 1024px) {
-	.container {
-		padding: 32px;
-	}
+  .container {
+    padding: 32px;
+  }
 }
 ```
 
@@ -184,21 +184,21 @@ import React from "react";
 import styles from "./NewComponent.module.css";
 
 function NewComponent({ title, description, onClick, children }) {
-	const handleClick = () => {
-		if (onClick) {
-			onClick();
-		}
-	};
+  const handleClick = () => {
+    if (onClick) {
+      onClick();
+    }
+  };
 
-	return (
-		<div className={styles.container}>
-			{title && <h3 className={styles.title}>{title}</h3>}
-			{description && <p className={styles.description}>{description}</p>}
-			<div className={styles.content} onClick={handleClick}>
-				{children}
-			</div>
-		</div>
-	);
+  return (
+    <div className={styles.container}>
+      {title && <h3 className={styles.title}>{title}</h3>}
+      {description && <p className={styles.description}>{description}</p>}
+      <div className={styles.content} onClick={handleClick}>
+        {children}
+      </div>
+    </div>
+  );
 }
 
 export default NewComponent;
@@ -209,33 +209,33 @@ export default NewComponent;
 ```css
 /* NewComponent.module.css */
 .newComponent {
-	padding: var(--spacing-unit);
-	border: 1px solid var(--border-color);
-	border-radius: var(--border-radius);
-	background: var(--bg-primary);
+  padding: var(--spacing-unit);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background: var(--bg-primary);
 }
 
 .newComponent__title {
-	font-size: var(--font-size-lg);
-	font-weight: 600;
-	margin-bottom: var(--spacing-unit);
-	color: var(--text-primary);
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  margin-bottom: var(--spacing-unit);
+  color: var(--text-primary);
 }
 
 .newComponent__description {
-	font-size: var(--font-size-base);
-	color: var(--text-secondary);
-	margin-bottom: calc(var(--spacing-unit) * 2);
+  font-size: var(--font-size-base);
+  color: var(--text-secondary);
+  margin-bottom: calc(var(--spacing-unit) * 2);
 }
 
 .newComponent__content {
-	cursor: pointer;
-	transition: var(--transition);
+  cursor: pointer;
+  transition: var(--transition);
 }
 
 .newComponent__content:hover {
-	transform: translateY(-2px);
-	box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
 }
 ```
 
@@ -254,29 +254,29 @@ import React from "react";
 import NewComponent from "@components/NewComponent/NewComponent";
 
 function UikitNewComponent() {
-	return (
-		<div className="uikit-section">
-			<h2>NewComponent</h2>
+  return (
+    <div className="uikit-section">
+      <h2>NewComponent</h2>
 
-			<div className="uikit-examples">
-				<h3>Базовый пример</h3>
-				<NewComponent
-					title="Заголовок компонента"
-					description="Описание компонента"
-				>
-					Содержимое компонента
-				</NewComponent>
+      <div className="uikit-examples">
+        <h3>Базовый пример</h3>
+        <NewComponent
+          title="Заголовок компонента"
+          description="Описание компонента"
+        >
+          Содержимое компонента
+        </NewComponent>
 
-				<h3>С обработчиком событий</h3>
-				<NewComponent
-					title="Кликабельный компонент"
-					onClick={() => alert("Компонент кликнут!")}
-				>
-					Кликните на меня
-				</NewComponent>
-			</div>
-		</div>
-	);
+        <h3>С обработчиком событий</h3>
+        <NewComponent
+          title="Кликабельный компонент"
+          onClick={() => alert("Компонент кликнут!")}
+        >
+          Кликните на меня
+        </NewComponent>
+      </div>
+    </div>
+  );
 }
 
 export default UikitNewComponent;
@@ -311,17 +311,17 @@ git push origin feature/new-component
 
 ### 3. Создание Pull Request
 
--   Перейдите в GitHub
--   Создайте Pull Request из feature ветки в main
--   Добавьте описание изменений
--   Укажите связанные задачи
+-Перейдите в GitHub
+-Создайте Pull Request из feature ветки в mai
+-Добавьте описание изменени
+-Укажите связанные задачи
 
 ### 4. Code Review
 
--   Другой разработчик проверяет код
--   Комментарии и предложения по улучшению
--   Исправление замечаний
--   Approval и merge
+-Другой разработчик проверяет ко
+-Комментарии и предложения по улучшению
+-Исправление замечаний
+-Approval и merge
 
 ## 🧪 Тестирование
 
@@ -333,23 +333,23 @@ import { render, screen, fireEvent } from "@testing-library/react";
 import NewComponent from "../NewComponent";
 
 describe("NewComponent", () => {
-	test("renders title and description", () => {
-		render(
-			<NewComponent title="Test Title" description="Test Description" />
-		);
+  test("renders title and description", () => {
+    render(
+      <NewComponent title="Test Title" description="Test Description" />
+    );
 
-		expect(screen.getByText("Test Title")).toBeInTheDocument();
-		expect(screen.getByText("Test Description")).toBeInTheDocument();
-	});
+    expect(screen.getByText("Test Title")).toBeInTheDocument();
+    expect(screen.getByText("Test Description")).toBeInTheDocument();
+  });
 
-	test("calls onClick when clicked", () => {
-		const handleClick = jest.fn();
+  test("calls onClick when clicked", () => {
+    const handleClick = jest.fn();
 
-		render(<NewComponent onClick={handleClick}>Click me</NewComponent>);
+    render(<NewComponent onClick={handleClick}>Click me</NewComponent>);
 
-		fireEvent.click(screen.getByText("Click me"));
-		expect(handleClick).toHaveBeenCalledTimes(1);
-	});
+    fireEvent.click(screen.getByText("Click me"));
+    expect(handleClick).toHaveBeenCalledTimes(1);
+  });
 });
 ```
 
@@ -361,15 +361,15 @@ import { render, screen } from "@testing-library/react";
 import ArticleList from "../ArticleList";
 
 test("renders all articles", () => {
-	const articles = [
-		{ id: 1, title: "Article 1", excerpt: "Excerpt 1" },
-		{ id: 2, title: "Article 2", excerpt: "Excerpt 2" },
-	];
+  const articles = [
+    { id: 1, title: "Article 1", excerpt: "Excerpt 1" },
+    { id: 2, title: "Article 2", excerpt: "Excerpt 2" },
+  ];
 
-	render(<ArticleList articles={articles} />);
+  render(<ArticleList articles={articles} />);
 
-	expect(screen.getByText("Article 1")).toBeInTheDocument();
-	expect(screen.getByText("Article 2")).toBeInTheDocument();
+  expect(screen.getByText("Article 1")).toBeInTheDocument();
+  expect(screen.getByText("Article 2")).toBeInTheDocument();
 });
 ```
 
@@ -399,22 +399,22 @@ npm test -- --coverage
 
 ```javascript
 function ArticleCard({ article, onClick }) {
-	console.log("ArticleCard props:", { article, onClick });
+  console.log("ArticleCard props:", { article, onClick });
 
-	useEffect(() => {
-		console.log("ArticleCard mounted with article:", article.id);
+  useEffect(() => {
+    console.log("ArticleCard mounted with article:", article.id);
 
-		return () => {
-			console.log("ArticleCard unmounted:", article.id);
-		};
-	}, [article.id]);
+    return () => {
+      console.log("ArticleCard unmounted:", article.id);
+    };
+  }, [article.id]);
 
-	return (
-		<div onClick={() => onClick(article.id)}>
-			<h3>{article.title}</h3>
-			<p>{article.excerpt}</p>
-		</div>
-	);
+  return (
+    <div onClick={() => onClick(article.id)}>
+      <h3>{article.title}</h3>
+      <p>{article.excerpt}</p>
+    </div>
+  );
 }
 ```
 
@@ -422,9 +422,9 @@ function ArticleCard({ article, onClick }) {
 
 ```javascript
 function handleArticleClick(articleId) {
-	debugger; // Точка останова
-	console.log("Article clicked:", articleId);
-	// логика обработки клика
+  debugger; // Точка останова
+  console.log("Article clicked:", articleId);
+  // логика обработки клика
 }
 ```
 
@@ -435,17 +435,17 @@ function handleArticleClick(articleId) {
 ```css
 /* Начинайте с desktop стилей */
 .container {
-	padding: 16px;
-	margin: 0 auto;
-	max-width: 100%;
+  padding: 16px;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 /* Затем добавляйте стили для маленьких экранов */
 @media (max-width: 768px) {
-	.container {
-		padding: 24px;
-		max-width: 720px;
-	}
+  .container {
+    padding: 24px;
+    max-width: 720px;
+  }
 }
 ```
 
@@ -462,21 +462,21 @@ function handleArticleClick(articleId) {
 
 ```javascript
 function ResponsiveImage({ src, alt, sizes }) {
-	return (
-		<img
-			src={src}
-			alt={alt}
-			sizes={sizes}
-			className={styles.responsiveImage}
-		/>
-	);
+  return (
+    <img
+      src={src}
+      alt={alt}
+      sizes={sizes}
+      className={styles.responsiveImage}
+    />
+  );
 }
 
 // Использование
 <ResponsiveImage
-	src="@img/article-images/1.png"
-	alt="Article image"
-	sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+  src="@img/article-images/1.png"
+  alt="Article image"
+  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
 />;
 ```
 
@@ -488,10 +488,10 @@ function ResponsiveImage({ src, alt, sizes }) {
 import React, { memo } from "react";
 
 const ArticleCard = memo(({ article, onClick }) => (
-	<div onClick={() => onClick(article.id)}>
-		<h3>{article.title}</h3>
-		<p>{article.excerpt}</p>
-	</div>
+  <div onClick={() => onClick(article.id)}>
+    <h3>{article.title}</h3>
+    <p>{article.excerpt}</p>
+  </div>
 ));
 ```
 
@@ -501,24 +501,24 @@ const ArticleCard = memo(({ article, onClick }) => (
 import { useCallback } from "react";
 
 function ArticleList({ articles, onArticleClick }) {
-	const handleClick = useCallback(
-		(articleId) => {
-			onArticleClick(articleId);
-		},
-		[onArticleClick]
-	);
+  const handleClick = useCallback(
+    (articleId) => {
+      onArticleClick(articleId);
+    },
+    [onArticleClick]
+  );
 
-	return (
-		<div>
-			{articles.map((article) => (
-				<ArticleCard
-					key={article.id}
-					article={article}
-					onClick={handleClick}
-				/>
-			))}
-		</div>
-	);
+  return (
+    <div>
+      {articles.map((article) => (
+        <ArticleCard
+          key={article.id}
+          article={article}
+          onClick={handleClick}
+        />
+      ))}
+    </div>
+  );
 }
 ```
 
@@ -528,25 +528,25 @@ function ArticleList({ articles, onArticleClick }) {
 import { useMemo } from "react";
 
 function ArticleList({ articles, sortBy }) {
-	const sortedArticles = useMemo(() => {
-		return articles.sort((a, b) => {
-			if (sortBy === "date") {
-				return new Date(b.date) - new Date(a.date);
-			}
-			if (sortBy === "title") {
-				return a.title.localeCompare(b.title);
-			}
-			return 0;
-		});
-	}, [articles, sortBy]);
+  const sortedArticles = useMemo(() => {
+    return articles.sort((a, b) => {
+      if (sortBy === "date") {
+        return new Date(b.date) - new Date(a.date);
+      }
+      if (sortBy === "title") {
+        return a.title.localeCompare(b.title);
+      }
+      return 0;
+    });
+  }, [articles, sortBy]);
 
-	return (
-		<div>
-			{sortedArticles.map((article) => (
-				<ArticleCard key={article.id} article={article} />
-			))}
-		</div>
-	);
+  return (
+    <div>
+      {sortedArticles.map((article) => (
+        <ArticleCard key={article.id} article={article} />
+      ))}
+    </div>
+  );
 }
 ```
 
@@ -558,11 +558,11 @@ import { lazy, Suspense } from "react";
 const HeavyComponent = lazy(() => import("./HeavyComponent"));
 
 function App() {
-	return (
-		<Suspense fallback={<div>Загрузка...</div>}>
-			<HeavyComponent />
-		</Suspense>
-	);
+  return (
+    <Suspense fallback={<div>Загрузка...</div>}>
+      <HeavyComponent />
+    </Suspense>
+  );
 }
 ```
 
@@ -573,12 +573,12 @@ function App() {
 ```javascript
 // ✅ Безопасно - React автоматически экранирует
 function SafeComponent({ userInput }) {
-	return <div>{userInput}</div>;
+  return <div>{userInput}</div>;
 }
 
 // ❌ Опасно - только для доверенного контента
 function DangerousComponent({ htmlContent }) {
-	return <div dangerouslySetInnerHTML={{ __html: htmlContent }} />;
+  return <div dangerouslySetInnerHTML={{ __html: htmlContent }} />;
 }
 ```
 
@@ -588,25 +588,25 @@ function DangerousComponent({ htmlContent }) {
 import PropTypes from "prop-types";
 
 function ArticleCard({ article, onClick }) {
-	return (
-		<div onClick={() => onClick(article.id)}>
-			<h3>{article.title}</h3>
-			<p>{article.excerpt}</p>
-		</div>
-	);
+  return (
+    <div onClick={() => onClick(article.id)}>
+      <h3>{article.title}</h3>
+      <p>{article.excerpt}</p>
+    </div>
+  );
 }
 
 ArticleCard.propTypes = {
-	article: PropTypes.shape({
-		id: PropTypes.number.isRequired,
-		title: PropTypes.string.isRequired,
-		excerpt: PropTypes.string.isRequired,
-	}).isRequired,
-	onClick: PropTypes.func.isRequired,
+  article: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    excerpt: PropTypes.string.isRequired,
+  }).isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
 ArticleCard.defaultProps = {
-	onClick: () => {},
+  onClick: () => {},
 };
 ```
 
@@ -614,21 +614,21 @@ ArticleCard.defaultProps = {
 
 ### Документация
 
--   [React Documentation](https://react.dev/)
--   [Vite Documentation](https://vitejs.dev/)
--   [CSS Modules](https://github.com/css-modules/css-modules)
+- [React Documentation](https://react.dev/)
+- [Vite Documentation](https://vitejs.dev/)
+- [CSS Modules](https://github.com/css-modules/css-modules)
 
 ### Инструменты разработки
 
--   [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
--   [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
--   [ESLint](https://eslint.org/)
+- [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+- [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
+- [ESLint](https://eslint.org/)
 
 ### Лучшие практики
 
--   [React Best Practices](https://react.dev/learn)
--   [Performance Optimization](https://react.dev/learn/render-and-commit)
--   [Security Best Practices](https://react.dev/learn/security)
+- [React Best Practices](https://react.dev/learn)
+- [Performance Optimization](https://react.dev/learn/render-and-commit)
+- [Security Best Practices](https://react.dev/learn/security)
 
 ## 🚨 Частые ошибки и их решения
 
@@ -647,12 +647,12 @@ import Button from "@components/Button/Button.jsx";
 ```css
 /* ❌ Проблема - глобальные стили используется в app.css*/
 .container {
-	...;
+  ...;
 }
 
 /* ✅ Решение - локальные стили Component.module.css*/
 .componentName__container {
-	...;
+  ...;
 }
 /* это два разных свойства и не приведут к ошибке  */
 ```
@@ -662,14 +662,14 @@ import Button from "@components/Button/Button.jsx";
 ```javascript
 // ❌ Проблема
 {
-	articles.map((article) => <ArticleCard article={article} />);
+  articles.map((article) => <ArticleCard article={article} />);
 }
 
 // ✅ Решение
 {
-	articles.map((article) => (
-		<ArticleCard key={article.id} article={article} />
-	));
+  articles.map((article) => (
+    <ArticleCard key={article.id} article={article} />
+  ));
 }
 ```
 
@@ -678,11 +678,11 @@ import Button from "@components/Button/Button.jsx";
 ```javascript
 // ❌ Проблема - бесконечный цикл
 useEffect(() => {
-	setCount(count + 1);
+  setCount(count + 1);
 }, [count]);
 
 // ✅ Решение - функциональное обновление
 useEffect(() => {
-	setCount((prevCount) => prevCount + 1);
+  setCount((prevCount) => prevCount + 1);
 }, []);
 ```

@@ -1,44 +1,17 @@
 import styles from "./../post.module.css";
 import PostAside from "./PostAside";
 
-const PostText = ({ text, textArray, boldFirst = false }) => {
-  const paragraphs = textArray || (text ? text.split("\n\n") : []);
-  if (!paragraphs.length) return null;
+const PostText = ({ text }) => {
+  if (!text) return null;
 
   return (
-    <>
-      {paragraphs.map((p, index) => (
-        <p
-          key={index}
-          className={
-            index === 0 && boldFirst
-              ? styles.post__textBold
-              : styles.post__text
-          }
-        >
-          {p}
-        </p>
-      ))}
-    </>
+    <div
+      className="post__text"
+      dangerouslySetInnerHTML={{ __html: text }}
+    />
   );
 };
 
-const PostQuote = ({ quoteText, quoteAuthor }) => {
-  if (!quoteText) return null;
-  return (
-    <blockquote className={styles.post__quote}>
-      <div className={styles.post__quoteTextWrapper}>
-        <div className={styles.quotesElement}>“</div>
-        <div className={styles.post__quoteContent}>
-          <p className={styles.post__quoteText}>{quoteText}</p>
-          {quoteAuthor && (
-            <cite className={styles.post__quoteAuthor}>{quoteAuthor}</cite>
-          )}
-        </div>
-      </div>
-    </blockquote>
-  );
-};
 
 const PostContent = ({ data, children }) => {
   return (
@@ -57,5 +30,5 @@ const PostContent = ({ data, children }) => {
   );
 };
 
-export { PostText, PostQuote };
+export { PostText };
 export default PostContent;

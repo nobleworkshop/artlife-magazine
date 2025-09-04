@@ -145,21 +145,16 @@
 	line-height: 180%;
 }
 
-.post__textBold {
-	font-family: var(--font-family);
-	font-weight: 500;
-	font-size: clamp(1rem, 0.933rem + 0.33vw, 1.25rem);
-	line-height: 180%;
-}
-
-.post__quote {
-    font-family: var(--font-family);
-	font-weight: 600;
-	font-size: clamp(1.5rem, 1.1rem + 2vw, 3rem);
-	line-height: 120%;
-	padding: clamp(2.188rem, 1.554rem + 3.17vw, 4.563rem) 0;
-	border-top: 1px solid rgba(0, 0, 0, 1);
-	border-bottom: 1px solid rgba(0, 0, 0, 1);
+.post__main quote {
+  display: block;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: clamp(1.5rem, 1.1rem + 2vw, 3rem);
+  line-height: 120%;
+  padding: clamp(2.188rem, 1.554rem + 3.17vw, 4.563rem) 0;
+  border-top: 1px solid rgba(0, 0, 0, 1);
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  margin: 24px 0;
 }
 
 .post__quoteTextWrapper{
@@ -172,10 +167,6 @@
 	font-weight: 600;
 	font-size: clamp(3rem, 2.2rem + 4vw, 6rem);
 	line-height: 100%;
-}
-
-.post__quoteText {
-
 }
 
 .post__quoteAuthor {

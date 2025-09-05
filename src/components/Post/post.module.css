@@ -169,7 +169,7 @@
 	font-size: 96px;
 }
 
-.post__main quote author {
+.post__main quote span[rel="author"] {
 	display: block;
 	font-size: 14px;
 	font-weight: 400;

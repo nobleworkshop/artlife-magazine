@@ -19,7 +19,7 @@ const UikitPost = () => {
                         {`import Post from "../components/Post/Post";`}
                         <br />
                         <br />
-                        {`<Post data={articles[0]} />`}
+                        {`<Post data={article} />`}
                     </code>
                 </pre>
             </div>

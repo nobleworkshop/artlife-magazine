@@ -1,28 +1,28 @@
 .post {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .post__line {
-  height: 1px;
-  background-color: rgba(0, 0, 0, 1);
-  margin: 192px 0 0 0;
+	height: 1px;
+	background-color: rgba(0, 0, 0, 1);
+	margin: 192px 0 0 0;
 
-  @media (max-width: 767px) {
-	margin: 96px 0 0 0;
+	@media (max-width: 767px) {
+		margin: 96px 0 0 0;
 	}
 }
 
 .postHeader__text {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
-  margin-bottom: clamp(3rem, 2.2rem + 4vw, 6rem);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 32px;
+	margin-bottom: clamp(3rem, 2.2rem + 4vw, 6rem);
 
-  @media (max-width: 767px) {
-	grid-template-columns: 1fr;
-	gap: 16px;
-  }
+	@media (max-width: 767px) {
+		grid-template-columns: 1fr;
+		gap: 16px;
+	}
 }
 
 .post__title {
@@ -34,13 +34,13 @@
 }
 
 .post__desc {
-  	font-family: var(--font-family);
+	font-family: var(--font-family);
 	font-weight: 500;
 	font-size: clamp(1rem, 0.933rem + 0.33vw, 1.25rem);
 	line-height: 180%;
 }
 
-.post__detailes{
+.post__detailes {
 	display: flex;
 	gap: 20px;
 	justify-content: space-between;
@@ -70,12 +70,12 @@
 }
 
 .post__img img {
-  width: 100%;
-  height: auto;
-  display: block;
+	width: 100%;
+	height: auto;
+	display: block;
 }
 
-.post__wrapper{
+.post__wrapper {
 	width: 66%;
 	display: flex;
 	gap: 64px;
@@ -99,7 +99,7 @@
 .post__main {
 	flex: 1;
 }
-.post__authorInfo{
+.post__authorInfo {
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -108,32 +108,32 @@
 	margin-bottom: clamp(1rem, 0.733rem + 1.33vw, 2rem);
 }
 
-.photo{
-	width:80px;
-	height:80px;
+.photo {
+	width: 80px;
+	height: 80px;
 	border-radius: 50%;
 }
 
-.name{
+.name {
 	font-family: var(--font-family);
 	font-weight: 600;
 	font-size: 32px;
 	line-height: 120%;
 }
 
-.divider{
+.divider {
 	width: 100%;
 	border-top: 1px solid rgba(0, 0, 0, 1);
 	margin: 1rem 0;
 }
 
-.post__detailsItems{
+.post__detailsItems {
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
 }
 
-.post__main{
+.post__main {
 	display: flex;
 	flex-direction: column;
 	gap: 24px;
@@ -141,23 +141,43 @@
 
 .post__text {
 	font-family: var(--font-family);
-    font-size: clamp(0.875rem, 0.842rem + 0.17vw, 1rem);
+	font-size: clamp(0.875rem, 0.842rem + 0.17vw, 1rem);
 	line-height: 180%;
 }
 
 .post__main quote {
-  display: block;
-  font-family: var(--font-family);
-  font-weight: 600;
-  font-size: clamp(1.5rem, 1.1rem + 2vw, 3rem);
-  line-height: 120%;
-  padding: clamp(2.188rem, 1.554rem + 3.17vw, 4.563rem) 0;
-  border-top: 1px solid rgba(0, 0, 0, 1);
-  border-bottom: 1px solid rgba(0, 0, 0, 1);
-  margin: 24px 0;
+	position: relative;
+	display: block;
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: clamp(1.5rem, 1.1rem + 2vw, 3rem);
+	line-height: 120%;
+	padding: clamp(2.188rem, 1.554rem + 3.17vw, 4.563rem) 0;
+	border-top: 1px solid rgba(0, 0, 0, 1);
+	border-bottom: 1px solid rgba(0, 0, 0, 1);
+	margin: 24px 0;
+	padding-left: 74px;
 }
 
-.post__quoteTextWrapper{
+.post__main quote::before {
+	content: "“";
+	position: absolute;
+	left: 0;
+	top: 48px;
+	font-weight: 600;
+	line-height: 100%;
+	font-size: 96px;
+}
+
+.post__main quote author {
+	display: block;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 160%;
+	margin-top: 16px;
+}
+
+.post__quoteTextWrapper {
 	display: flex;
 	gap: 24px;
 }
@@ -170,7 +190,7 @@
 }
 
 .post__quoteAuthor {
-    font-family: var(--font-family);
+	font-family: var(--font-family);
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 160%;

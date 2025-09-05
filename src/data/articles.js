@@ -28,7 +28,7 @@ export const articles = [
     img: img1,
     title: "Hope dies last",
     desc: loremText,
-    text: `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> <quote>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </quote> <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui </p>`,
+    text: `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> <quote>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <author>Nelson Mandela</author> </quote> <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui </p>`,
     authorName: "Jakob Gronberg",
     authorPhoto: authorPhoto,
     date: "16. March 2022",
@@ -294,4 +294,3 @@ export const articles = [
     quoteAuthor: "Savanarolla"
   },
 ];
-

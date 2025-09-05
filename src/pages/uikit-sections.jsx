@@ -1,4 +1,3 @@
-
 import UiKitHeader from "@uikit/uikit-Header";
 import UiKitLeadArticle from "@uikit/uikit-LeadArticle";
 import UiKitArticle from "@uikit/uikit-Article";
@@ -14,14 +13,12 @@ import styles from "./uikit.module.css";
 import UiKitLatestPosts from "@uikit/uikit-LatestPosts";
 import UiKitReturnNavigation from "@uikit/uikit-ReturnNavigation";
 import UiKitPost from "../uikit-components/uikit-Post";
-
+import UiKitPodcastPost from "../uikit-components/uikit-PodcastPost";
 
 const UiKitSections = () => {
 	return (
 		<div className="container">
-			<h1 className={styles.uikit__title}>
-				UiKit
-			</h1>
+			<h1 className={styles.uikit__title}>UiKit</h1>
 			<div className={styles.uikit__wrapper}>
 				<h2 className={styles.uikit__subtitle}>Sections</h2>
 				<UiKitHeader />
@@ -35,8 +32,9 @@ const UiKitSections = () => {
 				<UiKitArticleCard />
 				<UiKitArticleCards />
 				<UiKitLatestPosts />
-        		<UiKitFooter />
+				<UiKitFooter />
 				<UiKitPost />
+				<UiKitPodcastPost />
 				<UiKitReturnNavigation />
 			</div>
 		</div>

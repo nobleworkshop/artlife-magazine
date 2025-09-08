@@ -18,7 +18,7 @@ const MagazinePost = () => {
       <div className={styles.magazinePost + " container"}>
 
 		<div className={styles["magazinePost-header"]}>
-          <Header title="" />
+          <Header />
         </div>
 
 		<div className={styles["magazinePost-returnNav"]}>

@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 import Main from "./pages/main";
 import Magazine from "./pages/magazine";
+import MagazinePost from "./pages/magazinePost";
 import UiKit from "./pages/uikit";
 import UiKitWidgets from "./pages/uikit-widgets";
 import UiKitSections from "./pages/uikit-sections";
@@ -32,6 +33,7 @@ function App() {
 				<nav className="nav">
 					<Link to="/" title="Main" />
 					<Link to="/magazine" title="Magazine" />
+					<Link to="/magazinePost" title="MagazinePost" />
 					<Link to="/podcast" title="Podcast" />
 					<Link to="/uikit" title="UiKit" />
 					<Link to="/uikit-widgets" title="UiKit Widgets" />
@@ -41,6 +43,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Main />} />
 					<Route path="/magazine" element={<Magazine />} />
+					<Route path="/magazinePost" element={<MagazinePost />} />
 					<Route path="/podcast" element={<Podcast />} />
 					<Route path="/uikit" element={<UiKit />} />
 					<Route path="/uikit-widgets" element={<UiKitWidgets />} />

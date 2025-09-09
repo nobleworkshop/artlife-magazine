@@ -33,12 +33,14 @@ function App() {
 				<nav className="nav">
 					<Link to="/" title="Main" />
 					<Link to="/magazine" title="Magazine" />
-					<Link to="/magazinePost" title="MagazinePost" />
+					<Link to="/magazinePost" title="Post" />
+					<Link to="/author-profile" title="Author" />
 					<Link to="/podcast" title="Podcast" />
-					<Link to="/uikit" title="UiKit" />
-					<Link to="/uikit-widgets" title="UiKit Widgets" />
-					<Link to="/uikit-sections" title="UiKit Sections" />
-					<Link to="/author-profile" title="Author Profile" />
+				</nav>
+				<nav className="nav nav--ui">
+					<Link to="/uikit" title="UI Elements" />
+					<Link to="/uikit-widgets" title="Widgets" />
+					<Link to="/uikit-sections" title="Sections" />
 				</nav>
 				<Routes>
 					<Route path="/" element={<Main />} />

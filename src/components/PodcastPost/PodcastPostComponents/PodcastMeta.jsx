@@ -1,19 +1,19 @@
-import DetailsItem from "../DetailsItem/DetailsItem";
-import Socials from "../Socials/Socials";
+import DetailsItem from "../../DetailsItem/DetailsItem";
+import Socials from "../../Socials/Socials";
 import styles from "./podcastMeta.module.css";
 
-const PodcastMeta = () => {
+const PodcastMeta = ({ date, duration }) => {
 	return (
 		<div className={styles.meta}>
 			<div className={styles.divider}></div>
 
 			<div className={styles.metaContent}>
 				<div className={styles.metaItem}>
-					<DetailsItem title="Date" value="16. March 2022" />
+					<DetailsItem title="Date" value={date} />
 				</div>
 
 				<div className={styles.metaItem}>
-					<DetailsItem title="Duration" value="45 Min" />
+					<DetailsItem title="Duration" value={duration} />
 				</div>
 
 				<div className={styles.shareSection}>

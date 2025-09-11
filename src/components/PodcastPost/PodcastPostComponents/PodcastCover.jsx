@@ -1,23 +1,23 @@
 import arrowIcon from "../../img/arrow.svg";
 import styles from "./podcastCover.module.css";
 
-const PodcastCover = () => {
+const PodcastCover = ({ coverImage, author, episodeNumber }) => {
 	return (
 		<div className={styles.coverWrapper}>
 			<img
-				src="/src/img/podcast-covers/cover5.png"
+				src={coverImage}
 				alt="Podcast cover"
 				className={styles.cover}
 			/>
 
 			<div className={styles.overlayTopLeft}>
-				<span className={styles.author}>Fyrre</span>
+				<span className={styles.author}>{author}</span>
 				<br />
 				<span className={styles.type}>Podcast</span>
 			</div>
 
 			<div className={styles.overlayBottomRight}>
-				<div className={styles.episodeNumber}>Ep 05</div>
+				<div className={styles.episodeNumber}>{episodeNumber}</div>
 				<img src={arrowIcon} alt="arrow" className={styles.arrow} />
 			</div>
 		</div>

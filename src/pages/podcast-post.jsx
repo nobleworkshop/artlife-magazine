@@ -4,6 +4,7 @@ import Header from "@components/Header/Header";
 import Footer from "@components/Footer/Footer";
 import Podcast from "@components/Podcast/Podcast";
 import ReturnNavigation from "@components/ReturnNavigation/ReturnNavigation";
+import { podcastData } from "@data/podcastData";
 
 const PodcastPostPage = () => {
 	return (
@@ -13,7 +14,7 @@ const PodcastPostPage = () => {
 					<div className={styles["author-profile__container"]}>
 						<Header />
 						<ReturnNavigation title="Podcast" link="/podcast" />
-						<PodcastPost />
+						<PodcastPost podcastData={podcastData} />
 
 						<Podcast />
 					</div>

@@ -1,6 +1,6 @@
 import styles from "./podcastQuote.module.css";
 
-const PodcastQuote = () => {
+const PodcastQuote = ({ quote, quoteAuthor }) => {
 	return (
 		<div className={styles.quote}>
 			<div className={styles.divider}></div>
@@ -8,11 +8,8 @@ const PodcastQuote = () => {
 			<div className={styles.quoteContent}>
 				<span className={styles.quoteMark}>"</span>
 				<div className={styles.quoteText}>
-					<p className={styles.text}>
-						The greatest glory in living lies not in never falling,
-						but in rising every time we fall.
-					</p>
-					<span className={styles.author}>Nelson Mandela</span>
+					<p className={styles.text}>{quote}</p>
+					<span className={styles.author}>{quoteAuthor}</span>
 				</div>
 			</div>
 

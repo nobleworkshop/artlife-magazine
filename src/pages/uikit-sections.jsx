@@ -13,6 +13,8 @@ import styles from "./uikit.module.css";
 import UiKitLatestPosts from "@uikit/uikit-LatestPosts";
 import UiKitReturnNavigation from "@uikit/uikit-ReturnNavigation";
 import UiKitPost from "../uikit-components/uikit-Post";
+import UiKitAuthorsListItem from "../uikit-components/uikit-AuthorsListItem";
+import UiKitAuthorsList from "../uikit-components/uikit-AuthorsList";
 
 
 const UiKitSections = () => {
@@ -37,6 +39,8 @@ const UiKitSections = () => {
         		<UiKitFooter />
 				<UiKitPost />
 				<UiKitReturnNavigation />
+				<UiKitAuthorsListItem />
+				<UiKitAuthorsList />
 			</div>
 		</div>
 	);

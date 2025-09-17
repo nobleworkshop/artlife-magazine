@@ -24,7 +24,7 @@ const UiKitPodcastPost = () => {
 						{`import PodcastPost from "../components/PodcastPost/PodcastPost";`}
 						<br />
 						<br />
-						{`<PodcastPost />`}
+						{`<PodcastPost podcastData={podcastData} />`}
 					</code>
 				</pre>
 			</div>

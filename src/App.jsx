@@ -37,9 +37,6 @@ function App() {
 					<Link to="/author-profile" title="Author" />
 					<Link to="/podcast" title="Podcast" />
 					<Link to="/podcast-post" title="Podcast Post" />
-					<Link to="/uikit" title="UiKit" />
-					<Link to="/uikit-widgets" title="UiKit Widgets" />
-					<Link to="/uikit-sections" title="UiKit Sections" />
 					<Link to="/author-profile" title="Author Profile" />
 				</nav>
 				<nav className="nav nav--ui">

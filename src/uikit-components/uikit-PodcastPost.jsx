@@ -1,5 +1,6 @@
-import styles from "./uikit.module.css";
-import PodcastPost from "../components/PodcastPost/PodcastPost";
+import styles from './uikit.module.css';
+import PodcastPost from '../components/PodcastPost/PodcastPost';
+import { podcastData } from '../data/podcastData';
 
 const UiKitPodcastPost = () => {
 	return (
@@ -9,13 +10,13 @@ const UiKitPodcastPost = () => {
 			<div
 				className={
 					styles.component__preview +
-					" " +
-					styles["component__preview--column"] +
-					" " +
-					styles["component__preview--dark-bg"]
+					' ' +
+					styles['component__preview--column'] +
+					' ' +
+					styles['component__preview--dark-bg']
 				}
 			>
-				<PodcastPost />
+				<PodcastPost podcastData={podcastData} />
 			</div>
 			<div className={styles.component__code}>
 				<pre>

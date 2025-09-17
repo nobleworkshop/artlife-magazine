@@ -25,5 +25,19 @@ develop - разработка
 
 ## Стили в проекте
 
-Используем модульный CSS. Имена классов пишем придерживаясь БЭМ.ъ
+Используем модульный CSS. Имена классов пишем придерживаясь БЭМ.
 [Общие слова часто используемые в CSS классах](https://github.com/yoksel/common-words)
+
+## Документация
+
+### JSON Server
+
+- [Полное руководство по JSON Server](./docs/JSON_SERVER_GUIDE.md) - подробная документация по использованию
+- [Быстрая шпаргалка](./docs/JSON_SERVER_CHEATSHEET.md) - краткая справка для быстрого использования
+
+### Разработка
+
+- [Руководство по разработке](./docs/DEVELOPMENT_GUIDE.md)
+- [Документация проекта](./docs/PROJECT_DOCUMENTATION.md)
+- [Docker документация](./docs/README-Docker.md)
+- [JSON-SERVER](./docs/JSON-SERVER.md)

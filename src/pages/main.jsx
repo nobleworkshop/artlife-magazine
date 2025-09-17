@@ -3,7 +3,7 @@ import Header from "@components/Header/Header";
 import RunningLine from "@components/RunningLine/RunningLine";
 
 import LeadArticle from "@components/LeadArticle/LeadArticle";
-import LeadArticleImg from "../img/leadArticle-img.png";
+// import LeadArticleImg from "../img/leadArticle-img.png";
 
 import ArticlesSection from "./main/ArticlesSection";
 

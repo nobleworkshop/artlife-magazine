@@ -10,7 +10,7 @@ import authors from "../../img/header-titles/authors.svg";
 import magazine from "../../img/header-titles/magazine.svg";
 import podcast from "../../img/header-titles/podcast.svg";
 
-const Header = ({ title }) => {
+const Header = ({ title = "" }) => {
     return (
 		<header>
 			<div className={styles.header}>

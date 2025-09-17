@@ -1,5 +1,5 @@
-// import arrowIcon from "../../../img/podcast-covers/small/";
-import styles from "./podcastCover.module.css";
+import arrowIcon from '../../../img/arrow.svg';
+import styles from './podcastCover.module.css';
 
 const PodcastCover = ({ coverImage, author, episodeNumber }) => {
 	return (
@@ -18,7 +18,7 @@ const PodcastCover = ({ coverImage, author, episodeNumber }) => {
 
 			<div className={styles.overlayBottomRight}>
 				<div className={styles.episodeNumber}>{episodeNumber}</div>
-				{/* <img src={arrowIcon} alt="arrow" className={styles.arrow} /> */}
+				<img src={arrowIcon} alt="arrow" className={styles.arrow} />
 			</div>
 		</div>
 	);

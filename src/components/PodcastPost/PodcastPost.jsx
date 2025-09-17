@@ -1,5 +1,5 @@
-import PodcastPostSidebar from "@component/PodcastPostComponents/PodcastPostSidebar";
-import PodcastPostContent from "@component/PodcastPostComponents/PodcastPostContent";
+import PodcastPostSidebar from "./PodcastPostComponents/PodcastPostSidebar";
+import PodcastPostContent from "./PodcastPostComponents/PodcastPostContent";
 import styles from "./podcastPost.module.css";
 
 const PodcastPost = ({ podcastData }) => {

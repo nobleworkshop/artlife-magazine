@@ -6,6 +6,7 @@ import UiKit from "./pages/uikit";
 import UiKitWidgets from "./pages/uikit-widgets";
 import UiKitSections from "./pages/uikit-sections";
 import Podcast from "./pages/podcast";
+import PodcastPostPage from "./pages/podcast-post";
 import AuthorProfilePage from "./pages/author-profile";
 
 import "./styles/reset.css";
@@ -26,7 +27,6 @@ function Link({ to, title }) {
 }
 
 function App() {
-
 	return (
 		<>
 			<BrowserRouter>
@@ -36,6 +36,11 @@ function App() {
 					<Link to="/magazinePost" title="Post" />
 					<Link to="/author-profile" title="Author" />
 					<Link to="/podcast" title="Podcast" />
+					<Link to="/podcast-post" title="Podcast Post" />
+					<Link to="/uikit" title="UiKit" />
+					<Link to="/uikit-widgets" title="UiKit Widgets" />
+					<Link to="/uikit-sections" title="UiKit Sections" />
+					<Link to="/author-profile" title="Author Profile" />
 				</nav>
 				<nav className="nav nav--ui">
 					<Link to="/uikit" title="UI Elements" />
@@ -47,10 +52,14 @@ function App() {
 					<Route path="/magazine" element={<Magazine />} />
 					<Route path="/magazinePost" element={<MagazinePost />} />
 					<Route path="/podcast" element={<Podcast />} />
+					<Route path="/podcast-post" element={<PodcastPostPage />} />
 					<Route path="/uikit" element={<UiKit />} />
 					<Route path="/uikit-widgets" element={<UiKitWidgets />} />
 					<Route path="/uikit-sections" element={<UiKitSections />} />
-					<Route path="/author-profile" element={<AuthorProfilePage />} />
+					<Route
+						path="/author-profile"
+						element={<AuthorProfilePage />}
+					/>
 				</Routes>
 			</BrowserRouter>
 		</>

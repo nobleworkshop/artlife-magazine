@@ -7,6 +7,7 @@ import UiKitWidgets from "./pages/uikit-widgets";
 import UiKitSections from "./pages/uikit-sections";
 import Podcast from "./pages/podcast";
 import AuthorProfilePage from "./pages/author-profile";
+import Authors from "./pages/authors";
 
 import "./styles/reset.css";
 import "./styles/variables.css";
@@ -35,6 +36,7 @@ function App() {
 					<Link to="/magazine" title="Magazine" />
 					<Link to="/magazinePost" title="Post" />
 					<Link to="/author-profile" title="Author" />
+					<Link to="/authors" title="Authors" />
 					<Link to="/podcast" title="Podcast" />
 				</nav>
 				<nav className="nav nav--ui">
@@ -51,6 +53,7 @@ function App() {
 					<Route path="/uikit-widgets" element={<UiKitWidgets />} />
 					<Route path="/uikit-sections" element={<UiKitSections />} />
 					<Route path="/author-profile" element={<AuthorProfilePage />} />
+					<Route path="/authors" element={<Authors />} />
 				</Routes>
 			</BrowserRouter>
 		</>

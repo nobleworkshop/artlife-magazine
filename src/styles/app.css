@@ -27,7 +27,7 @@ body {
 
 	width: max-content;
 	max-width: 100%;
-	overflow-x: scroll;
+	/* overflow-x: scroll; */
 	padding: 10px 20px;
 
 	display: flex;

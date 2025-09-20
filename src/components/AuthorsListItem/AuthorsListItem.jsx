@@ -1,10 +1,8 @@
 import styles from "./authorsListItem.module.css";
 import DetailsItem from "../DetailsItem/DetailsItem";
 import LinkTo from "../LinkTo/LinkTo";
-import defaultImg from '../../img/authors/1.png';
 
-const AuthorsListItem = ({ img = defaultImg, name, job, city }) => {
-
+const AuthorsListItem = ({ img = "/img/authors/1.png", name, job, city }) => {
 	return (
 		<div className={styles.author}>
 			<div className={styles.author__info}>

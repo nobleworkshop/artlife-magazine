@@ -1,6 +1,5 @@
-import AuthorsListItem from "../components/AuthorListItem/AuthorsListItem";
+import AuthorsListItem from "../components/AuthorsListItem/AuthorsListItem";
 import styles from "./uikit.module.css";
-import img1 from "../img/authors/1.png";
 
 const UiKitAuthorsListItem = () => {
 	return (
@@ -9,7 +8,7 @@ const UiKitAuthorsListItem = () => {
 
 			<div className={styles.component__preview}>
 				<AuthorsListItem
-					img={img1}
+					img="/img/authors/1.png"
 					name="Jakob Grønberg"
 					job="Artist"
 					city="Berlin"
@@ -19,22 +18,14 @@ const UiKitAuthorsListItem = () => {
 			<div className={styles.component__code}>
 				<pre>
 					<code>
-						{`import AuthorsListItem from "../components/AuthorsListItem/";`}
-						<br />
-						{`import img1 from "../img/authors/1.png";`}
-						<br />
-						<br />
-						{`<AuthorsListItem`}
-						<br />
-						{`  img={img1}`}
-						<br />
-						{`  name="Jakob Grønberg"`}
-						<br />
-						{`  job="Artist"`}
-						<br />
-						{`  city="Berlin"`}
-						<br />
-						{`/>`}
+{`import AuthorsListItem from "../components/AuthorsListItem/AuthorsListItem";
+
+<AuthorsListItem
+  img="/img/authors/1.png"
+  name="Jakob Grønberg"
+  job="Artist"
+  city="Berlin"
+/>`}
 					</code>
 				</pre>
 			</div>

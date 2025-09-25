@@ -1,14 +1,11 @@
-import React, { useState } from "react";
-import styles from "./styles.module.css";
+import styles from './styles.module.css';
 
 const NewsletterSignup = () => {
-	const [email, setEmail] = useState("");
+	const [email, setEmail] = useState('');
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		// Здесь будет логика отправки email
-		console.log("Email submitted:", email);
-		setEmail("");
+		setEmail('');
 	};
 
 	return (

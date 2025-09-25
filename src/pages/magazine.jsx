@@ -1,27 +1,29 @@
-import styles from "./magazine.module.css";
-import Header from "../components/Header/Header";
-import CategoriesNavbar from "../components/CategoriesNavbar/CategoriesNavbar";
-import ArticleCards from "../components/ArticleCards/ArticleCards";
-import LinkTo from "../components/LinkTo/LinkTo";
-import Footer from "@components/Footer/Footer";
+import Footer from '@components/Footer/Footer';
+
+import ArticleCards from '../components/ArticleCards/ArticleCards';
+import CategoriesNavbar from '../components/CategoriesNavbar/CategoriesNavbar';
+import Header from '../components/Header/Header';
+import LinkTo from '../components/LinkTo/LinkTo';
+
+import styles from './magazine.module.css';
 
 const Magazine = () => {
 	return (
 		<>
-			<div className={styles.magazine + " container"}>
-				<div className={styles["magazine-header"]}>
+			<div className={`${styles.magazine} container`}>
+				<div className={styles['magazine-header']}>
 					<Header title="magazine" />
 				</div>
 
-				<div className={styles["magazine-navbar"]}>
+				<div className={styles['magazine-navbar']}>
 					<CategoriesNavbar />
 				</div>
 
-				<div className={styles["magazine-articles"]}>
+				<div className={styles['magazine-articles']}>
 					<ArticleCards />
 				</div>
 
-				<div className={styles["magazine-link-next"]}>
+				<div className={styles['magazine-link-next']}>
 					<LinkTo title="next" link="/articles" direction="right" />
 				</div>
 			</div>

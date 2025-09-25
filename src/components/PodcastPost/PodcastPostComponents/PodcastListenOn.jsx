@@ -1,4 +1,4 @@
-import styles from "./podcastListenOn.module.css";
+import styles from './podcastListenOn.module.css';
 
 const PodcastListenOn = () => {
 	return (

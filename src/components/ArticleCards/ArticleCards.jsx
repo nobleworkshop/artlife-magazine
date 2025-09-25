@@ -1,6 +1,7 @@
-import ArticleCard from "../ArticleCard/ArticleCard";
-import styles from "./articleCards.module.css";
-import { articles } from "../../data/articles";
+import { articles } from '../../data/articles';
+import ArticleCard from '../ArticleCard/ArticleCard';
+
+import styles from './articleCards.module.css';
 
 const ArticleCards = () => {
 	return (
@@ -15,7 +16,7 @@ const ArticleCards = () => {
 							img={article.img}
 							title={article.title}
 							text={article.text}
-							authorName={article.authorName}  // исправлено
+							authorName={article.authorName} // исправлено
 							date={article.date}
 							timeToRead={article.timeToRead}
 							badgeName={article.badgeName}

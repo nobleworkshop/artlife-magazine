@@ -1,6 +1,8 @@
 .authorProfile {
 	display: flex;
+
 	gap: 96px;
+
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 20px;
@@ -8,42 +10,51 @@
 
 .sidebar {
 	display: flex;
+
 	flex-direction: column;
-	gap: 48px;
-	width: 350px;
 	flex-shrink: 0;
+	gap: 48px;
+
+	width: 350px;
 }
 
 .profileImageContainer {
+	position: relative;
+
 	width: 350px;
 	height: 350px;
-	border-radius: 1000px;
 	overflow: hidden;
-	position: relative;
+
+	border-radius: 1000px;
 }
 
 .profileImage {
 	width: 100%;
 	height: 100%;
+
 	object-fit: cover;
 	object-position: center;
 }
 
 .sidebarContent {
 	display: flex;
+
 	flex-direction: column;
 	gap: 32px;
+
 	width: 100%;
 }
 
 .divider {
 	width: 100%;
 	height: 1px;
+
 	background-color: var(--black);
 }
 
 .socialSection {
 	display: flex;
+
 	justify-content: space-between;
 	align-items: center;
 	gap: 12px;
@@ -51,16 +62,20 @@
 
 .socialIcons {
 	display: flex;
-	gap: 12px;
+
 	align-items: center;
+	gap: 12px;
 }
 
 .socialLink {
 	display: flex;
-	align-items: center;
+
 	justify-content: center;
+	align-items: center;
+
 	width: 20px;
 	height: 20px;
+
 	transition: opacity 0.2s ease;
 }
 
@@ -71,67 +86,76 @@
 .socialIcon {
 	width: 100%;
 	height: 100%;
+
 	object-fit: contain;
 }
 
 .followText {
+	width: 198px;
+
 	font-family: var(--font-family);
-	font-weight: 600;
 	font-size: 20px;
+	font-weight: 600;
 	line-height: 1.35em;
 	text-transform: uppercase;
 	color: var(--black);
-	width: 198px;
 }
 
 .content {
 	display: flex;
+
+	flex: 1;
 	flex-direction: column;
 	gap: 48px;
-	flex: 1;
 }
 
 .headerSection {
 	display: flex;
+
 	flex-direction: column;
 	gap: 32px;
+
 	width: 100%;
 }
 
 .authorName {
+	margin: 0;
+
 	font-family: var(--font-family);
-	font-weight: 600;
 	font-size: 104px;
+	font-weight: 600;
 	line-height: 1.1em;
 	text-transform: uppercase;
 	color: var(--black);
-	margin: 0;
 }
 
 .shortBio {
+	margin: 0;
+
 	font-family: var(--font-family);
-	font-weight: 500;
 	font-size: 22px;
+	font-weight: 500;
 	line-height: 1.8em;
 	color: var(--black);
-	margin: 0;
 }
 
 .longBio {
-	font-family: var(--font-family);
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 1.8em;
-	color: var(--black);
-	margin: 0;
 	width: 754px;
 	max-width: 100%;
+	margin: 0;
+
+	font-family: var(--font-family);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: var(--black);
 }
 
 /* Responsive Design */
-@media (max-width: 1200px) {
+@media (width <= 1200px) {
 	.authorProfile {
 		gap: 60px;
+
 		padding: 0 16px;
 	}
 
@@ -153,16 +177,18 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
 	.authorProfile {
 		flex-direction: column;
 		gap: 48px;
+
 		padding: 0 16px;
 	}
 
 	.sidebar {
-		width: 100%;
 		align-items: center;
+
+		width: 100%;
 	}
 
 	.profileImageContainer {
@@ -193,7 +219,7 @@
 	}
 }
 
-@media (max-width: 480px) {
+@media (width <= 480px) {
 	.authorProfile {
 		padding: 0 12px;
 	}

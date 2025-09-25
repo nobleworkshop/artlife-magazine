@@ -1,6 +1,7 @@
-import styles from "./uikit.module.css";
-import PodcastListItem from "@components/PodcastListItem/PodcastListItem";
-import PodcastImg from "@img/podcast-covers/small/01.jpg";
+import PodcastListItem from '@components/PodcastListItem/PodcastListItem';
+
+import styles from './uikit.module.css';
+import PodcastImg from '@img/podcast-covers/small/01.jpg';
 
 const UiKitPodcastListItem = () => {
 	return (
@@ -20,12 +21,18 @@ const UiKitPodcastListItem = () => {
 			<div className={styles.component__code}>
 				<pre>
 					<code>
-						{`import PodcastListItem from "@components/PodcastListItem/PodcastListItem";`}
+						{
+							'import PodcastListItem from "@components/PodcastListItem/PodcastListItem";'
+						}
 						<br />
-						{`import PodcastImg from "@img/podcast-covers/small/01.jpg";`}
+						{
+							'import PodcastImg from "@img/podcast-covers/small/01.jpg";'
+						}
 						<br />
 						<br />
-						{`<PodcastListItem number="01" image={PodcastImg} title="The Problem of today’s cultural development" date="2022-03-16" duration="80" />`}
+						{
+							'<PodcastListItem number="01" image={PodcastImg} title="The Problem of today’s cultural development" date="2022-03-16" duration="80" />'
+						}
 					</code>
 				</pre>
 			</div>

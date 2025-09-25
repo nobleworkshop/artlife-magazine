@@ -1,8 +1,7 @@
-.section-title{
+.section-title {
 	font-family: var(--font-family);
-	font-weight: 600;
 	font-size: clamp(2rem, 0.941rem + 5.29vw, 6.5rem);
+	font-weight: 600;
 	line-height: 110%;
 	text-transform: uppercase;
-
 }

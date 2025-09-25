@@ -1,22 +1,24 @@
 .wraper {
 	/* padding: 48px 0; */
+
 	/* margin-bottom: 94px; */
 }
 
 .list > * {
 	padding: 48px 0;
+
 	border-bottom: 1px solid #000;
 }
 
 .list > *:last-child {
-	border-bottom: none;
 	padding-bottom: 0;
+
+	border-bottom: none;
 }
 
 .more {
 	margin-top: 96px;
 }
-
 
 /*
 .articlesSection > * {

@@ -1,17 +1,15 @@
-import Logo from "../Logo/Logo";
-import Link from "../Link/Link";
-import Socials from "../Socials/Socials";
+import Link from '../Link/Link';
+import Logo from '../Logo/Logo';
+import Socials from '../Socials/Socials';
 
-import styles from "./header.module.css";
-import img from "../../img/line.png"
+import styles from './header.module.css';
+import artlife from '../../img/header-titles/art&life.svg';
+import authors from '../../img/header-titles/authors.svg';
+import magazine from '../../img/header-titles/magazine.svg';
+import podcast from '../../img/header-titles/podcast.svg';
 
-import artlife from "../../img/header-titles/art&life.svg";
-import authors from "../../img/header-titles/authors.svg";
-import magazine from "../../img/header-titles/magazine.svg";
-import podcast from "../../img/header-titles/podcast.svg";
-
-const Header = ({ title = "" }) => {
-    return (
+const Header = ({ title = '' }) => {
+	return (
 		<header>
 			<div className={styles.header}>
 				<div className={styles.logo}>
@@ -28,31 +26,31 @@ const Header = ({ title = "" }) => {
 				</nav>
 			</div>
 
-			{title === "art&life" && (
+			{title === 'art&life' && (
 				<div className="title">
 					<img src={artlife} alt={title} />
 				</div>
 			)}
 
-			{title === "authors" && (
+			{title === 'authors' && (
 				<div className="title">
 					<img src={authors} alt={title} />
 				</div>
 			)}
 
-			{title === "magazine" && (
+			{title === 'magazine' && (
 				<div className="title">
 					<img src={magazine} alt={title} />
 				</div>
 			)}
 
-			{title === "podcast" && (
+			{title === 'podcast' && (
 				<div className="title">
 					<img src={podcast} alt={title} />
 				</div>
 			)}
 		</header>
 	);
-}
+};
 
 export default Header;

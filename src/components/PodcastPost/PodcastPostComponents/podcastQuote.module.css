@@ -1,65 +1,72 @@
 .quote {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    padding: 1.5rem 0;
+	display: flex;
+
+	flex-direction: column;
+	gap: 3rem;
+
+	padding: 1.5rem 0;
 }
 
 .divider {
-    width: 100%;
-    height: 1px;
-    background: #000;
+	width: 100%;
+	height: 1px;
+
+	background: #000;
 }
 
 .quoteContent {
-    display: flex;
-    gap: 1.5rem;
-    align-items: flex-start;
+	display: flex;
+
+	align-items: flex-start;
+	gap: 1.5rem;
 }
 
 .quoteMark {
-    font-family: var(--font-family);
-    font-weight: 600;
-    font-size: 6rem;
-    line-height: 1;
-    color: #000;
-    flex-shrink: 0;
+	flex-shrink: 0;
+
+	font-family: var(--font-family);
+	font-size: 6rem;
+	font-weight: 600;
+	line-height: 1;
+	color: #000;
 }
 
 .quoteText {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    flex: 1;
+	display: flex;
+
+	flex: 1;
+	flex-direction: column;
+	gap: 1rem;
 }
 
 .text {
-    font-family: var(--font-family);
-    font-weight: 600;
-    font-size: 3rem;
-    line-height: 1.2;
-    color: #000;
-    margin: 0;
+	margin: 0;
+
+	font-family: var(--font-family);
+	font-size: 3rem;
+	font-weight: 600;
+	line-height: 1.2;
+	color: #000;
 }
 
 .author {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 0.875rem;
-    line-height: 1.6;
-    color: #000;
+	font-family: var(--font-family);
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 1.6;
+	color: #000;
 }
 
-@media (max-width: 768px) {
-    .quoteMark {
-        font-size: 4rem;
-    }
+@media (width <= 768px) {
+	.quoteMark {
+		font-size: 4rem;
+	}
 
-    .text {
-        font-size: 2rem;
-    }
+	.text {
+		font-size: 2rem;
+	}
 
-    .quoteContent {
-        gap: 1rem;
-    }
+	.quoteContent {
+		gap: 1rem;
+	}
 }

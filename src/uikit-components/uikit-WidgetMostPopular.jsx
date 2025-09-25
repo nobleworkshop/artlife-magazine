@@ -1,8 +1,9 @@
-import WidgetMostPopular from "../components/WidgetMostPopular/WidgetMostPopular";
-import styles from "./uikit.module.css";
+import WidgetMostPopular from '../components/WidgetMostPopular/WidgetMostPopular';
+
+import styles from './uikit.module.css';
 
 const UiKitWidgetMostPopular = () => {
-    return (
+	return (
 		<div className={styles.component}>
 			<h3 className={styles.component__title}>Widget Most Popular</h3>
 
@@ -13,10 +14,12 @@ const UiKitWidgetMostPopular = () => {
 			<div className={styles.component__code}>
 				<pre>
 					<code>
-						{`import WidgetMostPopular from "../components/WidgetMostPopular/WidgetMostPopular";`}
+						{
+							'import WidgetMostPopular from "../components/WidgetMostPopular/WidgetMostPopular";'
+						}
 						<br />
 						<br />
-						{`<WidgetMostPopular />`}
+						{'<WidgetMostPopular />'}
 						<br />
 					</code>
 				</pre>

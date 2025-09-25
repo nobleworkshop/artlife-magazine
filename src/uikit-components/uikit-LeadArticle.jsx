@@ -1,6 +1,7 @@
-import LeadArticle from "../components/LeadArticle/LeadArticle";
-import styles from "./uikit.module.css";
-import img from "../img/leadArticle-img.png";
+import LeadArticle from '../components/LeadArticle/LeadArticle';
+
+import styles from './uikit.module.css';
+import img from '../img/leadArticle-img.png';
 
 const UiKitButton = () => {
 	return (
@@ -23,7 +24,7 @@ const UiKitButton = () => {
 			<div className={styles.component__code}>
 				<pre>
 					<code>
-{`import LeadArticle from "../components/LeadArticle/LeadArticle";
+						{`import LeadArticle from "../components/LeadArticle/LeadArticle";
 
 <LeadArticle
 	title="Don’t close your eyes"

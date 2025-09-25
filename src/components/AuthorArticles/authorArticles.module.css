@@ -1,43 +1,53 @@
 .authorArticles {
 	display: flex;
+
 	flex-direction: column;
 	gap: 96px;
+
 	margin: 0 auto;
 }
 
 .header {
 	display: flex;
+
 	flex-direction: column;
 	justify-content: center;
 	gap: 48px;
+
 	width: 100%;
 }
 
 .divider {
 	height: 1px;
+
 	background-color: var(--black);
 }
 
 .title {
+	margin: 0;
+
 	font-family: var(--font-family);
-	font-weight: 600;
 	font-size: 72px;
+	font-weight: 600;
 	line-height: 1.1em;
 	color: var(--black);
-	margin: 0;
 }
 
 .articlesGrid {
 	display: flex;
+
 	flex-direction: column;
-	width: 100%;
 	gap: -1px;
+
+	width: 100%;
 }
 
 .articlesRow {
 	display: flex;
-	width: 100%;
+
 	gap: -1px;
+
+	width: 100%;
 }
 
 .articlesRow:first-child {
@@ -52,47 +62,55 @@
 }
 
 .article {
-	border-right: 1px solid var(--black);
 	display: flex;
+
 	align-items: center;
 	gap: 48px;
-	padding: 32px;
+
 	width: 760.5px;
+	padding: 32px;
+
 	background-color: var(--white);
+	border-right: 1px solid var(--black);
 }
 
 .articleImage {
+	flex-shrink: 0;
+
 	width: 150px;
 	height: 150px;
 	overflow: hidden;
-	flex-shrink: 0;
 }
 
 .image {
 	width: 100%;
 	height: 100%;
+
 	object-fit: cover;
 	object-position: center;
 }
 
 .articleContent {
 	display: flex;
+
+	flex: 1;
 	flex-direction: column;
 	gap: 16px;
-	flex: 1;
 }
 
 .articleTitle {
+	margin: 0;
+
 	font-family: var(--font-family);
-	font-weight: 600;
 	font-size: 32px;
+	font-weight: 600;
 	line-height: 1.2em;
 	color: var(--black);
-	margin: 0;
 }
 
 .articleMeta {
 	display: flex;
+
 	justify-content: flex-start;
 	align-items: center;
 	gap: 32px;
@@ -100,33 +118,32 @@
 
 .metaItem {
 	display: flex;
-	gap: 8px;
+
 	align-items: center;
+	gap: 8px;
 }
 
 .metaLabel {
 	font-family: var(--font-family);
-	font-weight: 600;
 	font-size: 14px;
+	font-weight: 600;
 	line-height: 1.6em;
 	color: var(--black);
 }
 
 .metaValue {
 	font-family: var(--font-family);
-	font-weight: 400;
 	font-size: 14px;
+	font-weight: 400;
 	line-height: 1.6em;
 	color: var(--black);
 }
 
 /* Responsive Design */
-@media (max-width: 1600px) {
+@media (width <= 1600px) {
 	.authorArticles {
 		max-width: 1200px;
 	}
-
-
 
 	.divider,
 	.title {
@@ -143,9 +160,11 @@
 	}
 
 	.article {
+		gap: 32px;
+
 		width: 600px;
 		padding: 24px;
-		gap: 32px;
+
 		border-bottom: 1px solid var(--black);
 	}
 
@@ -159,12 +178,10 @@
 	}
 }
 
-@media (max-width: 1200px) {
+@media (width <= 1200px) {
 	.authorArticles {
 		gap: 60px;
 	}
-
-
 
 	.header {
 		gap: 32px;
@@ -194,13 +211,12 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
 	.authorArticles {
 		gap: 48px;
+
 		padding: 0 16px;
 	}
-
-
 
 	.header {
 		gap: 24px;
@@ -213,9 +229,11 @@
 
 	.article {
 		flex-direction: column;
-		text-align: center;
-		padding: 20px;
 		gap: 20px;
+
+		padding: 20px;
+
+		text-align: center;
 	}
 
 	.articleImage {
@@ -233,12 +251,10 @@
 	}
 }
 
-@media (max-width: 480px) {
+@media (width <= 480px) {
 	.authorArticles {
 		padding: 0 12px;
 	}
-
-
 
 	.title {
 		font-size: 32px;

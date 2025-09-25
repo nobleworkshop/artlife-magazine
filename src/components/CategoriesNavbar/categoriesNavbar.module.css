@@ -1,22 +1,28 @@
-.categories-navbar{
-	width: 100%;
+.categories-navbar {
 	display: flex;
+
+	flex-wrap: wrap;
+	justify-content: space-between;
 	align-items: center;
 	gap: 20px;
-	justify-content: space-between;
+
+	width: 100%;
+
 	background-color: #fff;
-	flex-wrap: wrap;
 }
-.categories-navbar__title{
+
+.categories-navbar__title {
 	font-family: var(--font-family);
-	font-weight: 600;
 	font-size: 16px;
+	font-weight: 600;
 	text-transform: uppercase;
 }
 
 .navbar {
-  display: flex;
-  gap: 12px;
-  background-color: #fff;
-  flex-wrap: wrap;
+	display: flex;
+
+	flex-wrap: wrap;
+	gap: 12px;
+
+	background-color: #fff;
 }

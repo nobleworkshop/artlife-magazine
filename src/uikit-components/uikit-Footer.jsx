@@ -1,5 +1,6 @@
-import Footer from "../components/Footer/Footer";
-import styles from "./uikit.module.css";
+import Footer from '../components/Footer/Footer';
+
+import styles from './uikit.module.css';
 
 const UiKitFooter = () => {
 	return (
@@ -13,10 +14,10 @@ const UiKitFooter = () => {
 			<div className={styles.component__code}>
 				<pre>
 					<code>
-						{`import Footer from "../components/Footer/Footer";`}
+						{'import Footer from "../components/Footer/Footer";'}
 						<br />
 						<br />
-						{`<Footer />`}
+						{'<Footer />'}
 					</code>
 				</pre>
 			</div>

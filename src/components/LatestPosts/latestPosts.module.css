@@ -1,19 +1,23 @@
-.latestPosts{
+.latestPosts {
 	padding: 40px 0;
-	background-color: rgba(255, 255, 255, 1);
+
+	background-color: rgb(255 255 255 / 100%);
 }
 
-.latestPosts__header{
+.latestPosts__header {
 	display: flex;
-	gap: 10px 20px;
+
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
+	gap: 10px 20px;
+
 	margin-bottom: 96px;
-	flex-wrap: wrap;
 }
 
 .latestPosts__grid {
 	display: grid;
+
 	grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -22,15 +26,14 @@
 	margin-left: -1px;
 }
 
-@media (max-width: 1439px) {
+@media (width <= 1439px) {
 	.latestPosts__grid {
 		grid-template-columns: 1fr 1fr;
 	}
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
 	.latestPosts__grid {
 		grid-template-columns: 1fr;
 	}
 }
-

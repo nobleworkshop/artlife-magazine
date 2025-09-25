@@ -1,6 +1,7 @@
-import DetailsItem from "../../DetailsItem/DetailsItem";
-import Socials from "../../Socials/Socials";
-import styles from "./podcastMeta.module.css";
+import DetailsItem from '../../DetailsItem/DetailsItem';
+import Socials from '../../Socials/Socials';
+
+import styles from './podcastMeta.module.css';
 
 const PodcastMeta = ({ date, duration }) => {
 	return (

@@ -1,21 +1,28 @@
-import styles from "./uikit.module.css";
-import LatestPosts from "../components/LatestPosts/LatestPosts";
+import LatestPosts from '../components/LatestPosts/LatestPosts';
+
+import styles from './uikit.module.css';
 
 const UiKitLatestPosts = () => {
 	return (
 		<div className={styles.component}>
 			<h3 className={styles.component__title}>Latest Posts section</h3>
 
-			<div className={styles.component__preview + " " + styles['component__preview--column'] + " " + styles['component__preview--dark-bg']}>
+			<div
+				className={`${styles.component__preview} ${
+					styles['component__preview--column']
+				} ${styles['component__preview--dark-bg']}`}
+			>
 				<LatestPosts />
 			</div>
 			<div className={styles.component__code}>
 				<pre>
 					<code>
-						{`import LatestPosts from "../components/LatestPosts/LatestPosts";`}
+						{
+							'import LatestPosts from "../components/LatestPosts/LatestPosts";'
+						}
 						<br />
 						<br />
-						{`<LatestPosts />`}
+						{'<LatestPosts />'}
 					</code>
 				</pre>
 			</div>

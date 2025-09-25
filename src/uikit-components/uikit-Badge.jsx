@@ -1,5 +1,6 @@
-import Badge from "../components/Badge/Badge";
-import styles from "./uikit.module.css";
+import Badge from '../components/Badge/Badge';
+
+import styles from './uikit.module.css';
 
 const UiKitButton = () => {
 	return (
@@ -14,12 +15,12 @@ const UiKitButton = () => {
 			<div className={styles.component__code}>
 				<pre>
 					<code>
-						{`import Badge from "../components/Badge/Badge";`}
+						{'import Badge from "../components/Badge/Badge";'}
 						<br />
 						<br />
-						{`<Badge title="Badge" />`}
+						{'<Badge title="Badge" />'}
 						<br />
-						{`<Badge title="Badge" link="/" />`}
+						{'<Badge title="Badge" link="/" />'}
 					</code>
 				</pre>
 			</div>

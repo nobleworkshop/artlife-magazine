@@ -1,5 +1,6 @@
-import SectionTitle from "../components/SectionTitle/SectionTitle";
-import styles from "./uikit.module.css";
+import SectionTitle from '../components/SectionTitle/SectionTitle';
+
+import styles from './uikit.module.css';
 
 const UiKitButton = () => {
 	return (
@@ -13,10 +14,12 @@ const UiKitButton = () => {
 			<div className={styles.component__code}>
 				<pre>
 					<code>
-						{`import SectionTitle from "../components/SectionTitle/SectionTitle";`}
+						{
+							'import SectionTitle from "../components/SectionTitle/SectionTitle";'
+						}
 						<br />
 						<br />
-						{`<SectionTitle title="Authors" />`}
+						{'<SectionTitle title="Authors" />'}
 					</code>
 				</pre>
 			</div>

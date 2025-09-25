@@ -1,71 +1,85 @@
 .card {
 	display: flex;
+
+	flex-direction: column;
+	gap: clamp(1rem, 0.765rem + 1.18vw, 2rem);
+
 	max-width: 507px;
 	padding: clamp(1.5rem, 1.147rem + 1.76vw, 3rem);
-	gap: clamp(1rem, 0.765rem + 1.18vw, 2rem);
-	flex-direction: column;
-	background: #fff;
-	border: 1px solid rgba(0, 0, 0, 1);
 	overflow: hidden;
 
-	cursor: pointer;
+	background: #fff;
+	border: 1px solid rgb(0 0 0 / 100%);
+
 	transition: box-shadow 0.3s ease;
+
+	cursor: pointer;
 }
 
 .card:hover {
-	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 8px 24px rgb(0 0 0 / 10%);
 }
 
 .coverWrapper {
 	position: relative;
+
 	width: 100%;
-	aspect-ratio: 1 / 1;
 	overflow: hidden;
+
+	aspect-ratio: 1 / 1;
 }
 
 .cover {
+	display: block;
+
 	width: 100%;
 	height: 100%;
+
 	object-fit: cover;
-	display: block;
 }
 
 .cover__overlayTopLeft {
 	position: absolute;
 	top: clamp(1.125rem, 0.86rem + 1.32vw, 2.25rem);
 	left: clamp(1.125rem, 0.86rem + 1.32vw, 2.25rem);
-	color: rgb(255, 255, 255, 1);
+
+	color: rgb(255 255 255 / 100%);
 }
 
 .heading {
-	font-family: var(--font-family);;
+	font-family: var(--font-family);
+	font-size: clamp(1.25rem, 0.794rem + 2.28vw, 3.188rem);
 	font-weight: 600;
-	font-size:clamp(1.25rem, 0.794rem + 2.28vw, 3.188rem);
 	text-transform: uppercase;
 }
-.subHeading{
+
+.subHeading {
 	font-family: var(--font-family);
-	font-weight: 600;
 	font-size: clamp(0.875rem, 0.713rem + 0.81vw, 1.563rem);
+	font-weight: 600;
 	text-transform: uppercase;
 }
 
 .cover__footer {
 	position: absolute;
 	bottom: clamp(1rem, 0.765rem + 1.18vw, 2rem);
-	padding-right: clamp(1.125rem, 0.86rem + 1.32vw, 2.25rem);
-	padding-left: clamp(1.125rem, 0.86rem + 1.32vw, 2.25rem);
-	width: 100%;
+
 	display: flex;
+
+	justify-content: space-between;
 	align-items: flex-end;
 
 	gap: 12px;
-	justify-content: space-between;
-	color: #fff;
+
+	width: 100%;
+	padding-right: clamp(1.125rem, 0.86rem + 1.32vw, 2.25rem);
+	padding-left: clamp(1.125rem, 0.86rem + 1.32vw, 2.25rem);
+
 	font-family: var(--font-family);
-	font-weight: 600;
 	font-size: clamp(0.875rem, 0.713rem + 0.81vw, 1.563rem);
+	font-weight: 600;
 	text-transform: uppercase;
+	color: #fff;
 }
 
 .arrow {
@@ -75,14 +89,14 @@
 
 .title {
 	font-family: var(--font-family);
-	font-weight: 600;
 	font-size: clamp(1rem, 0.765rem + 1.18vw, 2rem);
+	font-weight: 600;
 	line-height: 120%;
 }
 
 .podcast__details {
 	display: flex;
-	gap: 16px;
-	flex-wrap: wrap;
-}
 
+	flex-wrap: wrap;
+	gap: 16px;
+}

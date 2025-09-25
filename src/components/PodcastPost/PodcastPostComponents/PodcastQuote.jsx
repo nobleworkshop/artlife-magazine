@@ -1,4 +1,4 @@
-import styles from "./podcastQuote.module.css";
+import styles from './podcastQuote.module.css';
 
 const PodcastQuote = ({ quote, quoteAuthor }) => {
 	return (

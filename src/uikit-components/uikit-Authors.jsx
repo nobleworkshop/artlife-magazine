@@ -1,21 +1,26 @@
-import styles from "./uikit.module.css";
-import Authors from "../components/Authors/Authors";
+import Authors from '../components/Authors/Authors';
+
+import styles from './uikit.module.css';
 
 const UiKitAuthors = () => {
 	return (
 		<div className={styles.component}>
 			<h3 className={styles.component__title}>Authors section</h3>
 
-			<div className={styles.component__preview + " " + styles['component__preview--column'] + " " + styles['component__preview--dark-bg']}>
+			<div
+				className={`${styles.component__preview} ${
+					styles['component__preview--column']
+				} ${styles['component__preview--dark-bg']}`}
+			>
 				<Authors />
 			</div>
 			<div className={styles.component__code}>
 				<pre>
 					<code>
-						{`import Authors from "../components/Authors/Authors";`}
+						{'import Authors from "../components/Authors/Authors";'}
 						<br />
 						<br />
-						{`<Authors />`}
+						{'<Authors />'}
 					</code>
 				</pre>
 			</div>

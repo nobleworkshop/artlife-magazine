@@ -1,5 +1,6 @@
-import styles from "./authorsList.module.css";
-import AuthorsListItem from "../AuthorsListItem/AuthorsListItem";
+import AuthorsListItem from '../AuthorsListItem/AuthorsListItem';
+
+import styles from './authorsList.module.css';
 
 const AuthorsList = ({ authors }) => {
 	return (
@@ -12,7 +13,9 @@ const AuthorsList = ({ authors }) => {
 						job={author.job}
 						city={author.city}
 					/>
-					{index < authors.length - 1 && <div className={styles.divider}></div>}
+					{index < authors.length - 1 && (
+						<div className={styles.divider}></div>
+					)}
 				</div>
 			))}
 		</div>

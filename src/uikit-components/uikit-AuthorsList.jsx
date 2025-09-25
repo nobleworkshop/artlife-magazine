@@ -1,15 +1,17 @@
-import { useEffect, useState } from "react";
-import AuthorsList from "../components/AuthorsList/AuthorsList";
-import styles from "./uikit.module.css";
+import { useEffect, useState } from 'react';
+
+import AuthorsList from '../components/AuthorsList/AuthorsList';
+
+import styles from './uikit.module.css';
 
 const UiKitAuthorsList = () => {
 	const [authors, setAuthors] = useState([]);
 
 	useEffect(() => {
-		fetch("/db.json")
+		fetch('/db.json')
 			.then((res) => res.json())
 			.then((data) => setAuthors(data.authors))
-			.catch((err) => console.error("Ошибка загрузки authors:", err));
+			.catch((err) => console.error('Ошибка загрузки authors:', err));
 	}, []);
 
 	return (
@@ -25,7 +27,7 @@ const UiKitAuthorsList = () => {
 			<div className={styles.component__code}>
 				<pre>
 					<code>
-{`import { useEffect, useState } from "react";
+						{`import { useEffect, useState } from "react";
 import AuthorsList from "../components/AuthorsList/AuthorsList";
 
 const UiKitAuthorsList = () => {

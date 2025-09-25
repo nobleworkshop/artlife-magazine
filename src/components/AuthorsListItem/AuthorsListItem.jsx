@@ -1,8 +1,9 @@
-import styles from "./authorsListItem.module.css";
-import DetailsItem from "../DetailsItem/DetailsItem";
-import LinkTo from "../LinkTo/LinkTo";
+import DetailsItem from '../DetailsItem/DetailsItem';
+import LinkTo from '../LinkTo/LinkTo';
 
-const AuthorsListItem = ({ img = "/img/authors/1.png", name, job, city }) => {
+import styles from './authorsListItem.module.css';
+
+const AuthorsListItem = ({ img = '/img/authors/1.png', name, job, city }) => {
 	return (
 		<div className={styles.author}>
 			<div className={styles.author__info}>

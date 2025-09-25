@@ -1,5 +1,6 @@
-import AuthorsListItem from "../components/AuthorsListItem/AuthorsListItem";
-import styles from "./uikit.module.css";
+import AuthorsListItem from '../components/AuthorsListItem/AuthorsListItem';
+
+import styles from './uikit.module.css';
 
 const UiKitAuthorsListItem = () => {
 	return (
@@ -18,7 +19,7 @@ const UiKitAuthorsListItem = () => {
 			<div className={styles.component__code}>
 				<pre>
 					<code>
-{`import AuthorsListItem from "../components/AuthorsListItem/AuthorsListItem";
+						{`import AuthorsListItem from "../components/AuthorsListItem/AuthorsListItem";
 
 <AuthorsListItem
   img="/img/authors/1.png"

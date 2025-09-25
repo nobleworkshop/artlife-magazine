@@ -1,17 +1,17 @@
 a.NavLink__active {
-    font-family: var(--font-family);
-    font-weight: var(--font-weight);
-    font-size: 20px;
-    line-height: 100%;
-    color: var(--font-text-default);
-    text-transform: capitalize;
+	font-family: var(--font-family);
+	font-size: 20px;
+	font-weight: var(--font-weight);
+	line-height: 100%;
+	text-transform: capitalize;
+	color: var(--font-text-default);
 }
 
 a.NavLink__pending {
-    font-family: var(--font-family);
-    font-weight: var(--font-weight);
-    font-size: 20px;
-    line-height: 100%;
-    color: var(--font-text-default);
-    text-transform: capitalize;
+	font-family: var(--font-family);
+	font-size: 20px;
+	font-weight: var(--font-weight);
+	line-height: 100%;
+	text-transform: capitalize;
+	color: var(--font-text-default);
 }

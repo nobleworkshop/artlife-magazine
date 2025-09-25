@@ -1,14 +1,15 @@
+import Socials from '@components/Socials/Socials';
+
 import styles from './detailsItem.module.css';
-import Socials from "@components/Socials/Socials";
 
 const DetailsItem = ({ title, value }) => {
 	const renderValue = () => {
-		if (title === "Duration") {
+		if (title === 'Duration') {
 			// если value уже строка, просто вернуть её
-			if (typeof value === "string") return value;
+			if (typeof value === 'string') return value;
 
 			// если число — красиво форматируем
-			if (typeof value === "number") {
+			if (typeof value === 'number') {
 				if (value < 60) return `${value} Min`;
 				const hours = Math.floor(value / 60);
 				const minutes = value % 60;
@@ -16,12 +17,12 @@ const DetailsItem = ({ title, value }) => {
 			}
 		}
 
-		if (title === "Date") {
+		if (title === 'Date') {
 			// пробуем использовать строку напрямую, если не число
 			const date = new Date(value);
 			if (!isNaN(date)) {
-				const day = String(date.getDate()).padStart(2, "0");
-				const month = date.toLocaleString("en-US", { month: "long" });
+				const day = String(date.getDate()).padStart(2, '0');
+				const month = date.toLocaleString('en-US', { month: 'long' });
 				const year = date.getFullYear();
 				return `${day}. ${month} ${year}`;
 			} else {
@@ -30,11 +31,11 @@ const DetailsItem = ({ title, value }) => {
 			}
 		}
 
-		if (title === "DateShort") {
+		if (title === 'DateShort') {
 			const date = new Date(value);
 			if (!isNaN(date)) {
-				const day = String(date.getDate()).padStart(2, "0");
-				const month = String(date.getMonth() + 1).padStart(2, "0");
+				const day = String(date.getDate()).padStart(2, '0');
+				const month = String(date.getMonth() + 1).padStart(2, '0');
 				const year = date.getFullYear();
 				return `${day}.${month}.${year}`;
 			} else {
@@ -42,7 +43,7 @@ const DetailsItem = ({ title, value }) => {
 			}
 		}
 
-		if (title === "Share") {
+		if (title === 'Share') {
 			return <Socials showRss={false} />;
 		}
 
@@ -50,14 +51,16 @@ const DetailsItem = ({ title, value }) => {
 	};
 
 	return (
-		<div className={styles["details-item"]}>
-			<div className={styles["details-item__content"]}>
+		<div className={styles['details-item']}>
+			<div className={styles['details-item__content']}>
 				{title && (
-					<div className={styles["details-item__title"]}>
+					<div className={styles['details-item__title']}>
 						{title === 'DateShort' ? 'Date' : title}
 					</div>
 				)}
-				<div className={styles["details-item__value"]}>{renderValue()}</div>
+				<div className={styles['details-item__value']}>
+					{renderValue()}
+				</div>
 			</div>
 		</div>
 	);

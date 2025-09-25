@@ -1,5 +1,6 @@
-import styles from "./uikit.module.css";
-import Widget from "../components/Widget/Widget";
+import Widget from '../components/Widget/Widget';
+
+import styles from './uikit.module.css';
 
 const UiKitWidget = () => {
 	return (
@@ -15,14 +16,14 @@ const UiKitWidget = () => {
 			<div className={styles.component__code}>
 				<pre>
 					<code>
-						{`import Widget from "../components/Widget/Widget";`}
+						{'import Widget from "../components/Widget/Widget";'}
 						<br />
 						<br />
-						{`<Widget title="Widget">`}
+						{'<Widget title="Widget">'}
 						<br />
-						{`<p>Widget content</p>`}
+						{'<p>Widget content</p>'}
 						<br />
-						{`</Widget>`}
+						{'</Widget>'}
 					</code>
 				</pre>
 			</div>

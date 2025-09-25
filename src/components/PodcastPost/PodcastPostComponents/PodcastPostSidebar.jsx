@@ -1,7 +1,8 @@
-import PodcastCover from "./PodcastCover";
-import PodcastMeta from "./PodcastMeta";
-import PodcastListenOn from "./PodcastListenOn";
-import styles from "./podcastPostSidebar.module.css";
+import PodcastCover from './PodcastCover';
+import PodcastListenOn from './PodcastListenOn';
+import PodcastMeta from './PodcastMeta';
+
+import styles from './podcastPostSidebar.module.css';
 
 const PodcastPostSidebar = ({ podcastData }) => {
 	const { coverImage, author, episodeNumber, date, duration } = podcastData;

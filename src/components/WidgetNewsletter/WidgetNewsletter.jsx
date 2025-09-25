@@ -1,7 +1,8 @@
-import style from "./widgetNewsletter.module.css";
-import Button from "../Button/Button";
-import Widget from "../Widget/Widget";
-import Input from '../Input/Input'
+import Button from '../Button/Button';
+import Input from '../Input/Input';
+import Widget from '../Widget/Widget';
+
+import style from './widgetNewsletter.module.css';
 
 const WidgetNewsletter = () => {
 	return (
@@ -11,12 +12,7 @@ const WidgetNewsletter = () => {
 				<Input type="email" placeholder="Email" />
 			</div>
 			<div className={style['btn-wrapper']}>
-				<Button
-					title="Sign up"
-					onclick={() => {
-						console.log("Click!");
-					}}
-				/>
+				<Button title="Sign up" onclick={() => {}} />
 			</div>
 		</Widget>
 	);

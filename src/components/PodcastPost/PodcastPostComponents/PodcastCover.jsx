@@ -1,5 +1,5 @@
-import arrowIcon from '../../../img/arrow.svg';
 import styles from './podcastCover.module.css';
+import arrowIcon from '../../../img/arrow.svg';
 
 const PodcastCover = ({ coverImage, author, episodeNumber }) => {
 	return (

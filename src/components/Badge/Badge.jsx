@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
-import styles from "./badge.module.css";
+import { Link } from 'react-router-dom';
 
-const Badge = ({ title, link}) => {
+import styles from './badge.module.css';
+
+const Badge = ({ title, link }) => {
 	return (
 		<>
 			{link && (
@@ -9,9 +10,7 @@ const Badge = ({ title, link}) => {
 					{title}
 				</Link>
 			)}
-			{!link && (
-				<div className={styles.badge}>{title}</div>
-			)}
+			{!link && <div className={styles.badge}>{title}</div>}
 		</>
 	);
 };

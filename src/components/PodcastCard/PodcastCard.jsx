@@ -1,6 +1,7 @@
+import DetailsItem from '../DetailsItem/DetailsItem';
+
 import styles from './podcastCard.module.css';
 import arrowIcon from '../../img/arrow.svg';
-import DetailsItem from '../DetailsItem/DetailsItem';
 
 const PodcastCard = ({ cover, author, number, title, date, duration }) => {
 	return (

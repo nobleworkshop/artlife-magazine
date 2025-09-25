@@ -1,4 +1,5 @@
 import PodcastQuote from './PodcastQuote';
+
 import styles from './podcastPostContent.module.css';
 
 const PodcastPostContent = ({ podcastData }) => {

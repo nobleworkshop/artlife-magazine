@@ -1,6 +1,7 @@
-import ArticleCard from "../components/ArticleCard/ArticleCard";
-import styles from "./uikit.module.css";
-import img1 from "../img/article-images/1.png";
+import ArticleCard from '../components/ArticleCard/ArticleCard';
+
+import styles from './uikit.module.css';
+import img1 from '../img/article-images/1.png';
 
 const UiKitArticleCard = () => {
 	return (
@@ -23,30 +24,32 @@ const UiKitArticleCard = () => {
 			<div className={styles.component__code}>
 				<pre>
 					<code>
-						{`import ArticleCard from "../components/ArticleCard/ArticleCard";`}
+						{
+							'import ArticleCard from "../components/ArticleCard/ArticleCard";'
+						}
 						<br />
-						{`import img1 from "../img/article-images/1.png";`}
+						{'import img1 from "../img/article-images/1.png";'}
 						<br />
 						<br />
-						{`<ArticleCard`}
+						{'<ArticleCard'}
 						<br />
-						{`  img={img1}`}
+						{'  img={img1}'}
 						<br />
-						{`  title="Hope dies last"`}
+						{'  title="Hope dies last"'}
 						<br />
-						{`  text="Lorem ipsum dolor sit amet..."`}
+						{'  text="Lorem ipsum dolor sit amet..."'}
 						<br />
-						{`  author="Jakob Grønberg"`}
+						{'  author="Jakob Grønberg"'}
 						<br />
-						{`  date="2023-10-01"`}
+						{'  date="2023-10-01"'}
 						<br />
-						{`  timeToRead="1"`}
+						{'  timeToRead="1"'}
 						<br />
-						{`  badgeName="art"`}
+						{'  badgeName="art"'}
 						<br />
-						{`  badgeLink="/badge/art"`}
+						{'  badgeLink="/badge/art"'}
 						<br />
-						{`/>`}
+						{'/>'}
 					</code>
 				</pre>
 			</div>

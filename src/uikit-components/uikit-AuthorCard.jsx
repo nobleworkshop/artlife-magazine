@@ -1,6 +1,7 @@
-import AuthorCard from "../components/AuthorCard/AuthorCard";
-import styles from "./uikit.module.css";
-import img1 from "../img/authors/1.png";
+import AuthorCard from '../components/AuthorCard/AuthorCard';
+
+import styles from './uikit.module.css';
+import img1 from '../img/authors/1.png';
 
 const UiKitAuthorCard = () => {
 	return (
@@ -19,22 +20,24 @@ const UiKitAuthorCard = () => {
 			<div className={styles.component__code}>
 				<pre>
 					<code>
-						{`import AuthorCard from "../components/AuthorCard/AuthorCard";`}
+						{
+							'import AuthorCard from "../components/AuthorCard/AuthorCard";'
+						}
 						<br />
-						{`import img1 from "../img/authors/1.png";`}
+						{'import img1 from "../img/authors/1.png";'}
 						<br />
 						<br />
-						{`<AuthorCard`}
+						{'<AuthorCard'}
 						<br />
-						{`  img={img1}`}
+						{'  img={img1}'}
 						<br />
-						{`  name="Jakob Grønberg"`}
+						{'  name="Jakob Grønberg"'}
 						<br />
-						{`  job="Artist"`}
+						{'  job="Artist"'}
 						<br />
-						{`  city="Berlin"`}
+						{'  city="Berlin"'}
 						<br />
-						{`/>`}
+						{'/>'}
 					</code>
 				</pre>
 			</div>

@@ -1,9 +1,9 @@
-
-
 .header {
 	display: flex;
+
 	justify-content: space-between;
 	align-items: center;
+
 	margin-bottom: 24px;
 }
 
@@ -14,9 +14,10 @@
 
 .grid {
 	display: grid;
+
 	grid-template-columns: 1fr 1fr;
 
-	@media (max-width: 1226px) {
+	@media (width <= 1226px) {
 		grid-template-columns: 1fr;
 	}
 }

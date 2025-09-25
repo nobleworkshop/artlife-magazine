@@ -1,33 +1,31 @@
-import styles from "./main.module.css";
-import Header from "@components/Header/Header";
-import RunningLine from "@components/RunningLine/RunningLine";
+import Authors from '@components/Authors/Authors';
+import Footer from '@components/Footer/Footer';
+import Header from '@components/Header/Header';
+import LeadArticle from '@components/LeadArticle/LeadArticle';
+import Podcast from '@components/Podcast/Podcast';
+import RunningLine from '@components/RunningLine/RunningLine';
+import WidgetMostPopular from '@components/WidgetMostPopular/WidgetMostPopular';
+import WidgetNewsletter from '@components/WidgetNewsletter/WidgetNewsletter';
+import WidgetPrintmagazine from '@components/WidgetPrintmagazine/WidgetPrintmagazine';
 
-import LeadArticle from "@components/LeadArticle/LeadArticle";
 // import LeadArticleImg from "../img/leadArticle-img.png";
+import ArticlesSection from './main/ArticlesSection';
 
-import ArticlesSection from "./main/ArticlesSection";
-
-import Podcast from "@components/Podcast/Podcast";
-import Authors from "@components/Authors/Authors";
-
-import WidgetPrintmagazine from "@components/WidgetPrintmagazine/WidgetPrintmagazine";
-import WidgetMostPopular from "@components/WidgetMostPopular/WidgetMostPopular";
-import WidgetNewsletter from "@components/WidgetNewsletter/WidgetNewsletter";
-import Footer from "@components/Footer/Footer";
+import styles from './main.module.css';
 
 const Main = () => {
 	return (
 		<>
-			<div className={styles.main + " container"}>
-				<div className={styles["main-header"]}>
+			<div className={`${styles.main} container`}>
+				<div className={styles['main-header']}>
 					<Header title="art&life" />
 				</div>
 
-				<div className={styles["main-running-line"]}>
+				<div className={styles['main-running-line']}>
 					<RunningLine />
 				</div>
 
-				<div className={styles["main-lead-article"]}>
+				<div className={styles['main-lead-article']}>
 					<LeadArticle
 						title="Don't close your eyes"
 						text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam."
@@ -40,22 +38,22 @@ const Main = () => {
 					/>
 				</div>
 
-				<div className={styles["two-columns"]}>
-					<div className={styles["main-content"]}>
+				<div className={styles['two-columns']}>
+					<div className={styles['main-content']}>
 						<ArticlesSection />
 					</div>
-					<div className={styles["main-widgets"]}>
+					<div className={styles['main-widgets']}>
 						<WidgetPrintmagazine />
 						<WidgetMostPopular />
 						<WidgetNewsletter />
 					</div>
 				</div>
 
-				<div className={styles["main-podcast"]}>
+				<div className={styles['main-podcast']}>
 					<Podcast />
 				</div>
 
-				<div className={styles["main-authors"]}>
+				<div className={styles['main-authors']}>
 					<Authors />
 				</div>
 			</div>

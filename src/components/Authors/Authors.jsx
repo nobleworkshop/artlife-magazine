@@ -1,8 +1,8 @@
 import AuthorCard from '../AuthorCard/AuthorCard';
-import styles from './authors.module.css';
-import LinkTo from "../LinkTo/LinkTo";
-import SectionTitle from "../SectionTitle/SectionTitle";
+import LinkTo from '../LinkTo/LinkTo';
+import SectionTitle from '../SectionTitle/SectionTitle';
 
+import styles from './authors.module.css';
 import img1 from '../../img/authors/1.png';
 import img2 from '../../img/authors/2.png';
 import img3 from '../../img/authors/3.png';
@@ -12,12 +12,48 @@ import img6 from '../../img/authors/6.png';
 
 const Authors = () => {
 	const authors = [
-		{ id: 1, name: 'Jakob Grønberg', job: 'Artist', city: 'Berlin', img: img1 },
-		{ id: 2, name: 'Louise Jensen', job: 'Artist', city: 'Stockholm', img: img2 },
-		{ id: 3, name: 'Anne Henry', job: 'Photograph', city: 'New York', img: img3 },
-		{ id: 4, name: 'Anna Nielsen', job: 'Columnists', city: 'Copenhagen', img: img4 },
-		{ id: 5, name: 'Jane Cooper', job: 'Artist', city: 'Berlin', img: img5 },
-		{ id: 6, name: 'Cristofer Vaccaro', job: 'Artist', city: 'Lisbon', img: img6 },
+		{
+			id: 1,
+			name: 'Jakob Grønberg',
+			job: 'Artist',
+			city: 'Berlin',
+			img: img1,
+		},
+		{
+			id: 2,
+			name: 'Louise Jensen',
+			job: 'Artist',
+			city: 'Stockholm',
+			img: img2,
+		},
+		{
+			id: 3,
+			name: 'Anne Henry',
+			job: 'Photograph',
+			city: 'New York',
+			img: img3,
+		},
+		{
+			id: 4,
+			name: 'Anna Nielsen',
+			job: 'Columnists',
+			city: 'Copenhagen',
+			img: img4,
+		},
+		{
+			id: 5,
+			name: 'Jane Cooper',
+			job: 'Artist',
+			city: 'Berlin',
+			img: img5,
+		},
+		{
+			id: 6,
+			name: 'Cristofer Vaccaro',
+			job: 'Artist',
+			city: 'Lisbon',
+			img: img6,
+		},
 	];
 
 	return (

@@ -1,21 +1,25 @@
 .link {
 	display: inline-flex;
+
 	align-items: center;
+	gap: 8px;
+
 	text-decoration: none;
 	color: inherit;
+
 	transition: color 0.2s ease;
-	gap: 8px;
 }
 
 .text {
 	font-family: var(--font-family);
-	font-weight: 600;
 	font-size: clamp(0.875rem, 0.846rem + 0.15vw, 1rem);
+	font-weight: 600;
 	text-transform: uppercase;
 }
 
 .icon {
 	width: 16px;
 	height: 16px;
+
 	transition: transform 0.2s ease;
 }

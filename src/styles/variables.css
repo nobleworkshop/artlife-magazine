@@ -1,6 +1,6 @@
 :root {
 	/* Шрифты */
-	--font-family: "General Sans", sans-serif;
+	--font-family: 'General Sans', sans-serif;
 	--font-size-base: 16px;
 	--font-weight: 400;
 
@@ -11,7 +11,7 @@
 	/* Текст */
 	--text-default: var(--black);
 	--text-inverse: var(--white);
-	--text-muted: rgba(0, 0, 0, 0.6);
+	--text-muted: rgb(0 0 0 / 60%);
 
 	/* Фон */
 	--background-default: var(--white);
@@ -23,5 +23,5 @@
 
 	/* Граница */
 	--border-default: var(--black);
-	--border-inverse: rgba(255, 255, 255, 0.15);
+	--border-inverse: rgb(255 255 255 / 15%);
 }

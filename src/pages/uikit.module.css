@@ -1,17 +1,20 @@
 .uikit__title {
+	margin-bottom: 20px;
+
 	font-size: 32px;
 	font-weight: 300;
-	margin-bottom: 20px;
 }
 
 .uikit__subtitle {
+	margin-bottom: 10px;
+
 	font-size: 24px;
 	font-weight: 600;
-	margin-bottom: 10px;
 }
 
 .uikit__wrapper {
 	display: flex;
+
 	flex-direction: column;
 	gap: 20px;
 }

@@ -1,6 +1,5 @@
-import style from "./widgetMostPopular.module.css";
-import MostPopular from "../MostPopular/MostPopular"
-import Widget from "../Widget/Widget";
+import MostPopular from '../MostPopular/MostPopular';
+import Widget from '../Widget/Widget';
 
 const WidgetMostPopular = () => {
 	return (

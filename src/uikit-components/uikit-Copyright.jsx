@@ -1,5 +1,6 @@
-import Copyright from "../components/Copyright/Copyright";
-import styles from "./uikit.module.css";
+import Copyright from '../components/Copyright/Copyright';
+
+import styles from './uikit.module.css';
 
 const UiKitCopyright = () => {
 	return (
@@ -13,10 +14,12 @@ const UiKitCopyright = () => {
 			<div className={styles.component__code}>
 				<pre>
 					<code>
-						{`import Copyright from "../components/Copyright/Copyright";`}
+						{
+							'import Copyright from "../components/Copyright/Copyright";'
+						}
 						<br />
 						<br />
-						{`<Copyright />`}
+						{'<Copyright />'}
 					</code>
 				</pre>
 			</div>

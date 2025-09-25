@@ -1,36 +1,35 @@
-import React from "react";
-import styles from "./authorArticles.module.css";
+import styles from './authorArticles.module.css';
 
 const AuthorArticles = ({
-	authorName = "Louise Jensen",
+	authorName = 'Louise Jensen',
 	articles = [
 		{
 			id: 1,
-			title: "The best art museums",
-			image: "/src/img/article-images/1.png",
-			date: "16. March 2022",
-			readTime: "10 Min",
+			title: 'The best art museums',
+			image: '/src/img/article-images/1.png',
+			date: '16. March 2022',
+			readTime: '10 Min',
 		},
 		{
 			id: 2,
-			title: "An indestructible hope",
-			image: "/src/img/article-images/2.png",
-			date: "16. March 2022",
-			readTime: "10 Min",
+			title: 'An indestructible hope',
+			image: '/src/img/article-images/2.png',
+			date: '16. March 2022',
+			readTime: '10 Min',
 		},
 		{
 			id: 3,
-			title: "The chains of our lives",
-			image: "/src/img/article-images/3.png",
-			date: "16. March 2022",
-			readTime: "10 Min",
+			title: 'The chains of our lives',
+			image: '/src/img/article-images/3.png',
+			date: '16. March 2022',
+			readTime: '10 Min',
 		},
 		{
 			id: 4,
-			title: "Keep on smiling",
-			image: "/src/img/article-images/4.png",
-			date: "16. March 2022",
-			readTime: "10 Min",
+			title: 'Keep on smiling',
+			image: '/src/img/article-images/4.png',
+			date: '16. March 2022',
+			readTime: '10 Min',
 		},
 	],
 }) => {

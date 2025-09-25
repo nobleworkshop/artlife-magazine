@@ -1,8 +1,9 @@
-import ArticleCard  from '../ArticleCard/ArticleCard';
-import { articles } from "../../data/articles";
+import { articles } from '../../data/articles';
+import ArticleCard from '../ArticleCard/ArticleCard';
+import LinkTo from '../LinkTo/LinkTo';
+import SectionTitle from '../SectionTitle/SectionTitle';
+
 import styles from './latestPosts.module.css';
-import LinkTo from "../LinkTo/LinkTo";
-import SectionTitle from "../SectionTitle/SectionTitle";
 
 const LatestPosts = () => {
 	return (
@@ -13,22 +14,25 @@ const LatestPosts = () => {
 			</div>
 
 			<div className={styles.latestPosts__grid}>
-				{articles.slice(-3).reverse().map((article) => (
-					<ArticleCard
-						key={article.id}
-						img={article.img}
-						title={article.title}
-						text={article.text}
-						authorName={article.authorName}
-						date={article.date}
-						timeToRead={article.timeToRead}
-						badgeName={article.badgeName}
-						badgeLink={article.badgeLink}
-					/>
-				))}
+				{articles
+					.slice(-3)
+					.reverse()
+					.map((article) => (
+						<ArticleCard
+							key={article.id}
+							img={article.img}
+							title={article.title}
+							text={article.text}
+							authorName={article.authorName}
+							date={article.date}
+							timeToRead={article.timeToRead}
+							badgeName={article.badgeName}
+							badgeLink={article.badgeLink}
+						/>
+					))}
 			</div>
 		</section>
-	 );
-}
+	);
+};
 
 export default LatestPosts;

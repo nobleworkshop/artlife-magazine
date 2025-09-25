@@ -1,19 +1,17 @@
-import React from "react";
-import FooterNewsletterSignup from "../FooterNewsletterSignup/FooterNewsletterSignup";
+import FooterNewsletterSignup from '../FooterNewsletterSignup/FooterNewsletterSignup';
+import FooterRunningLine from '../FooterRunningLine/FooterRunningLine';
 
-import styles from "./footer.module.css";
-import FooterRunningLine from "../FooterRunningLine/FooterRunningLine";
-import FooterContent from "./FooterContent";
+import FooterContent from './FooterContent';
+
+import styles from './footer.module.css';
 
 const Footer = () => {
-
-
 	return (
 		<footer className={styles.footer}>
 			{/* Бегущая строка */}
 			<FooterRunningLine />
 
-			<div className={`container ${styles["footer__container"]}`}>
+			<div className={`container ${styles['footer__container']}`}>
 				{/* Секция подписки на рассылку */}
 				<FooterNewsletterSignup />
 

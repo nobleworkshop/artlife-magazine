@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
+import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
 import Main from "./pages/main";
 import Magazine from "./pages/magazine";
 import MagazinePost from "./pages/magazinePost";
@@ -9,17 +9,26 @@ import Podcast from "./pages/podcast";
 import PodcastPostPage from "./pages/podcast-post";
 import AuthorProfilePage from "./pages/author-profile";
 import Authors from "./pages/authors";
+import AuthorProfilePage from './pages/author-profile';
+import Magazine from './pages/magazine';
+import MagazinePost from './pages/magazinePost';
+import Main from './pages/main';
+import Podcast from './pages/podcast';
+import PodcastPostPage from './pages/podcast-post';
+import UiKit from './pages/uikit';
+import UiKitSections from './pages/uikit-sections';
+import UiKitWidgets from './pages/uikit-widgets';
 
-import "./styles/reset.css";
-import "./styles/variables.css";
-import "./styles/app.css";
+import './styles/reset.css';
+import './styles/variables.css';
+import './styles/app.css';
 
 function Link({ to, title }) {
 	return (
 		<NavLink
 			to={to}
 			className={({ isActive }) =>
-				isActive ? "nav__link nav__link--active" : "nav__link"
+				isActive ? 'nav__link nav__link--active' : 'nav__link'
 			}
 		>
 			{title}

@@ -1,5 +1,6 @@
-import DetailsItem from "../components/DetailsItem/DetailsItem";
-import styles from "./uikit.module.css";
+import DetailsItem from '../components/DetailsItem/DetailsItem';
+
+import styles from './uikit.module.css';
 
 const UiKitButton = () => {
 	return (
@@ -15,15 +16,16 @@ const UiKitButton = () => {
 			<div className={styles.component__code}>
 				<pre>
 					<code>
-						{`import DetailsItem from "../components/DetailsItem/DetailsItem";`}
+						{
+							'import DetailsItem from "../components/DetailsItem/DetailsItem";'
+						}
 						<br />
 						<br />
-						{`<DetailsItem title="Text" value="Jacob Gronberg"/>`}
+						{'<DetailsItem title="Text" value="Jacob Gronberg"/>'}
 						<br />
-						{`<DetailsItem title="Date" value="2022-03-16"/>`}
+						{'<DetailsItem title="Date" value="2022-03-16"/>'}
 						<br />
-						{`<DetailsItem title="Duration" value="1"/>`}
-
+						{'<DetailsItem title="Duration" value="1"/>'}
 					</code>
 				</pre>
 			</div>

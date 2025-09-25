@@ -1,9 +1,10 @@
-.date{
-    font-weight: 600;
-    font-size: 48px;
-    margin-bottom: 32px;
+.date {
+	margin-bottom: 32px;
+
+	font-size: 48px;
+	font-weight: 600;
 }
 
-.image{
-    margin-bottom: 16px;
+.image {
+	margin-bottom: 16px;
 }

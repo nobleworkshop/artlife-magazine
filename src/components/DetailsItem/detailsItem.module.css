@@ -1,20 +1,25 @@
 .details-item__title {
-	font-family: var (--font-family);
-	font-weight: 600;
+	font-family:
+		'var sans-serif' 'mily)',
+		sans-serif;
 	font-size: 14px;
+	font-weight: 600;
 	line-height: 160%;
 }
 
-.details-item__value{
-	font-family: var (--font-family);
+.details-item__value {
+	font-family:
+		'var sans-serif' 'mily)',
+		sans-serif;
 	font-size: 16px;
 	line-height: 160%;
 }
 
-.details-item__content{
+.details-item__content {
 	display: flex;
 	gap: 8px;
-	/* justify-content: space-between; */
 	align-items: center;
+	gap: 8px;
+
 	width: 100%;
 }

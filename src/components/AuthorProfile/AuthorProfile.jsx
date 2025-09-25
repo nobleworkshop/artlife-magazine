@@ -1,19 +1,18 @@
-import React from "react";
-import styles from "./authorProfile.module.css";
-import profileImage from "@img/authors/1.png";
-import instagramIcon from "@img/social/instagram.svg";
-import twitterIcon from "@img/social/twitter.svg";
-import youtubeIcon from "@img/social/youtube.svg";
+import styles from './authorProfile.module.css';
+import profileImage from '@img/authors/1.png';
+import instagramIcon from '@img/social/instagram.svg';
+import twitterIcon from '@img/social/twitter.svg';
+import youtubeIcon from '@img/social/youtube.svg';
 
 const AuthorProfile = ({
-	authorName = "Louise Jensen",
-	shortBio = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam.",
-	longBio = "Porttitor rhoncus dolor purus non enim praesent elementum. Eget dolor morbi non arcu risus quis varius. Posuere ac ut consequat semper viverra nam libero. In ornare quam viverra orci sagittis eu. Tristique risus nec feugiat in fermentum posuere urna nec. Tempus quam pellentesque nec nam aliquam sem et. Convallis a cras semper auctor neque vitae tempus quam pellentesque. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Sit amet porttitor eget dolor morbi non arcu risus. Justo eget magna fermentum iaculis eu non diam phasellus. Sit amet luctus venenatis lectus magna fringilla. Neque vitae tempus quam pellentesque nec nam.",
+	authorName = 'Louise Jensen',
+	shortBio = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam.',
+	longBio = 'Porttitor rhoncus dolor purus non enim praesent elementum. Eget dolor morbi non arcu risus quis varius. Posuere ac ut consequat semper viverra nam libero. In ornare quam viverra orci sagittis eu. Tristique risus nec feugiat in fermentum posuere urna nec. Tempus quam pellentesque nec nam aliquam sem et. Convallis a cras semper auctor neque vitae tempus quam pellentesque. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Sit amet porttitor eget dolor morbi non arcu risus. Justo eget magna fermentum iaculis eu non diam phasellus. Sit amet luctus venenatis lectus magna fringilla. Neque vitae tempus quam pellentesque nec nam.',
 	profileImageSrc = profileImage,
 	socialLinks = {
-		instagram: "https://instagram.com",
-		twitter: "https://twitter.com",
-		youtube: "https://youtube.com",
+		instagram: 'https://instagram.com',
+		twitter: 'https://twitter.com',
+		youtube: 'https://youtube.com',
 	},
 	showSocialSection = true,
 }) => {
@@ -53,22 +52,22 @@ const AuthorProfile = ({
 							<span className={styles.followText}>Follow</span>
 							<div className={styles.socialIcons}>
 								{renderSocialIcon(
-									"instagram",
+									'instagram',
 									socialLinks.instagram,
 									instagramIcon,
-									"Instagram"
+									'Instagram',
 								)}
 								{renderSocialIcon(
-									"twitter",
+									'twitter',
 									socialLinks.twitter,
 									twitterIcon,
-									"Twitter"
+									'Twitter',
 								)}
 								{renderSocialIcon(
-									"youtube",
+									'youtube',
 									socialLinks.youtube,
 									youtubeIcon,
-									"YouTube"
+									'YouTube',
 								)}
 							</div>
 						</div>

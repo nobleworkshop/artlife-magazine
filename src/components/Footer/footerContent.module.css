@@ -1,80 +1,88 @@
 .footer-content {
-	padding-bottom: 96px;
-	display: grid;
-	grid-template-columns: auto auto;
-	gap: 3rem;
 	position: relative;
-}
 
-.footer-brand-wrapper {
+	display: grid;
+
+	gap: 3rem;
+	grid-template-columns: auto auto;
+
+	padding-bottom: 96px;
 }
 
 .footer-brand-title {
 	font-size: 1.5rem;
 	font-weight: 600;
-	color: var(--white);
 	letter-spacing: 0.05em;
 	text-transform: uppercase;
+	color: var(--white);
 }
 
 .footer-navigation-wrapper {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 3rem;
 	position: relative;
+
+	display: grid;
+
+	gap: 3rem;
+	grid-template-columns: repeat(3, 1fr);
 }
 
 .footer-navigation-column {
+	position: relative;
+
 	display: flex;
+
 	flex-direction: column;
 	gap: 0.75rem;
-	position: relative;
 }
 
 .footer-navigation-link {
-	color: var(--white);
-	text-decoration: none;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.8;
 	letter-spacing: 0.025em;
+	text-decoration: none;
+	color: var(--white);
 }
 
 .footer-copyright {
 	display: flex;
+
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	flex-wrap: wrap;
 
 	gap: 20px;
+
 	padding-bottom: 65px;
 }
 
 .footer-copyright-text {
 	font-size: 14px;
-	color: var(--gray);
-	line-height: 1.8;
 	font-weight: 400;
+	line-height: 1.8;
 	letter-spacing: 0.025em;
+	color: var(--gray);
 }
 
 .footer-copyright-socials {
 	display: flex;
+
 	justify-content: flex-end;
 	align-items: center;
 }
 
 /* Адаптивность для планшетов */
-@media (max-width: 768px) {
+@media (width <= 768px) {
 	.footer-content {
-		padding-bottom: 42px;
-		grid-template-columns: 1fr;
 		gap: 1rem;
+		grid-template-columns: 1fr;
+
+		padding-bottom: 42px;
 	}
 
 	.footer-navigation-wrapper {
-		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 		gap: 2rem;
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 	}
 
 	.footer-copyright {
@@ -83,7 +91,7 @@
 }
 
 /* Адаптивность для мобильных устройств */
-@media (max-width: 480px) {
+@media (width <= 480px) {
 	.footer-copyright {
 		padding-bottom: 12px;
 	}

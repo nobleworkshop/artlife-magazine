@@ -1,40 +1,47 @@
 .container {
-	/* padding: 128px 0; */
-	padding:clamp(2rem, 0.5rem + 7.5vw, 8rem) 0;
-
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-	gap: 2rem;
+
 	align-items: center;
+	gap: 2rem;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+	/* padding: 128px 0; */
+	padding: clamp(2rem, 0.5rem + 7.5vw, 8rem) 0;
 
 	background-color: var(--black);
+
 	color: var(--white);
 }
 
 .title {
 	margin: 0;
+
 	font-size: clamp(24px, 10.82px + 4.12vw, 80px);
 	font-weight: 600;
 	line-height: 110%;
-	text-transform: uppercase;
 	letter-spacing: -0.02em;
+	text-transform: uppercase;
 }
 
 .form {
 	display: flex;
-	gap: 12px;
+
 	justify-content: flex-end;
+	gap: 12px;
 }
 
 .emailInput {
-	max-width: 309px;
 	flex: 1;
+
+	max-width: 309px;
 	padding: 1rem 1.25rem;
-	border: none;
+
 	background-color: var(--white);
-	color: var(--black);
+	border: none;
+
 	font-size: 1rem;
 	font-weight: 400;
+	color: var(--black);
 }
 
 .emailInput::placeholder {
@@ -43,21 +50,24 @@
 
 .emailInput:focus {
 	outline: none;
-	box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+	box-shadow: 0 0 0 3px rgb(255 255 255 / 20%);
 }
 
 .signupButton {
 	max-width: 104px;
-	padding: 1rem 1rem;
-	border: none;
+	padding: 1rem;
+
 	background-color: var(--white);
-	color: var(--black);
+	border: none;
+
 	font-size: 1rem;
 	font-weight: 500;
-	text-transform: uppercase;
 	letter-spacing: 0.05em;
-	cursor: pointer;
+	text-transform: uppercase;
 	white-space: nowrap;
+	color: var(--black);
+
+	cursor: pointer;
 }
 
 .signupButton:hover {
@@ -65,16 +75,19 @@
 }
 
 /* Адаптивность для планшетов */
-@media (max-width: 768px) {
+@media (width <= 768px) {
 	.content {
-		grid-template-columns: 1fr;
 		gap: 2rem;
-		text-align: center;
+		grid-template-columns: 1fr;
+
 		padding: 0;
+
+		text-align: center;
 	}
 
 	.form {
 		flex-direction: column;
+
 		width: 100%;
 		margin: 0 auto;
 	}
@@ -89,14 +102,15 @@
 }
 
 /* Адаптивность для мобильных устройств */
-@media (max-width: 480px) {
+@media (width <= 480px) {
 	.newsletterSection {
 		padding: 3rem 0;
 	}
 
 	.content {
-		padding: 0;
 		gap: 1.5rem;
+
+		padding: 0;
 	}
 
 	.title {
@@ -110,6 +124,7 @@
 	.emailInput,
 	.signupButton {
 		padding: 0.875rem 1rem;
+
 		font-size: 0.875rem;
 	}
 }

@@ -10,6 +10,12 @@ import UiKitLatestPosts from '@uikit/uikit-LatestPosts';
 import UiKitLeadArticle from '@uikit/uikit-LeadArticle';
 import UiKitPodcast from '@uikit/uikit-Podcast';
 import UiKitPodcastCard from '@uikit/uikit-PodcastCard';
+import UiKitPost from '@uikit/uikit-Post';
+import UiKitReturnNavigation from '@uikit/uikit-ReturnNavigation';
+import UiKitAuthorsList from '../uikit-components/uikit-AuthorsList';
+import UiKitAuthorsListItem from '../uikit-components/uikit-AuthorsListItem';
+import styles from './uikit.module.css';
+
 import UiKitPodcastPost from '@uikit/uikit-PodcastPost';
 import UiKitPost from '@uikit/uikit-Post';
 import UiKitReturnNavigation from '@uikit/uikit-ReturnNavigation';
@@ -37,6 +43,8 @@ const UiKitSections = () => {
 				<UiKitPost />
 				<UiKitPodcastPost />
 				<UiKitReturnNavigation />
+				<UiKitAuthorsListItem />
+				<UiKitAuthorsList />
 			</div>
 		</div>
 	);

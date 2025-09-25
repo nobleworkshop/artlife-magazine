@@ -1,15 +1,7 @@
 import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
-import Main from "./pages/main";
-import Magazine from "./pages/magazine";
-import MagazinePost from "./pages/magazinePost";
-import UiKit from "./pages/uikit";
-import UiKitWidgets from "./pages/uikit-widgets";
-import UiKitSections from "./pages/uikit-sections";
-import Podcast from "./pages/podcast";
-import PodcastPostPage from "./pages/podcast-post";
-import AuthorProfilePage from "./pages/author-profile";
-import Authors from "./pages/authors";
+
 import AuthorProfilePage from './pages/author-profile';
+import Authors from './pages/authors';
 import Magazine from './pages/magazine';
 import MagazinePost from './pages/magazinePost';
 import Main from './pages/main';

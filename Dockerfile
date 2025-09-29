@@ -1,6 +1,7 @@
 # Используем официальный Node.js образ как базовый
 FROM node:20-alpine AS base
 
+
 # Устанавливаем рабочую директорию
 WORKDIR /app
 
@@ -8,23 +9,24 @@ WORKDIR /app
 COPY package*.json ./
 
 # Устанавливаем зависимости
-RUN npm ci --only=production
+RUN npm ci --only=production --ignore-scripts
 
 # Этап разработки
 FROM base AS development
-RUN npm ci
+RUN npm ci --ignore-scripts
 COPY . .
 EXPOSE 5173 3001
 CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
 
 # Этап сборки
 FROM base AS build
-RUN npm ci
+RUN npm ci --ignore-scripts
 COPY . .
 RUN npm run build
 
 # Этап продакшена
-FROM nginx:alpine AS production
+FROM nginx:1.25-alpine AS production
+
 # Копируем собранные файлы
 COPY --from=build /app/dist /usr/share/nginx/html
 # Копируем конфигурацию nginx

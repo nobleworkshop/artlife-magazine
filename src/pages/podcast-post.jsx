@@ -4,6 +4,8 @@ import Podcast from '@components/Podcast/Podcast';
 import PodcastPost from '@components/PodcastPost/PodcastPost';
 import ReturnNavigation from '@components/ReturnNavigation/ReturnNavigation';
 
+import { useApi } from '../hooks/useApi';
+
 import styles from './podcast-post.module.css';
 
 const PodcastPostPage = () => {

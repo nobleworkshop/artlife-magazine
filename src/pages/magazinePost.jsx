@@ -1,9 +1,9 @@
-import Footer from '@components/Footer/Footer';
-
+import Footer from '../components/Footer/Footer';
 import Header from '../components/Header/Header';
 import LatestPosts from '../components/LatestPosts/LatestPosts';
 import Post from '../components/Post/Post';
 import ReturnNavigation from '../components/ReturnNavigation/ReturnNavigation';
+import { useApi } from '../hooks/useApi';
 
 import styles from './magazinePost.module.css';
 

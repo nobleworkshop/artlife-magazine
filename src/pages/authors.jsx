@@ -1,4 +1,5 @@
 import AuthorsList from '../components/AuthorsList/AuthorsList';
+import Footer from '../components/Footer/Footer';
 import Header from '../components/Header/Header';
 import { useApi } from '../hooks/useApi';
 

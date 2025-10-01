@@ -1,42 +1,28 @@
+import { useApi } from '../../hooks/useApi';
 import LinkTo from '../LinkTo/LinkTo';
 import PodcastCard from '../PodcastCard/PodcastCard';
 import SectionTitle from '../SectionTitle/SectionTitle';
 
 import styles from './podcast.module.css';
-import cover3 from '../../img/podcast-covers/cover3.png';
-import cover4 from '../../img/podcast-covers/cover4.png';
-import cover5 from '../../img/podcast-covers/cover5.png';
 
 const Podcasts = () => {
-	const podcasts = [
-		{
-			id: 3,
-			cover: cover3,
-			author: 'Fyrre',
-			number: '03',
-			title: 'Behind the scenes of the street art culture',
-			date: '2022-03-16',
-			duration: '45',
-		},
-		{
-			id: 4,
-			cover: cover4,
-			author: 'Fyrre',
-			number: '04',
-			title: 'The hidden messages of Jack Nielson',
-			date: '2022-03-16',
-			duration: '60',
-		},
-		{
-			id: 5,
-			cover: cover5,
-			author: 'Fyrre',
-			number: '05',
-			title: 'The Problem of today’s cultural development',
-			date: '2022-03-16',
-			duration: '80',
-		},
-	];
+	const { data: podcasts, loading, error } = useApi('podcasts');
+
+	if (loading) return <div>Loading...</div>;
+	if (error) return <div>Error: {error}</div>;
+	if (!podcasts) return <div>No podcasts found</div>;
+
+	// Map cover names to actual image paths
+	const getCoverImage = (coverName) => {
+		const coverMap = {
+			cover1: '/img/podcast-covers/cover1.png',
+			cover2: '/img/podcast-covers/cover2.png',
+			cover3: '/img/podcast-covers/cover3.png',
+			cover4: '/img/podcast-covers/cover4.png',
+			cover5: '/img/podcast-covers/cover5.png',
+		};
+		return coverMap[coverName] || '/img/podcast-covers/cover3.png';
+	};
 
 	return (
 		<section className={styles.podcasts}>
@@ -53,7 +39,7 @@ const Podcasts = () => {
 				{[...podcasts].reverse().map((podcast) => (
 					<PodcastCard
 						key={podcast.id}
-						cover={podcast.cover}
+						cover={getCoverImage(podcast.cover)}
 						author={podcast.author}
 						number={podcast.number}
 						title={podcast.title}

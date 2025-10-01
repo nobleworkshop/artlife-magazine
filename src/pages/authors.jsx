@@ -1,12 +1,16 @@
-import Footer from '@components/Footer/Footer';
-
-import data from '../../public/db.json';
 import AuthorsList from '../components/AuthorsList/AuthorsList';
 import Header from '../components/Header/Header';
+import { useApi } from '../hooks/useApi';
 
 import styles from './authors.module.css';
 
 const Authors = () => {
+	const { data: authors, loading, error } = useApi('authors');
+
+	if (loading) return <div>Loading...</div>;
+	if (error) return <div>Error: {error}</div>;
+	if (!authors) return <div>No authors found</div>;
+
 	return (
 		<>
 			<div className={`${styles.authors} container`}>
@@ -15,7 +19,7 @@ const Authors = () => {
 				</div>
 
 				<div className={styles['authors-authors-list']}>
-					<AuthorsList authors={data.authors} />
+					<AuthorsList authors={authors} />
 				</div>
 			</div>
 			<Footer />

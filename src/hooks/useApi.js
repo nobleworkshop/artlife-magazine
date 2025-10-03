@@ -1,9 +1,7 @@
 import { useEffect, useState } from 'react';
 
 // API URL для Docker и локальной разработки
-const API_BASE_URL = import.meta.env.DEV
-	? 'http://localhost:3001'
-	: 'http://localhost:3001';
+const API_BASE_URL = import.meta.env.VITE_API_URL;
 
 export function useApi(endpoint) {
 	const [data, setData] = useState(null);

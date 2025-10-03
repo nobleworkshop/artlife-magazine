@@ -1,9 +1,15 @@
 import Post from '../components/Post/Post';
-import { articles } from '../data/articles';
+import { useApi } from '../hooks/useApi';
 
 import styles from './uikit.module.css';
 
 const UikitPost = () => {
+	const { data: articles, loading, error } = useApi('articles');
+
+	if (loading) return <div>Loading...</div>;
+	if (error) return <div>Error: {error}</div>;
+	if (!articles || articles.length === 0) return <div>No articles found</div>;
+
 	const article = articles[0];
 
 	return (

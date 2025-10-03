@@ -4,11 +4,17 @@ import Podcast from '@components/Podcast/Podcast';
 import PodcastPost from '@components/PodcastPost/PodcastPost';
 import ReturnNavigation from '@components/ReturnNavigation/ReturnNavigation';
 
-import { podcastData } from '../data/podcastData';
+import { useApi } from '../hooks/useApi';
 
 import styles from './podcast-post.module.css';
 
 const PodcastPostPage = () => {
+	const { data: podcastData, loading, error } = useApi('podcastData');
+
+	if (loading) return <div>Loading...</div>;
+	if (error) return <div>Error: {error}</div>;
+	if (!podcastData) return <div>No podcast data found</div>;
+
 	return (
 		<>
 			<div className={`${styles.main} container`}>

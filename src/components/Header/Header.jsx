@@ -3,10 +3,10 @@ import Logo from '../Logo/Logo';
 import Socials from '../Socials/Socials';
 
 import styles from './header.module.css';
-import artlife from '../../img/header-titles/art&life.svg';
-import authors from '../../img/header-titles/authors.svg';
-import magazine from '../../img/header-titles/magazine.svg';
-import podcast from '../../img/header-titles/podcast.svg';
+import artlife from '@img/header-titles/art&life.svg';
+import authors from '@img/header-titles/authors.svg';
+import magazine from '@img/header-titles/magazine.svg';
+import podcast from '@img/header-titles/podcast.svg';
 
 const Header = ({ title = '' }) => {
 	return (

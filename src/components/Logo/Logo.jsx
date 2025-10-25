@@ -9,7 +9,7 @@
 
 import { Link } from 'react-router-dom';
 
-import Img from '../../img/logo.svg';
+import Img from '@img/logo.svg';
 
 const Logo = ({ alt, link }) => {
 	return (

@@ -2,7 +2,7 @@ import Article from '../../components/Article/Article';
 import LinkTo from '../../components/LinkTo/LinkTo';
 
 import styles from './articlesSection.module.css';
-import ArticleImg from '../../img/diogo.png';
+import ArticleImg from '@img/diogo.png';
 
 const ArticlesSection = () => {
 	return (

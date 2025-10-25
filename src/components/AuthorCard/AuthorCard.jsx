@@ -1,7 +1,7 @@
 import DetailsItem from '../DetailsItem/DetailsItem';
 
 import styles from './authorCard.module.css';
-import defaultImg from '../../img/authors/1.png';
+import defaultImg from '@img/authors/1.png';
 
 const AuthorCard = ({ img = defaultImg, name, job, city }) => {
 	return (

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import styles from './social.module.css';
-import rss from '../../../img/social/rss.svg';
+import rss from '@img/social/rss.svg';
 
 const Rss = ({ link, alt, target, invert = false }) => {
 	return (

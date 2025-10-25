@@ -1,7 +1,7 @@
 import DetailsItem from '../DetailsItem/DetailsItem';
 
 import styles from './podcastCard.module.css';
-import arrowIcon from '../../img/arrow.svg';
+import arrowIcon from '@img/arrow.svg';
 
 const PodcastCard = ({ cover, author, number, title, date, duration }) => {
 	return (

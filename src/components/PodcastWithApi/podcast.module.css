@@ -1,0 +1,28 @@
+.podcasts {
+	/* padding: 60px 0; */
+}
+
+.podcasts__header {
+	display: flex;
+
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px 20px;
+
+	margin-bottom: 24px;
+}
+
+.grid {
+	display: grid;
+
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+	margin-top: 1px;
+	margin-left: 1px;
+}
+
+.grid > * {
+	margin-top: -1px;
+	margin-left: -1px;
+}

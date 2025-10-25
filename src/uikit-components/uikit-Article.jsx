@@ -1,7 +1,7 @@
 import Article from '../components/Article/Article';
 
 import styles from './uikit.module.css';
-import image from '../img/diogo.png';
+import image from '@img/diogo.png';
 
 const UiKitArticle = () => {
 	return (

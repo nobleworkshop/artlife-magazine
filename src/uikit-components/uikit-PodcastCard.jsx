@@ -1,7 +1,7 @@
 import PodcastCard from '../components/PodcastCard/PodcastCard';
 
 import styles from './uikit.module.css';
-import PodcastCardCover from '../img/podcast-covers/cover5.png';
+import PodcastCardCover from '@img/podcast-covers/cover5.png';
 
 const UiKitPodcastCard = () => {
 	return (
@@ -27,7 +27,7 @@ const UiKitPodcastCard = () => {
 						}
 						;<br />
 						{
-							'import PodcastCardCover from "../img/podcast-covers/cover5.png"'
+							'import PodcastCardCover from "@img/podcast-covers/cover5.png"'
 						}
 						;
 						<br />

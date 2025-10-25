@@ -1,7 +1,7 @@
 import ArticleCard from '../components/ArticleCard/ArticleCard';
 
 import styles from './uikit.module.css';
-import img1 from '../img/article-images/1.png';
+import img1 from '@img/article-images/1.png';
 
 const UiKitArticleCard = () => {
 	return (
@@ -28,7 +28,7 @@ const UiKitArticleCard = () => {
 							'import ArticleCard from "../components/ArticleCard/ArticleCard";'
 						}
 						<br />
-						{'import img1 from "../img/article-images/1.png";'}
+						{'import img1 from "@img/article-images/1.png";'}
 						<br />
 						<br />
 						{'<ArticleCard'}

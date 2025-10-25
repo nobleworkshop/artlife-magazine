@@ -1,7 +1,7 @@
 import AuthorCard from '../components/AuthorCard/AuthorCard';
 
 import styles from './uikit.module.css';
-import img1 from '../img/authors/1.png';
+import img1 from '@img/authors/1.png';
 
 const UiKitAuthorCard = () => {
 	return (
@@ -24,7 +24,7 @@ const UiKitAuthorCard = () => {
 							'import AuthorCard from "../components/AuthorCard/AuthorCard";'
 						}
 						<br />
-						{'import img1 from "../img/authors/1.png";'}
+						{'import img1 from "@img/authors/1.png";'}
 						<br />
 						<br />
 						{'<AuthorCard'}

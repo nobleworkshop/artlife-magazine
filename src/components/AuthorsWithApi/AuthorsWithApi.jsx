@@ -1,16 +1,16 @@
-import { useApi } from '../../hooks/useApi';
+import { useAuthors } from '../../hooks/useApiWithImages';
 import AuthorCard from '../AuthorCard/AuthorCard';
 import LinkTo from '../LinkTo/LinkTo';
 import SectionTitle from '../SectionTitle/SectionTitle';
 
 import styles from './authors.module.css';
 
-const Authors = () => {
-	const { data: authors, loading, error } = useApi('authors');
+const AuthorsWithApi = () => {
+	const { data: authors, loading, error } = useAuthors();
 
-	if (loading) return <div>Loading...</div>;
-	if (error) return <div>Error: {error}</div>;
-	if (!authors) return <div>No authors found</div>;
+	if (loading) return <div>Loading authors...</div>;
+	if (error) return <div>Error loading authors: {error}</div>;
+	if (!authors || authors.length === 0) return <div>No authors found</div>;
 
 	return (
 		<section className={styles.authors}>
@@ -34,4 +34,4 @@ const Authors = () => {
 	);
 };
 
-export default Authors;
+export default AuthorsWithApi;

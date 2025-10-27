@@ -1,7 +1,6 @@
 import ArticleCard from '../components/ArticleCard/ArticleCard';
 
 import styles from './uikit.module.css';
-import img1 from '../img/article-images/1.png';
 
 const UiKitArticleCard = () => {
 	return (
@@ -10,7 +9,7 @@ const UiKitArticleCard = () => {
 
 			<div className={styles.component__preview}>
 				<ArticleCard
-					img={img1}
+					img="/img/article-images/1.png"
 					title="Hope dies last"
 					text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam."
 					author="Jakob Grønberg"

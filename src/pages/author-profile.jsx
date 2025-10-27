@@ -4,16 +4,34 @@ import Footer from '@components/Footer/Footer';
 import Header from '@components/Header/Header';
 import LinkTo from '@components/LinkTo/LinkTo';
 
+import { useApi } from '../hooks/useApi';
+
 import styles from './author-profile.module.css';
 
 const AuthorProfilePage = () => {
+	const {
+		data: authors,
+		loading: authorsLoading,
+		error: authorsError,
+	} = useApi('authors');
+	const {
+		data: articles,
+		loading: articlesLoading,
+		error: articlesError,
+	} = useApi('articles');
+
+	if (authorsLoading || articlesLoading) return <div>Loading...</div>;
+	if (authorsError || articlesError) return <div>Error loading data</div>;
+	if (!authors || !articles) return <div>No data found</div>;
+
+	// Get the first author as example
 	const authorData = {
-		authorName: 'Louise Jensen',
+		authorName: authors[0].name,
 		shortBio:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam.',
 		longBio:
 			'Porttitor rhoncus dolor purus non enim praesent elementum. Eget dolor morbi non arcu risus quis varius. Posuere ac ut consequat semper viverra nam libero. In ornare quam viverra orci sagittis eu. Tristique risus nec feugiat in fermentum posuere urna nec. Tempus quam pellentesque nec nam aliquam sem et. Convallis a cras semper auctor neque vitae tempus quam pellentesque. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Sit amet porttitor eget dolor morbi non arcu risus. Justo eget magna fermentum iaculis eu non diam phasellus. Sit amet luctus venenatis lectus magna fringilla. Neque vitae tempus quam pellentesque nec nam.',
-		profileImageSrc: '/src/img/authors/1.png',
+		profileImageSrc: authors[0].img,
 		socialLinks: {
 			instagram: 'https://instagram.com/louisejensen',
 			twitter: 'https://twitter.com/louisejensen',
@@ -21,36 +39,17 @@ const AuthorProfilePage = () => {
 		},
 	};
 
-	const articlesData = [
-		{
-			id: 1,
-			title: 'The best art museums',
-			image: '/src/img/article-images/1.png',
-			date: '16. March 2022',
-			readTime: '10 Min',
-		},
-		{
-			id: 2,
-			title: 'An indestructible hope',
-			image: '/src/img/article-images/2.png',
-			date: '16. March 2022',
-			readTime: '10 Min',
-		},
-		{
-			id: 3,
-			title: 'The chains of our lives',
-			image: '/src/img/article-images/3.png',
-			date: '16. March 2022',
-			readTime: '10 Min',
-		},
-		{
-			id: 4,
-			title: 'Keep on smiling',
-			image: '/src/img/article-images/4.png',
-			date: '16. March 2022',
-			readTime: '10 Min',
-		},
-	];
+	// Filter articles by author name and take first 4
+	const authorArticles = articles
+		.filter((article) => article.authorName === authorData.authorName)
+		.slice(0, 4)
+		.map((article) => ({
+			id: article.id,
+			title: article.title,
+			image: article.img,
+			date: article.date,
+			readTime: article.timeToRead,
+		}));
 
 	return (
 		<>
@@ -68,7 +67,7 @@ const AuthorProfilePage = () => {
 						<AuthorProfile {...authorData} />
 						<AuthorArticles
 							authorName={authorData.authorName}
-							articles={articlesData}
+							articles={authorArticles}
 						/>
 					</div>
 				</div>

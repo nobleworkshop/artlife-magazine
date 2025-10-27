@@ -8,12 +8,23 @@ import WidgetMostPopular from '@components/WidgetMostPopular/WidgetMostPopular';
 import WidgetNewsletter from '@components/WidgetNewsletter/WidgetNewsletter';
 import WidgetPrintmagazine from '@components/WidgetPrintmagazine/WidgetPrintmagazine';
 
+import { useApi } from '../hooks/useApi';
+
 // import LeadArticleImg from "../img/leadArticle-img.png";
 import ArticlesSection from './main/ArticlesSection';
 
 import styles from './main.module.css';
 
 const Main = () => {
+	const { data: articles, loading, error } = useApi('articles');
+
+	if (loading) return <div>Loading...</div>;
+	if (error) return <div>Error: {error}</div>;
+	if (!articles) return <div>No articles found</div>;
+
+	// Get the first article as lead article
+	const leadArticle = articles[0];
+
 	return (
 		<>
 			<div className={`${styles.main} container`}>
@@ -27,14 +38,14 @@ const Main = () => {
 
 				<div className={styles['main-lead-article']}>
 					<LeadArticle
-						title="Don't close your eyes"
-						text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam."
+						title={leadArticle.title}
+						text={leadArticle.desc}
 						// img={<img src={LeadArticleImg} alt="Lead Article img" />}
-						author="Jacob Gronberg"
-						date="2022-03-16"
-						timeToRead="1"
-						badge="Label"
-						badgeLink="/"
+						author={leadArticle.authorName}
+						date={leadArticle.date}
+						timeToRead={leadArticle.timeToRead}
+						badge={leadArticle.badgeName}
+						badgeLink={leadArticle.badgeLink}
 					/>
 				</div>
 

@@ -2,51 +2,28 @@ import Footer from '@components/Footer/Footer';
 import Header from '@components/Header/Header';
 import PodcastListItem from '@components/PodcastListItem/PodcastListItem';
 
+import { useApi } from '../hooks/useApi';
+
 import styles from './podcast.module.css';
-import img01 from '@img/podcast-covers/small/01.jpg';
-import img02 from '@img/podcast-covers/small/02.jpg';
-import img03 from '@img/podcast-covers/small/03.jpg';
-import img04 from '@img/podcast-covers/small/04.jpg';
-import img05 from '@img/podcast-covers/small/05.jpg';
 
 const Podcast = () => {
-	const podcastList = [
-		{
-			number: '01',
-			image: img01,
-			title: '10 artists your should definitely know',
-			date: '2022-03-16',
-			duration: '80',
-		},
-		{
-			number: '02',
-			image: img02,
-			title: 'The art of movement',
-			date: '2022-03-16',
-			duration: '80',
-		},
-		{
-			number: '03',
-			image: img03,
-			title: 'Behind the scenes of the street art culture',
-			date: '2022-03-16',
-			duration: '80',
-		},
-		{
-			number: '04',
-			image: img04,
-			title: 'The hidden messages of Jack Nielson',
-			date: '2022-03-16',
-			duration: '80',
-		},
-		{
-			number: '05',
-			image: img05,
-			title: 'The Problem of today’s cultural development',
-			date: '2022-03-16',
-			duration: '80',
-		},
-	];
+	const { data: podcasts, loading, error } = useApi('podcasts');
+
+	if (loading) return <div>Loading...</div>;
+	if (error) return <div>Error: {error}</div>;
+	if (!podcasts) return <div>No podcasts found</div>;
+
+	// Map cover names to actual image paths
+	const getCoverImage = (coverName) => {
+		const coverMap = {
+			cover1: '/img/podcast-covers/small/01.jpg',
+			cover2: '/img/podcast-covers/small/02.jpg',
+			cover3: '/img/podcast-covers/small/03.jpg',
+			cover4: '/img/podcast-covers/small/04.jpg',
+			cover5: '/img/podcast-covers/small/05.jpg',
+		};
+		return coverMap[coverName] || '/img/podcast-covers/small/01.jpg';
+	};
 
 	return (
 		<>
@@ -55,14 +32,14 @@ const Podcast = () => {
 					<Header title="podcast" />
 				</div>
 				<div className={styles['podcast__list']}>
-					{podcastList.reverse().map((item) => (
+					{podcasts.reverse().map((podcast) => (
 						<PodcastListItem
-							key={item.number}
-							number={item.number}
-							image={item.image}
-							title={item.title}
-							date={item.date}
-							duration={item.duration}
+							key={podcast.id}
+							number={podcast.number}
+							image={getCoverImage(podcast.cover)}
+							title={podcast.title}
+							date={podcast.date}
+							duration={podcast.duration}
 						/>
 					))}
 				</div>

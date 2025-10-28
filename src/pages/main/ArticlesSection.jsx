@@ -1,24 +1,33 @@
 import Article from '../../components/Article/Article';
 import LinkTo from '../../components/LinkTo/LinkTo';
+import { useApi } from '../../hooks/useApi';
 
 import styles from './articlesSection.module.css';
-import ArticleImg from '@img/diogo.png';
 
 const ArticlesSection = () => {
+	const { data: articles, loading, error } = useApi('articles');
+
+	if (loading) return <div>Loading...</div>;
+	if (error) return <div>Error: {error}</div>;
+	if (!articles) return <div>No articles found</div>;
+
+	// Get first 6 articles
+	const displayArticles = articles.slice(0, 6);
+
 	return (
 		<div className={styles.wraper}>
 			<div className={styles.list}>
-				{Array.from({ length: 6 }).map((_, index) => (
+				{displayArticles.map((article) => (
 					<Article
-						key={index}
-						img={ArticleImg}
-						title="Hope lights the way"
-						text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam."
-						autor="Jakob Gronberg"
-						date="2022-03-16"
-						timeToRead="1"
-						badgeName="ART"
-						badgeLink="/art"
+						key={article.id}
+						img={article.img}
+						title={article.title}
+						text={article.desc}
+						autor={article.authorName}
+						date={article.date}
+						timeToRead={article.timeToRead}
+						badgeName={article.badgeName}
+						badgeLink={article.badgeLink}
 					/>
 				))}
 			</div>

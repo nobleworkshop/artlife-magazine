@@ -1,7 +1,7 @@
 import LeadArticle from '../components/LeadArticle/LeadArticle';
 
 import styles from './uikit.module.css';
-import img from '../img/leadArticle-img.png';
+import img from '@img/leadArticle-img.png';
 
 const UiKitButton = () => {
 	return (

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import styles from './social.module.css';
-import instagram from '../../../img/social/instagram.svg';
+import instagram from '@img/social/instagram.svg';
 
 const Instagram = ({ link, alt, target, invert = false }) => {
 	return (

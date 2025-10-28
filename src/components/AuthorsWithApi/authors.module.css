@@ -1,0 +1,27 @@
+.authors {
+	padding: 60px 0;
+}
+
+.header {
+	display: flex;
+
+	justify-content: space-between;
+	align-items: center;
+
+	margin-bottom: 24px;
+}
+
+.title {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.grid {
+	display: grid;
+
+	grid-template-columns: 1fr 1fr;
+
+	@media (width <=1226px) {
+		grid-template-columns: 1fr;
+	}
+}

@@ -1,0 +1,80 @@
+/* ArticlePage.module.css */
+.articlePage {
+	padding: 2rem 0;
+}
+
+.articleHeader {
+	margin-bottom: 2rem;
+}
+
+.badge {
+	margin-bottom: 1rem;
+}
+
+.title {
+	margin-bottom: 1rem;
+
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: var(--text-primary);
+}
+
+.meta {
+	display: flex;
+
+	gap: 2rem;
+
+	margin-bottom: 1rem;
+}
+
+.articleImage {
+	margin-bottom: 2rem;
+}
+
+.articleImage img {
+	width: 100%;
+	height: auto;
+
+	border-radius: 8px;
+}
+
+.articleContent {
+	margin-bottom: 2rem;
+
+	line-height: 1.6;
+}
+
+.articleContent p {
+	margin-bottom: 1rem;
+}
+
+.quote {
+	margin: 2rem 0;
+	padding: 2rem;
+
+	background: var(--bg-secondary);
+	border-left: 4px solid var(--accent-color);
+	border-radius: 8px;
+}
+
+.quote blockquote {
+	margin: 0;
+
+	font-size: 1.2rem;
+	font-style: italic;
+}
+
+.quote cite {
+	display: block;
+
+	margin-top: 1rem;
+
+	font-weight: bold;
+}
+
+.navigation {
+	margin-top: 2rem;
+	padding-top: 2rem;
+
+	border-top: 1px solid var(--border-color);
+}

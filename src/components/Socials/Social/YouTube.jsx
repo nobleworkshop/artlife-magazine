@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import styles from './social.module.css';
-import youtube from '../../../img/social/youtube.svg';
+import youtube from '@img/social/youtube.svg';
 
 const YouTube = ({ link, alt, target, invert = false }) => {
 	return (

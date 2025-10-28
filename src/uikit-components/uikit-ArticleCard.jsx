@@ -27,7 +27,7 @@ const UiKitArticleCard = () => {
 							'import ArticleCard from "../components/ArticleCard/ArticleCard";'
 						}
 						<br />
-						{'import img1 from "../img/article-images/1.png";'}
+						{'import img1 from "@img/article-images/1.png";'}
 						<br />
 						<br />
 						{'<ArticleCard'}

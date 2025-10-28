@@ -2,7 +2,7 @@ import Button from '../Button/Button';
 import Widget from '../Widget/Widget';
 
 import style from './widgetPrintmagazine.module.css';
-import img from '../../img/magazin-cover.png';
+import img from '@img/magazin-cover.png';
 
 const WidgetPrintmagazine = () => {
 	return (

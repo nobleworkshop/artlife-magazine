@@ -1,0 +1,98 @@
+/* PodcastPage.module.css */
+.podcastPage {
+	padding: 2rem 0;
+}
+
+.podcastHeader {
+	margin-bottom: 2rem;
+}
+
+.title {
+	margin-bottom: 1rem;
+
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: var(--text-primary);
+}
+
+.meta {
+	display: flex;
+
+	gap: 2rem;
+
+	margin-bottom: 1rem;
+}
+
+.podcastCover {
+	display: flex;
+
+	justify-content: center;
+
+	margin-bottom: 2rem;
+}
+
+.podcastContent {
+	margin-bottom: 2rem;
+}
+
+.description {
+	margin-bottom: 2rem;
+}
+
+.description h2 {
+	margin-bottom: 1rem;
+
+	font-size: 1.5rem;
+	color: var(--text-primary);
+}
+
+.description p {
+	line-height: 1.6;
+	color: var(--text-secondary);
+}
+
+.listenSection {
+	padding: 2rem;
+
+	background: var(--bg-secondary);
+	border-radius: 8px;
+}
+
+.listenSection h3 {
+	margin-bottom: 1rem;
+
+	font-size: 1.3rem;
+	color: var(--text-primary);
+}
+
+.listenButtons {
+	display: flex;
+
+	gap: 1rem;
+}
+
+.listenButton {
+	padding: 0.75rem 1.5rem;
+
+	background: var(--primary-color);
+	border: none;
+	border-radius: 4px;
+
+	font-weight: bold;
+	color: var(--secondary-color);
+
+	transition: var(--transition);
+
+	cursor: pointer;
+}
+
+.listenButton:hover {
+	background: var(--accent-color);
+}
+
+.navigation {
+	margin-top: 2rem;
+	padding-top: 2rem;
+
+	border-top: 1px solid var(--border-color);
+}

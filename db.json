@@ -44,6 +44,15 @@
 		}
 	],
 
+	"articleCategories": [
+		"art",
+		"illustrations",
+		"nature",
+		"photography",
+		"sculptures",
+		"stories"
+	],
+
 	"articles": [
 		{
 			"id": 1,

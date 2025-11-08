@@ -26,7 +26,9 @@ const ArticleCard = ({
 
 			<div className={styles.card__content}>
 				<h3 className={styles.card__title}>{title}</h3>
-				<p className={styles.card__text}>{text}</p>
+				<p className={styles.card__text}>
+					{text.replace(/<[^>]+>/g, '')}
+				</p>
 			</div>
 
 			<div className={styles.card__details}>

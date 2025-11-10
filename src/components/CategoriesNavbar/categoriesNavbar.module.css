@@ -26,3 +26,55 @@
 
 	background-color: #fff;
 }
+
+.category-checkbox {
+	position: relative;
+
+	display: inline-block;
+
+	cursor: pointer;
+}
+
+.category-checkbox__input {
+	position: absolute;
+
+	width: 0;
+	height: 0;
+
+	opacity: 0;
+}
+
+.category-checkbox__label {
+	display: inline-block;
+
+	padding: 7px 12px;
+
+	background-color: #fff;
+	border: 1px solid #000;
+	border-radius: 100px;
+
+	font-size: 12px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #000;
+
+	transition: all 0.3s ease;
+
+	user-select: none;
+}
+
+.category-checkbox__input:checked + .category-checkbox__label {
+	background-color: #000;
+
+	color: #fff;
+}
+
+.category-checkbox__input:focus + .category-checkbox__label {
+	outline: 2px solid #000;
+
+	outline-offset: 2px;
+}
+
+.category-checkbox:hover .category-checkbox__label {
+	opacity: 0.8;
+}
